@@ -13,7 +13,7 @@ Team members: Ann Bui, Dan Lindeblom, Declan Davis
 
 # User Stories
 
-##### User stories allow you to draft the high-level requirements based on the user needs. It should describe the interaction of the user and the app.
+#### User stories allow you to draft the high-level requirements based on the user needs. It should describe the interaction of the user and the app.
 
 As a user, I can register an account/profile with my personal details.  
 As a user, I can edit my account/profile.  
@@ -21,7 +21,8 @@ As a user, I can earn Treats(integer) and badges in various ways
 As a user, I can view other profiles and request a match or Reject them.
 As a user, I can view and send messages with my matched users
 As a user, I can unmatch with my matched users
-STRETCH:
+
+#### STRETCH:
 
 - As a user, I can use Spotify together with my matched users
   - see what they're listening to
