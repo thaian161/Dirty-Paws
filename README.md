@@ -7,6 +7,10 @@ Dirty Paws is a ..............................
 - 👨🏼‍💻 [Dan Lindeblom](https://github.com/DLindeblom): the master of backend and data manipulater
 - 👨‍🏭 [Declan Davis](https://github.com/DexTheFish): the master of backend and data manipulater
 
+## Entity Relationship Diagram (ERD)
+
+!["ERD"](###)
+
 ## Main Features:
 
 ## Features we wish to accomplish:
@@ -17,36 +21,46 @@ Dirty Paws is a ..............................
 
 #### _Landing Page_
 
-!["Landing Page"](https://github.com/thaian161/Bake-It-Up/blob/master/docs/BIU-landing.png)
+!["Landing Page"](###)
 
 #### _Users Favorites Page_
 
-!["Users Favorites Page"](https://github.com/thaian161/Bake-It-Up/blob/master/docs/fav.png)
+!["Users Favorites Page"](###)
 
 #### _Users Main Page_
 
-!["Users Main Page"](https://github.com/thaian161/Bake-It-Up/blob/master/docs/buyer%20main.png)
+!["Users Main Page"](###)
 
 #### _Filter Feature_
 
-!["Filter Feature"](https://github.com/thaian161/Bake-It-Up/blob/master/docs/filter.png)
+!["Filter Feature"](###)
 
 #### _Admins Main Page_
 
-!["Admin Main Page"](https://github.com/thaian161/Bake-It-Up/blob/master/docs/admin-main.png)
+!["Admin Main Page"](###)
 
 #### _Admins Sell Baked Good Form_
 
-!["Admin Main Page"](https://github.com/thaian161/Bake-It-Up/blob/master/docs/admin-form.png)
+!["Admin Main Page"]((###)
 
 #### _Admins SOLD feature_
 
-!["Admin Main Page"](https://github.com/thaian161/Bake-It-Up/blob/master/docs/SOLD%20feature.png)
+!["Admin Main Page"](###)
 
 ## Dependencies
+- 
+- 
+- 
+- 
+
+
 ## Dev-Dependencies
 
 - nodemon
+- 
+- 
+- 
+- 
 
 ## Getting Started
 
