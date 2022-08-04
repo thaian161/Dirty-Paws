@@ -1,0 +1,10 @@
+
+DROP TABLE IF EXISTS matches CASCADE;
+
+CREATE TABLE matches (
+  id INTEGER PRIMARY KEY NOT NULL,
+
+  users_id INTEGER REFERENCES users (id) ON DELETE CASCADE
+  users_id INTEGER REFERENCES users (id) ON DELETE CASCADE
+  active BOOLEAN NOT NULL default true
+);
