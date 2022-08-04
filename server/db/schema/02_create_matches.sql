@@ -6,5 +6,7 @@ CREATE TABLE matches (
 
   userOne_id INTEGER REFERENCES users (id) ON DELETE CASCADE,
   userTwo_id INTEGER REFERENCES users (id) ON DELETE CASCADE,
-  active BOOLEAN NOT NULL default true
+  
+  userOne_likes_userTwo BOOLEAN default false,
+  userTwo_likes_userOne BOOLEAN default false
 );
