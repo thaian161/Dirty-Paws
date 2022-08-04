@@ -10,5 +10,5 @@ CREATE TABLE users (
   profile_picture VARCHAR(255) NOT NULL,
   bio VARCHAR(255) NOT NULL,
   age INTEGER NOT NULL,
-  address VARCHAR(255) NOT NULL,
+  address VARCHAR(255) NOT NULL
 );
