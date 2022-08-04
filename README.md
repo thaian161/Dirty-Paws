@@ -89,3 +89,7 @@ Dirty Paws is a ..............................
 
 > **Hope you enjoy the app and have a nice day :D**
 
+##### How to use
+run the server with > npm start
+connect to database with > npm run start
+

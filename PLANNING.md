@@ -24,7 +24,7 @@ As a user, I can unmatch with my matched users
 
 #### STRETCH:
 
-- As a user, I can use Spotify together with my matched users
+- As a user, I can use Spotify together with my matched users  
   - see what they're listening to
   - Play a song inside the chat
 - As a user, I am more likely to see profiles with a similar number of treats(and badges?)
