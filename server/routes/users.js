@@ -1,37 +1,39 @@
 const router = require('express').Router();
 
-// const users = ['Ann', 'Dan', 'Dex', 'Mia'];
-
 module.exports = (db) => {
-  // all routes will go here 
-  router.get('/', (req, res) => {
-    // get all users
-    const command = 'SELECT * FROM users';
-    db.query(command).then(data => {
+
+  router.get('/', (req, res) => { // get all users
+    const queryString = 'SELECT * FROM users';
+    db.query(queryString).then(data => {
+      console.log('get all users')
       res.json(data.rows);
     })
   });
 
-//todo: router.get('/random')
+  router.get('/random', (req, res) => { // get random user
+    console.log('attempt to get random user');
+    const queryString = 'SELECT * FROM users ORDER BY RANDOM() LIMIT 1'
+    db.query(queryString).then(data => {
+      res.json(data.rows);
+    })
+  })
 
-  router.get('/:id', (req, res) => {
-    // get profile info for a given user
-    const queryString = `SELECT (name, treats, profile_picture, bio, age, address) FROM users WHERE id=$1`;
+  router.get('/:id', (req, res) => { // get profile info for a specific user
+    const queryString = `SELECT * FROM users WHERE id=$1`;
     const queryParams = [ req.params.id ]
     db.query(queryString, queryParams).then(data => {
-      res.json(data.rows[0]);
+      console.log('get specified user')
+      res.json(data.rows);
     })
   });
 
-  router.post('/', (req, res) => {
-    // allow user to create new profile
+  router.post('/', (req, res) => { // create new user profile
     // grab new-user data from req.body
-    // command = INSERT INTO users VALUES (... req.body)
-    // db.query(command).then(() => {} )
-  })
+    // queryString = INSERT INTO users VALUES (... req.body)
+    // db.query(queryString).then(() => {} )
+  });
 
-  router.put('/:id', (req, res) => {
-    // allow user to edit their own profile
+  router.put('/:id', (req, res) => { // allow user to edit their own profile
     const { name, bio, age, address } = req.body
 
     const queryString = ` 
@@ -45,8 +47,7 @@ module.exports = (db) => {
     db.query(queryString, queryParams).then(data => {
       res.json(data.rows)
     })
-  
-    
-  })
+  });
+
   return router;
 }
