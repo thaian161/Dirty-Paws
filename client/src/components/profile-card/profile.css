@@ -1,0 +1,12 @@
+div.profile-front {
+  background-color: pink;
+  display: block;
+  height: 100px;
+  width: 50px;
+}
+div.profile-back {
+  background-color: rgb(87, 87, 183);
+  display: block;
+  height: 100px;
+  width: 50px;
+}

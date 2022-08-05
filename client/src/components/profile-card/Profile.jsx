@@ -11,13 +11,13 @@ export default function ProfileCard() {
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
       {/* -----FRONT CARD---- */}
-      <div className="profile-front">
+      <div>
         Front Front Front
         <button onClick={handleClick}>Click to flip</button>
       </div>
 
       {/* -----BACK CARD---- */}
-      <div className="profile-back">
+      <div>
         Back Back Back
         <button onClick={handleClick}>Click to flip</button>
       </div>
