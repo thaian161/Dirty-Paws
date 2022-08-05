@@ -7,6 +7,7 @@ import PurpleCat from './lotties/PurpleCat';
 function App() {
   const [state, setState] = useState('default state');
 
+
   useEffect(() => {
       axios.get('/users')
       .then((res) => {
