@@ -8,10 +8,9 @@ function App() {
   const [state, setState] = useState('default state');
 
   useEffect(() => {
-    Promise.all(
-      [axios.get('/users')]
-      ).then((all) => {
-      setState(prev => all[0].data); //grab data with all[0].data
+      axios.get('/users')
+      .then((res) => {
+      setState(res.data[0]); //grab data with all[0].data
       console.log('after the axios request:  ', state);
     })
   }, [])
@@ -21,6 +20,9 @@ function App() {
   return (
     <div className="App">
       <PurpleCat />
+      <p>{state.name}</p>
+      <p>{state.address}</p>
+
     </div>
   );
 }
