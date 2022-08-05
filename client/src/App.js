@@ -4,7 +4,7 @@ import ChatBubble from './lotties/ChatBubble';
 import PurpleCat from './lotties/PurpleCat';
 import RainbowCat from './lotties/RainbowCat';
 
-
+import EachProfileCard from './components/profile/EachProfileCard';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <RainbowCat />
       <ChatBubble />
 
-     
+      <EachProfileCard />
     </div>
   );
 }
