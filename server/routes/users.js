@@ -49,5 +49,14 @@ module.exports = (db) => {
     })
   });
 
+  router.delete('/:id', (req, res) => { // delete a user
+    res.json('delete feature not yet implemented')
+  });
+
+
+
+
+
+
   return router;
 }

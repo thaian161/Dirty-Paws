@@ -19,5 +19,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter(db));
+app.use('/matches', matchesRouter(db));
 
 module.exports = app;
