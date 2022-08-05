@@ -1,11 +1,11 @@
 import Lottie from 'react-lottie';
-import animationData from './46864-lovely-cats.json';
+import lovelycat from './46864-lovely-cats.json';
 
-const LovelyCat =()=>{
+const LovelyCat = () => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: animationData,
+    animationData: lovelycat,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
     },
