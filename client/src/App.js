@@ -1,7 +1,7 @@
 import './App.css';
 
 // import Lottie from 'react-lottie';
-import PurpleCat from './lotties/LovelyCat';
+import PurpleCat from './lotties/PurpleCat';
 
 function App() {
   return (
