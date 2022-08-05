@@ -5,12 +5,14 @@ const router = require('express').Router();
 module.exports = (db) => {
   // all routes will go here 
   router.get('/', (req, res) => {
+    // get all users
     const command = 'SELECT * FROM users';
-
     db.query(command).then(data => {
       res.json(data.rows);
     })
   });
+
+//todo: router.get('/random')
 
   router.get('/:id', (req, res) => {
     // get profile info for a given user
@@ -21,7 +23,6 @@ module.exports = (db) => {
     })
   });
 
-
   router.post('/', (req, res) => {
     // allow user to create new profile
     // grab new-user data from req.body
@@ -29,7 +30,6 @@ module.exports = (db) => {
     // db.query(command).then(() => {} )
   })
 
-  
   router.put('/:id', (req, res) => {
     // allow user to edit their own profile
     const { name, bio, age, address } = req.body
