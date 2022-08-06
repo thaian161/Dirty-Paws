@@ -1,0 +1,114 @@
+.home {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+
+  /* The image used */
+  background: url('./images/test2blue.png');
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* font-family: "Quicksand", sans-serif; */
+  /* font-family: 'Pacifico', cursive; */
+
+  padding-top: 11%;
+}
+
+.home .homeContent {
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding: 4rem;
+  z-index: 99;
+}
+.home .homeContent h2 {
+  margin-top: 2rem;
+  font-size: 12rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  line-height: 7rem;
+  color: var(--black);
+  text-shadow: var(--box-shadow);
+  font-family: 'Pacifico', cursive;
+}
+.home .homeContent p {
+  font-size: 2rem;
+  line-height: 2;
+  margin-bottom: 2rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+}
+.home .homeContent .home-btn {
+  height: 3rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+}
+.home .homeContent .home-btn button {
+  font-size: 1.5rem;
+  background-color: var(--black);
+  color: black;
+  border: none;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 900;
+}
+
+div.homeContent {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(255, 255, 255, 0); /* Black w/opacity/see-through */
+  color: black;
+  z-index: 5;
+  margin-top: -8rem;
+}
+
+section {
+  padding: 3rem 3%;
+}
+
+
+.home a:link {
+  text-decoration: none;
+}
+.home a {
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  font-size: rem;
+  margin-right: 3rem;
+  color: var(--black);
+  font-weight: bold;
+}
+
+.home a {
+  background: linear-gradient(to right, #401c0c, #401c0c),
+    linear-gradient(to right, #fea2c4, #a2c3fe);
+}
+.home a {
+  background: linear-gradient(to right, #401c0c, #401c0c),
+    linear-gradient(to right, #fea2c4, #a2c3fe);
+  background-size: 100% 5px, 0 5px;
+}
+.home a {
+  background: linear-gradient(to right, #401c0c, #401c0c),
+    linear-gradient(to right, #fea2c4, #a2c3fe);
+  background-size: 100% 5px, 0 5px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+}
+.home a:hover {
+  background-size: 0 5px, 100% 5px;
+}
+.home a {
+  background: linear-gradient(to right, #401c0c, #401c0c),
+    linear-gradient(to right, #fea2c4, #a2c3fe);
+  background-size: 100% 5px, 0 5px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 500ms;
+}

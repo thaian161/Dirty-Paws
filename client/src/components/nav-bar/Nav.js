@@ -1,5 +1,6 @@
 import './Nav.css';
 import clearLogo from './images/clearLogo.png';
+import whiteLogo from './images/whiteLogo.png';
 
 export default function Nav() {
   return (
