@@ -8,7 +8,7 @@ const db = require('./configs/db.config');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-
+var matchesRouter = require('./routes/matches');
 var app = express();
 
 app.use(logger('dev'));
