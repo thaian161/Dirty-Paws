@@ -71,7 +71,7 @@ section {
 section#home.home {
   display: flex;
   flex-direction: column;
-
+  padding-top: 4%;
 }
 
 .intro-large {
@@ -91,4 +91,7 @@ p {
 
 .chat-box {
   background-color: red;
+  height: 2px;
+  width: 2px;
+
 }
