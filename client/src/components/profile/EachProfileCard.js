@@ -14,7 +14,7 @@ export default function EachProfileCard() {
           <h2>
             Ms Meow Meow <span>19</span>
           </h2>
-          <p>Orlando</p>
+          <p className='profile-city'>Orlando</p>
 
           <div className="profile-footer">
             <div>
@@ -23,7 +23,7 @@ export default function EachProfileCard() {
 
             <div>
               <p className="bio">Bio</p>
-              <p>Meow meow meow meow meow meow</p>
+              <p className="bio-description">Meow meow meow meow meow meow</p>
             </div>
           </div>
         </div>

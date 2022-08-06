@@ -80,4 +80,16 @@
   margin-top: 1rem;
 }
 
+p.bio {
+  font-family: Concert One;
+}
+p.bio-description {
+  /* font-family: Open Sans; */
+  font-style: italic;
+}
+p.profile-city {
+  /* font-family: Open Sans; */
+  font-style: italic;
+}
+
 /* -----END EACH PROFILE CARD COMPONENT----- */
