@@ -11,6 +11,7 @@ var usersRouter = require('./routes/users');
 var matchesRouter = require('./routes/matches');
 var messagesRouter = require('./routes/messages');
 var badgesRouter = require('./routes/badges');
+var loginRouter = require('./routes/login');
 var app = express();
 
 app.use(logger('dev'));
@@ -24,6 +25,7 @@ app.use('/users', usersRouter(db));
 app.use('/matches', matchesRouter(db));
 app.use('/messages', messagesRouter(db));
 app.use('/badges', badgesRouter(db));
+app.use('/login', loginRouter())
 
 
 module.exports = app;
