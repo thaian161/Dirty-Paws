@@ -29,7 +29,6 @@ export default function EachProfileCard() {
           </div>
         </div>
       </div>
-      
     </div>
     
   );
