@@ -33,7 +33,7 @@ section {
   width: 30%;
   float: left;
   /* text-align: center; */
-  
+
   padding: 2.5rem;
   z-index: 99;
 }
@@ -70,15 +70,14 @@ section {
 
 section#home.home {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+
 }
 
 .intro-large {
   font-family: Concert One;
   color: #406ca6;
   text-align: left;
-  
 }
 .intro-small {
   font-family: roboto mono;
@@ -88,4 +87,8 @@ section#home.home {
 p {
   font-family: open sans;
   text-align: left;
+}
+
+.chat-box {
+  background-color: red;
 }

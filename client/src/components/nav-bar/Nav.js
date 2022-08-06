@@ -18,7 +18,7 @@ export default function Nav() {
         <a className="nav-btn" href="#profile">My Profile</a>
         <a className="nav-btn" href="#log-in">Sign In</a>
         <a className="nav-btn" href="#sign-up">Sign Up</a>
-        <a className="nav-btn" href="#sign-up">Search<img className="match-icon" src={ match } alt=""/></a>
+        <a className="nav-btn" href="#sign-up">Search</a>
       </nav>
     </header>
   );
