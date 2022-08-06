@@ -10,26 +10,26 @@ export default function LandingPage() {
     <body>
       <section className="home" id="home">
         <div className="homeContent">
-          <h3> Dirty Paws </h3>
-          <p>Ready to get Dirty?</p>
+          <h3 className="intro-large"> Looking For Your Soulmate? </h3>
+          <p className="intro-small"> Ready To Get Your Paws Dirty</p>
           <p>
-            Ready to get Dirty? Ready to get Dirty? Ready to get Dirty? Ready to
-            get Dirty? Ready to get Dirty?
+            I need some dummy content to fill this section for the sake of my
+            design halp halp halp halp halp halp halp halp halp halp halp halp
+            halp halp halp halp halp halp
           </p>
           <a href="/#">
             <button className="land-btn">explore more</button>
           </a>
-          <div>
-            <ChatBubble />
-          </div>
+          
         </div>
 
         <div className="landing-animation-container">
           <div>
-            <HumanCat/>
+            <HumanCat />
           </div>
-
-          
+          <div>
+            <ChatBubble />
+          </div>
         </div>
       </section>
     </body>
