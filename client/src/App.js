@@ -1,8 +1,8 @@
 import './App.css';
 import ChatBubble from './lotties/ChatBubble';
-
 import PurpleCat from './lotties/PurpleCat';
 import RainbowCat from './lotties/RainbowCat';
+
 
 import EachProfileCard from './components/profile/EachProfileCard';
 import Profile from './components/profile/Profile';
@@ -14,6 +14,7 @@ function App() {
     <div className="App">
       <Nav />
       <LandingPage />
+     
 
       <PurpleCat />
       <RainbowCat />

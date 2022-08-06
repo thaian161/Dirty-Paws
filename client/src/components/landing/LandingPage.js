@@ -5,7 +5,7 @@ export default function LandingPage() {
     <body>
       <section className="home" id="home">
         <div className="homeContent">
-          {/* <h2> Dirty Paws </h2>
+          <h2> Dirty Paws </h2>
           <p>
            Ready to get Dirty?
           </p>
@@ -13,7 +13,8 @@ export default function LandingPage() {
             <a href="/#">
               <button>SEE ALL BAKED GOODS</button>
             </a>
-          </div> */}
+            
+          </div>
         </div>
       </section>
     </body>

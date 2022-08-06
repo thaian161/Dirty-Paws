@@ -7,7 +7,9 @@
   background-position: center center;
 
   /* The image used */
-  background: url('./images/test2blue.png');
+  /* background: url('./images/blue.png'); */
+  /* background: url('./images/blueBBD9FF.png'); */
+  background: url('./images/blueD8E9FF.png');
 
   /* Full height */
   height: 100%;
@@ -71,7 +73,6 @@ div.homeContent {
 section {
   padding: 3rem 3%;
 }
-
 
 .home a:link {
   text-decoration: none;
