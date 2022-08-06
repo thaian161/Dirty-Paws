@@ -6,7 +6,7 @@ import PurpleCat from './lotties/PurpleCat';
 
 function App() {
   const [state, setState] = useState('default state');
-
+  
   const getRandomUser = function() {
     axios.get('/users/random')
       .then((res) => {
