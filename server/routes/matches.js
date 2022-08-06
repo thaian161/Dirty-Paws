@@ -2,14 +2,13 @@ const router = require('express').Router();
 
 module.exports = (db) => {
   
+  router.get('/', (req, res) => {
+    res.json('made it to /matches')
+  })
+  
   router.post('/', (req, res) => { // Like another user
     // "one_likes_two"
-  
   });
-
-  router.get('/', (req, res) => { // get all the matches
-    
-  })
 
   return router;
 }

@@ -1,12 +1,10 @@
 const router = require('express').Router();
 
 module.exports = (db) => {
-  
-  router.get('/', (req, res) => {
-    res.json('made it to /badges');
-  });
 
+  router.get('/', (req, res) => {
+    res.json('made it to /messages');
+  })
+  
   return router;
 }
-
-  

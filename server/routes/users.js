@@ -5,7 +5,6 @@ module.exports = (db) => {
   router.get('/', (req, res) => { // get all users
     const queryString = 'SELECT * FROM users';
     db.query(queryString).then(data => {
-      console.log('get all users')
       res.json(data.rows);
     })
   });
