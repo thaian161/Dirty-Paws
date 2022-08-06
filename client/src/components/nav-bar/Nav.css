@@ -61,6 +61,19 @@ a.nav-btn {
 img.match-icon {
   height: 3rem;
 }
+a.nav-btn::before {
+  /* Highlight color */
+  background-color: #f7efb6;
+
+  content: "";
+  position: absolute;
+  width: calc(100% + 4px);
+  height: 60%;
+  left: -2px;
+  bottom: 0;
+  z-index: -1;
+  transform: rotate(-2deg);
+}
 
 /* .header a {
   background: linear-gradient(to right, #401c0c, #401c0c),
