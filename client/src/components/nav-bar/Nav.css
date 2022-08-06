@@ -17,7 +17,10 @@
 }
 .header .logoContent .logo img {
   height: 5rem;
+  border-radius: 0% 28% 0% 0% / 10% 64% 0% 0%;
+  background-color: rgba(255, 255, 255, 0.678);
 }
+
 .header .logoContent .logoName {
   color: var(--black);
   font-size: 2rem;
@@ -53,7 +56,26 @@
 a.nav-btn {
   font-weight: 900;
   font-family: Roboto mono;
+  text-shadow: #b5cae5 2px 2px;
 }
+
+img.match-icon {
+  height: 3rem;
+}
+a.nav-btn::before {
+  /* Highlight color */
+  background-color: #f7efb6;
+
+  content: '';
+  position: absolute;
+  width: calc(100% + 4px);
+  height: 60%;
+  left: -2px;
+  bottom: 0;
+  z-index: -1;
+  transform: rotate(-2deg);
+}
+
 /* .header a {
   background: linear-gradient(to right, #401c0c, #401c0c),
     linear-gradient(to right, #fea2c4, #a2c3fe);

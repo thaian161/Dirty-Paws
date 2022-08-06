@@ -1,11 +1,11 @@
 import Lottie from 'react-lottie';
-import chatbubble from './chat-bubble.json';
+import sexyCat from './sexy-cat.json';
 
-const ChatBubble = () => {
+const SexyCat = () => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: chatbubble,
+    animationData: sexyCat,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
     },
@@ -13,9 +13,13 @@ const ChatBubble = () => {
 
   return (
     <div>
-      <Lottie options={defaultOptions} height={200} width={200} />
+      <Lottie
+        options={defaultOptions}
+        height={450}
+        width={450}
+      />
     </div>
   );
 };
 
-export default ChatBubble;
+export default SexyCat;

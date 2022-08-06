@@ -1,11 +1,11 @@
 import Lottie from 'react-lottie';
-import chatbubble from './chat-bubble.json';
+import spacedog from './space-dog.json';
 
-const ChatBubble = () => {
+const SpaceDog = () => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: chatbubble,
+    animationData: spacedog,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
     },
@@ -18,4 +18,4 @@ const ChatBubble = () => {
   );
 };
 
-export default ChatBubble;
+export default SpaceDog;

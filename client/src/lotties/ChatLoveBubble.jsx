@@ -1,11 +1,11 @@
 import Lottie from 'react-lottie';
-import chatbubble from './chat-bubble.json';
+import chatlovebubble from './chat-love.json';
 
-const ChatBubble = () => {
+const ChatLoveBubble = () => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: chatbubble,
+    animationData: chatlovebubble,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
     },
@@ -18,4 +18,4 @@ const ChatBubble = () => {
   );
 };
 
-export default ChatBubble;
+export default ChatLoveBubble;

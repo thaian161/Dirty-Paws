@@ -7,7 +7,7 @@ CREATE TABLE users (
   name VARCHAR(255) NOT NULL,
   treats INTEGER NOT NULL DEFAULT 1,
   password VARCHAR(255) NOT NULL,
-  profile_picture VARCHAR(255) NOT NULL,
+  profile_picture TEXT NOT NULL,
   bio VARCHAR(255) NOT NULL,
   age INTEGER NOT NULL,
   address VARCHAR(255) NOT NULL

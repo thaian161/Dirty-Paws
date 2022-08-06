@@ -1,0 +1,97 @@
+section {
+  padding: 3rem 3%;
+}
+
+.home {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+
+  /* The image used */
+  /* background: url('./images/blue.png'); */
+  /* background: url('./images/blueBBD9FF.png'); */
+  background: url('./images/layer4.7.png'), url('./images/layer2.png'),
+    url('./images/layer3.png'), url('./images/blueD8E9FF.png');
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* font-family: "Quicksand", sans-serif; */
+  /* font-family: 'Pacifico', cursive; */
+
+  padding-top: 0%;
+}
+
+.home .homeContent {
+  width: 30%;
+  float: left;
+  /* text-align: center; */
+
+  padding: 2.5rem;
+  z-index: 99;
+}
+
+.land-btn {
+  color: #f78c8c;
+  border: 2px dashed #406ca6;
+  border-radius: 10% 28% 10% 10% / 0% 55% 0% 0%;
+  background-color: #5985ca;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 15px;
+  box-shadow: #f78c8c 3px 3px 0px 0px, #f78c8c 5px 5px 0px 0px,
+    #f78c8c 6px 6px 0px 0px, black 7px 7px 0px 0px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.land-btn:hover {
+  color: #406ca6;
+  border: 2px dashed #406ca6;
+  border-radius: 10% 28% 10% 10% / 0% 55% 0% 0%;
+  background-color: #f78c8c;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 15px;
+  box-shadow: #5985ca 3px 3px 0px 0px, #5985ca 5px 5px 0px 0px,
+    #5985ca 5px 5px 0px 0px, #5985ca 6px 6px 0px 0px, black 7px 7px 0px 0px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+section#home.home {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4%;
+}
+
+.intro-large {
+  font-family: Concert One;
+  color: #406ca6;
+  text-align: left;
+}
+.intro-small {
+  font-family: roboto mono;
+  color: #f07e74;
+  text-align: left;
+}
+p {
+  font-family: open sans;
+  text-align: left;
+}
+
+.chat-box {
+  background-color: red;
+  height: 2px;
+  width: 2px;
+
+}
