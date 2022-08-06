@@ -1,11 +1,11 @@
 import Lottie from 'react-lottie';
-import chatbubble from './chat-bubble.json';
+import animals from './animals.json';
 
-const ChatBubble = () => {
+const Animals = () => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: chatbubble,
+    animationData: animals,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
     },
@@ -18,4 +18,4 @@ const ChatBubble = () => {
   );
 };
 
-export default ChatBubble;
+export default Animals;

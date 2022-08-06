@@ -1,6 +1,9 @@
 import './LandingPage.css';
 import HumanCat from '../../lotties/HumanCat';
 import ChatBubble from '../../lotties/ChatBubble';
+import PurpleCat from '../../lotties/PurpleCat';
+import Animals from '../../lotties/Animals';
+import SpaceDog from '../../lotties/SpaceDog';
 
 export default function LandingPage() {
   return (
@@ -16,16 +19,16 @@ export default function LandingPage() {
           <a href="/#">
             <button className="land-btn">explore more</button>
           </a>
+          <div>
+            <ChatBubble />
+          </div>
         </div>
 
         <div className="landing-animation-container">
           <div>
-            <HumanCat />
+            <HumanCat/>
           </div>
 
-          <div>
-            <ChatBubble />
-          </div>
           
         </div>
       </section>

@@ -17,10 +17,9 @@
 }
 .header .logoContent .logo img {
   height: 5rem;
-  border-radius: 0% 28% 0% 0% / 10% 64% 0% 0% ;
+  border-radius: 0% 28% 0% 0% / 10% 64% 0% 0%;
   background-color: rgba(255, 255, 255, 0.678);
 }
-
 
 .header .logoContent .logoName {
   color: var(--black);
@@ -58,6 +57,11 @@ a.nav-btn {
   font-weight: 900;
   font-family: Roboto mono;
 }
+
+img.match-icon {
+  height: 3rem;
+}
+
 /* .header a {
   background: linear-gradient(to right, #401c0c, #401c0c),
     linear-gradient(to right, #fea2c4, #a2c3fe);
