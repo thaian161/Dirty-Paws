@@ -24,7 +24,7 @@
   border-radius: 0.5rem;
   overflow: hidden;
   margin: 1rem;
-  border: solid 4px;
+  border: solid 4px #5985ca;
 }
 
 .profile-wrapper:hover {
