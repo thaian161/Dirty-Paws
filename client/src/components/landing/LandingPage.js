@@ -1,9 +1,9 @@
 import './LandingPage.css';
 import HumanCat from '../../lotties/HumanCat';
-import ChatBubble from '../../lotties/ChatBubble';
-import PurpleCat from '../../lotties/PurpleCat';
-import Animals from '../../lotties/Animals';
-import SpaceDog from '../../lotties/SpaceDog';
+// import ChatBubble from '../../lotties/ChatBubble';
+// import PurpleCat from '../../lotties/PurpleCat';
+// import Animals from '../../lotties/Animals';
+// import SpaceDog from '../../lotties/SpaceDog';
 import ChatLoveBubble from '../../lotties/ChatLoveBubble';
 
 export default function LandingPage() {
