@@ -12,7 +12,7 @@ INSERT INTO users (name, treats, password, profile_picture, bio, age, address) V
 ('Clifford', 5, '123', 'https://img.freepik.com/free-vector/cute-corgi-running-cartoon-illustration_138676-2052.jpg?w=740&t=st=1659775519~exp=1659776119~hmac=e23bd0fe691177c20d1668dcc39d2ad4c2980d93bc6f6219f0852e8edce1fdac', 'frisbee! frisbee! arf arf', 2, '111 example road, Toronto');
 
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
-('Garfield', 15, '123', 'https://img.freepik.com/free-vector/cute-cat-holding-fish-cartoon-icon-illustration-animal-food-icon-concept-isolated-flat-cartoon-style_138676-2171.jpg?w=740&t=st=1659775582~exp=1659776182~hmac=93e4e07c8a28c3d55f3abf4ced9b99fff9e948ddd2e725ad231f36be9b3c3b9f', 36, '111 example road, Toronto');
+('Garfield', 15, '123', 'https://img.freepik.com/free-vector/cute-cat-holding-fish-cartoon-icon-illustration-animal-food-icon-concept-isolated-flat-cartoon-style_138676-2171.jpg?w=740&t=st=1659775582~exp=1659776182~hmac=93e4e07c8a28c3d55f3abf4ced9b99fff9e948ddd2e725ad231f36be9b3c3b9f', 'meow lasagne meow meow mondays are bad mrrrp', 36, '111 example road, Toronto');
 
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
 ('Grumpy Cat', 0, '123', 'https://img.freepik.com/free-vector/cute-cat-yoga-pose-cartoon-illustration_138676-2791.jpg?w=740&t=st=1659775605~exp=1659776205~hmac=6f3bb6a1a1509077f8e40c45851645e41de731de89084b0f753e24c45be50e98', 'y u no swipe me', 83, '111 example road, Toronto');
