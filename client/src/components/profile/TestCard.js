@@ -1,21 +1,20 @@
 import './Profile.css';
 import profileNav from './images/profileNav.jpg';
 
-export default function EachProfileCard() {
+export default function TestCard() {
   return (
-
     <div className="each-profile-container">
       <div className="profile-wrapper">
         <div className="img">{/* {Nav Fun Pattern Background} */}</div>
         <div className="content">
           <img
-            src="https://img.freepik.com/free-vector/cute-cat-holding-fish-cartoon-icon-illustration-animal-food-icon-concept-isolated-flat-cartoon-style_138676-2171.jpg?w=2000"
+            src="https://img.freepik.com/premium-vector/cute-puffer-fish-cartoon-illustration-animal-nature-concept-isolated-flat-cartoon_138676-2293.jpg?w=2000"
             alt="aaa"
           />
           <h2>
-            Ms Meow Meow <span>19</span>
+            Mr Dex The Fish <span>21</span>
           </h2>
-          <p className="profile-city">Orlando</p>
+          <p className="profile-city">Toronto</p>
 
           <div className="profile-footer">
             <div>
@@ -24,13 +23,11 @@ export default function EachProfileCard() {
 
             <div>
               <p className="bio">Bio</p>
-              <p className="bio-description">Meow meow meow meow meow meow</p>
+              <p className="bio-description">Blob blob blob</p>
             </div>
           </div>
         </div>
       </div>
-      
     </div>
-    
   );
 }

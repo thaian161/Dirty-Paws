@@ -92,4 +92,13 @@ p.profile-city {
   font-style: italic;
 }
 
+.each-profile-container {
+  margin: 4rem;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  background-color: green;
+  margin-top: auto;
+}
+
 /* -----END EACH PROFILE CARD COMPONENT----- */

@@ -5,6 +5,8 @@ import PurpleCat from './lotties/PurpleCat';
 import RainbowCat from './lotties/RainbowCat';
 
 import EachProfileCard from './components/profile/EachProfileCard';
+import Profile from './components/profile/Profile';
+
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <ChatBubble />
 
       <EachProfileCard />
+
+      <Profile />
     </div>
   );
 }
