@@ -2,8 +2,8 @@
   top: 0;
   right: 0;
   left: 0;
-  background-color: #fef1df;
-  background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+  /* background-color: #fef1df;
+  background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); */
   display: flex;
   align-items: center;
   justify-content: space-between;
