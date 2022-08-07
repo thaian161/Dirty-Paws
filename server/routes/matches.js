@@ -6,9 +6,9 @@ module.exports = (db) => {
     res.json('made it to /matches')
   });
   
-  router.get('/:userOne/:userTwo', (req, res) => { // 'Like' another user
-    const {userOne, userTwo} = req.params;
-    
+  router.get('/:id', (req, res) => { // 'Like' another user
+    const userOne = req.cookies.user_id;
+    const userTwo = req.params.id;
     // find match, if it exists:
     const queryParams = [userOne, userTwo];
     const queryString = `

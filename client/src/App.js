@@ -10,10 +10,13 @@ function App() {
   const getRandomUser = function() {
     axios.get('/users/random')
       .then((res) => {
-        setState(res.data); //grab data with all[0].data
+        setState(res.data[0]); //grab data with all[0].data
         console.log('after the axios request:  ', state);
       });
   }
+  const sendLikeToUser = function() {
+    console.log('click click');
+  };
   
 
   useEffect(() => {
@@ -25,7 +28,8 @@ function App() {
     <div className="App">
       <PurpleCat />
       <button onClick={getRandomUser}>NO THANKS! gimme somebody new!</button>
-      <p>{state[0].name}</p>
+      <button onClick={sendLikeToUser}>YES PLEASE! I would love to talk to them!</button>
+          {Object.values(state).map(x => <p>{x}</p>)}
     </div>
   );
 }
