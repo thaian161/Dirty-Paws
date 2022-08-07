@@ -89,9 +89,17 @@ p {
   text-align: left;
 }
 
-.chat-box {
-  background-color: red;
+div.chat-box {
+  background-color: transparent;
   height: 2px;
   width: 2px;
-
+  width: 200px;
+  position: fixed;
+  height: 200px;
+  /* overflow: auto; */
+  /* margin: 0px auto; */
+  /* outline: none; */
+  bottom: -4px;
+  right: 10px;
+  z-index: 9000;
 }
