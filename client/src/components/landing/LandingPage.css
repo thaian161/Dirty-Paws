@@ -103,6 +103,14 @@ h3.intro-small {
 
   font-size: 2.5rem;
   line-height: 3rem;
+
+  /* font-family: roboto mono;
+  color: #fb8d9f;
+  text-align: right;
+  margin-right: 28px;
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 3rem; */
 }
 p.landing-p {
   font-family: Lora;
