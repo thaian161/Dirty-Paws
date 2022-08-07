@@ -93,3 +93,28 @@ Dirty Paws is a ..............................
 run the server with > npm start
 connect to database with > npm run start
 
+
+
+
+##### Example of axios within the Client:
+```
+App.js
+ const [state, setState] = useState('default state');
+  
+  const getRandomUser = function() {
+    axios.get('/users/random')
+      .then((res) => {
+        setState(res.data[0]); //grab data with all[0].data
+        console.log('after the axios request:  ', state);
+      });
+  }
+  const sendLikeToUser = function() {
+    console.log('click click');
+  };
+  
+
+  useEffect(() => {
+    getRandomUser();
+  }, []);
+
+```
