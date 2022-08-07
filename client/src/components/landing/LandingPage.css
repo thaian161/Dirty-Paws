@@ -32,6 +32,9 @@ section {
 
   padding: 4rem;
   margin-top: 2rem;
+
+  background-color: rgba(249, 249, 249, 0.601);
+  border-radius: 5rem;
 }
 
 .land-btn {
@@ -76,6 +79,7 @@ section#home.home {
   flex-direction: row;
   justify-content: space-between;
   padding-top: 6%;
+  
 }
 
 h2.intro-large {
