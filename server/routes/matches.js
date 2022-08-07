@@ -41,17 +41,17 @@ module.exports = (db) => {
 }
 
 
-// footnote 1:
+// FOOTNOTE 1:
   // change this route to a 'post' request to './' once it's linked to an axios request.
   // Axios.post should send userOne and userTwo in the req.body. 
   // Using req.params is a temporary workaround so that we can test in the browser with simple GET requests.
 
-// footnote 2:
+// FOOTNOTE 2:
   // currently, in 'update the match if one was found', we blindly set both booleans to true.
   // this means that user A can force a match with user B by 'liking' them twice.
   // to fix the issue would require a slightly more delicate queryString to target the correct boolean.
 
-// big picture:
+// BIG PICTURE:
 /*
 click on the SWIPE RIGHT / LIKE button.
 Other user has already liked me?
