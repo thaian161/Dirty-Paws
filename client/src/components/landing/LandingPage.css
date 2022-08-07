@@ -1,7 +1,6 @@
 section {
   padding: 3rem 3%;
 }
-
 .home {
   min-height: 100vh;
   width: 100vw;
@@ -13,8 +12,8 @@ section {
   /* The image used */
   /* background: url('./images/blue.png'); */
   /* background: url('./images/blueBBD9FF.png'); */
-  background: url('./images/layer4.7.png'), url('./images/layer2.png'),
-    url('./images/layer3.png'), url('./images/blueD8E9FF.png');
+  background: url('./images/layer2.png'), url('./images/layer3.png'),
+    url('./images/blueD8E9FF.png');
 
   /* Full height */
   height: 100%;
@@ -23,26 +22,29 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* font-family: "Quicksand", sans-serif; */
-  /* font-family: 'Pacifico', cursive; */
-
   padding-top: 0%;
 }
 
 .home .homeContent {
-  width: 30%;
-  float: left;
-  /* text-align: center; */
+  width: 53%;
+  float: right;
+  text-align: center;
 
-  padding: 2.5rem;
-  z-index: 99;
+  padding: 4rem;
+  margin-top: 2rem;
 }
 
 .land-btn {
+  font-family: Lora;
+  font-weight: 600;
+  text-transform: uppercase;
+
   color: #406ca6;
   border: 3.5px dashed #406ca6;
   border-radius: 10% 28% 10% 10% / 0% 55% 0% 0%;
-  background-color: #f78c8c;
+  text-shadow: #b5cae5 2px 2px;
+
+  background-color: #ff9eae;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 10px;
@@ -50,14 +52,15 @@ section {
   box-shadow: #5985ca 4px 4px 0px 0px, #5985ca 6px 6px 0px 0px,
     #5985ca 6px 6px 0px 0px, #5985ca 7px 7px 0px 0px, black 8px 8px 0px 0px;
   position: relative;
-  text-transform: uppercase;
 }
 
 .land-btn:hover {
-  color: #215394;
+  color: #3767a7;
+  text-shadow: #b5cae5 2px 2px;
+  font-weight: 900;
   border: 3.5px dashed #406ca6;
   border-radius: 10% 28% 10% 10% / 0% 55% 0% 0%;
-  background-color: #f78c8c;
+  background-color: #ff9eae;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 10px;
@@ -66,60 +69,62 @@ section {
     #5985ca 2px 2px 0px 0px, #5985ca 3px 3px 0px 0px, black 4px 4px 0px 0px;
   position: relative;
   text-transform: uppercase;
-
-  /* color: #f78c8c;
-  border: 3px dashed #f78c8c;
-  border-radius: 10% 28% 10% 10% / 0% 55% 0% 0%;
-  background-color: #7293c8;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 10px;
-  padding-right: 15px;
-  box-shadow: #f78c8c 3px 3px 0px 0px, #f78c8c 5px 5px 0px 0px,
-    #f78c8c 6px 6px 0px 0px, black 7px 7px 0px 0px;
-  position: relative;
-  text-transform: uppercase; */
 }
 
 section#home.home {
   display: flex;
-  flex-direction: column;
-  padding-top: 4%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 6%;
 }
 
-.intro-large {
-  font-family: Concert One;
+h2.intro-large {
+  font-family: Lora;
+  font-style: italic;
+  font-weight: 900;
   color: #406ca6;
-  text-align: left;
+  text-align: right;
+  margin-bottom: 0;
+
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-right: 21px;
+  line-height: 4rem;
 }
-.intro-small {
-  font-family: roboto mono;
-  color: #f07e74;
-  text-align: left;
+h3.intro-small {
+  font-family: concert one;
+  color: #fb8d9f;
+  text-align: right;
+  margin-right: 28px;
+
+  font-size: 2.5rem;
+  line-height: 3rem;
 }
-p {
-  font-family: open sans;
+p.landing-p {
+  font-family: Lora;
+  /* font-style: italic; */
   text-align: left;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  color: rgb(69, 69, 69);
 }
 
 div.chat-box {
   background-color: transparent;
-  height: 2px;
-  width: 2px;
-  width: 200px;
-  position: fixed;
-  height: 200px;
-  /* overflow: auto; */
-  /* margin: 0px auto; */
-  /* outline: none; */
-  bottom: -50px;
-  right: -30px;
+  width: 12.5rem;
+  height: 12.5rem;
+
+  bottom: -4rem;
+  right: -3.5rem;
+
   z-index: 9000;
+  position: fixed;
 }
 
 .logo-chatbot img {
-  height: 5rem;
-  animation: boucingAnnLOL 1.3s ease infinite forwards;
+  height: 6rem;
+  animation: boucingAnnLOL 1.5s ease infinite forwards;
 }
 @keyframes boucingAnnLOL {
   0% {
@@ -131,4 +136,16 @@ div.chat-box {
   100% {
     transform: translateY(-0.3rem);
   }
+}
+
+div.landing-animation-container {
+  background-color: #fbbec9;
+  border-radius: 60% 78% 37% 81% / 96% 88% 40% 41%;
+
+  padding: 2rem;
+  padding-top: 2rem;
+  padding-right: 2.25rem;
+  padding-left: 3.7rem;
+
+  margin-left: 1rem;
 }

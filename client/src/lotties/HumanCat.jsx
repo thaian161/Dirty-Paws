@@ -3,8 +3,8 @@ import humanCat from './human-cat.json';
 
 const HumanCat = () => {
   const defaultOptions = {
-    loop: false,
-    autoplay: false,
+    loop: true,
+    autoplay: true,
     animationData: humanCat,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
@@ -13,7 +13,7 @@ const HumanCat = () => {
 
   return (
     <div>
-      <Lottie options={defaultOptions} height={700} width={700} />
+      <Lottie options={defaultOptions} height={520} width={520} />
     </div>
   );
 };
