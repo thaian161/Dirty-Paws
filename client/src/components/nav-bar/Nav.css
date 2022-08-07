@@ -41,7 +41,7 @@
 
 .nav-btn:hover {
   color: #406ca6;
-  border: 2px dashed #406ca6;
+  border: 4px dashed #406ca6;
   border-radius: 10% 28% 10% 10% / 0% 55% 0% 0%;
   background-color: #f78c8c;
   padding-top: 8px;
@@ -64,7 +64,7 @@ img.match-icon {
 }
 a.nav-btn::before {
   /* Highlight color */
-  background-color: #f7efb6;
+  background-color: rgba(254, 215, 221, 0.187);
 
   content: '';
   position: absolute;
@@ -73,34 +73,7 @@ a.nav-btn::before {
   left: -2px;
   bottom: 0;
   z-index: -1;
-  transform: rotate(-2deg);
+  transform: rotate(-1.8deg);
+  border: dashed 5px rgb(251, 183, 194);
 }
 
-/* .header a {
-  background: linear-gradient(to right, #401c0c, #401c0c),
-    linear-gradient(to right, #fea2c4, #a2c3fe);
-}
-.header a {
-  background: linear-gradient(to right, #401c0c, #401c0c),
-    linear-gradient(to right, #fea2c4, #a2c3fe);
-  background-size: 100% 5px, 0 5px;
-}
-.header a {
-  background: linear-gradient(to right, #401c0c, #401c0c),
-    linear-gradient(to right, #fea2c4, #a2c3fe);
-  background-size: 100% 5px, 0 5px;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-}
-.header a:hover {
-  background-size: 0 5px, 100% 5px;
-}
-.header a {
-  background: linear-gradient(to right, #401c0c, #401c0c),
-    linear-gradient(to right, #fea2c4, #a2c3fe);
-  background-size: 100% 5px, 0 5px;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 500ms;
-}
- */
