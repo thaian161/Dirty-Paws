@@ -17,8 +17,6 @@
 }
 .header .logoContent .logo img {
   height: 5rem;
-  border-radius: 0% 28% 0% 0% / 10% 64% 0% 0%;
-  background-color: rgba(255, 255, 255, 0.678);
 }
 
 .header .logoContent .logoName {
@@ -77,3 +75,7 @@ a.nav-btn::before {
   border: dashed 5px rgb(251, 183, 194);
 }
 
+nav.navbar {
+  padding-left: 2rem;
+  padding-right: -2rem;
+}

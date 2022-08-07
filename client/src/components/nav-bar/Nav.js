@@ -14,7 +14,7 @@ export default function Nav() {
 
       <nav className="navbar">
        
-        <a className="nav-btn" href="#sign-up">  About</a>
+        <a className="nav-btn" href="#sign-up">About</a>
         <a className="nav-btn" href="#profile">My Profile</a>
         <a className="nav-btn" href="#log-in">Sign In</a>
         <a className="nav-btn" href="#sign-up">Sign Up</a>
