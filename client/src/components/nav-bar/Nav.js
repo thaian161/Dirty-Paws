@@ -26,9 +26,9 @@ export default function Nav() {
         
         <Link className="nav-btn" to="/about"  >About</Link>
         <Link className="nav-btn" to="/profile">My Profile</Link>
-        <Link className="nav-btn" to="/login">Sign In</Link>
+        <Link className="nav-btn" to="/login"  >Sign In</Link>
         <Link className="nav-btn" to="/sign-up">Sign Up</Link>
-        <Link className="nav-btn" to="/search">Search</Link>
+        <Link className="nav-btn" to="/search" >Search</Link>
 
       </nav>
     </header>
