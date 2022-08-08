@@ -2,7 +2,7 @@ import './FrontProfile.css';
 import yes from './images/yes.png';
 import noSoSad from './images/noSoSad.png';
 
-export default function FrontProfile() {
+export default function FrontProfile(props) {
   return (
     <div className="container">
       <div className="front-wrapper">
@@ -14,7 +14,7 @@ export default function FrontProfile() {
           />
         </div>
         <div className="content">
-          <h2 className="user-name"> Sleepy Head </h2>
+          <h2 className="user-name"> {props.name} </h2>
         </div>
         <div className="profile-footer">
           <div>

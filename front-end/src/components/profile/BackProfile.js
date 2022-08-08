@@ -2,7 +2,7 @@ import './BackProfile.css';
 import yes from './images/yes.png';
 import noSoSad from './images/noSoSad.png';
 
-export default function BackProfile() {
+export default function BackProfile(props) {
   return (
     <div className="container">
       <div className="back-wrapper">
@@ -14,7 +14,7 @@ export default function BackProfile() {
           />
         </div>
         <div className="back-content">
-          <h2 className="bio"> A little bit about me... </h2>
+          <h2 className="bio">{props.bio}</h2>
         </div>
         <div className="profile-footer-bio">
           <div>
