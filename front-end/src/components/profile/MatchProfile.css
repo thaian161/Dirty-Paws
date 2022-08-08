@@ -52,7 +52,7 @@ img.love-btn-match {
   
 }
 
-.front-wrapper:hover {
+.match-wrapper:hover {
   border: 4px solid #204a80;
 
   box-shadow: #5985ca 8px 8px 0px 0px, #5985ca 8px 8px 0px 0px,
