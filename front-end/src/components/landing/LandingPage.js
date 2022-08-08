@@ -1,6 +1,7 @@
 import './LandingPage.css';
 import chatbot from './images/chatbot.png';
 import petsPink from './images/petsPink.png';
+import an from './images/an.png';
 
 export default function LandingPage() {
   return (
@@ -26,7 +27,7 @@ export default function LandingPage() {
         </div>
 
         <div className="landing-animation-container">
-          <img className="landing-pic" src={petsPink} alt=''/>
+          <img className="landing-pic" src={an} alt=''/>
         </div>
       </section>
       <div className="chat-box">
