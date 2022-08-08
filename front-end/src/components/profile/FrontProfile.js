@@ -19,22 +19,22 @@ export default function FrontProfile(props) {
         <div className="profile-footer">
           <div>
             <p className="profile-title">AGE</p>
-            <p className="num">19</p>
+            <p className="num">{props.age}</p>
           </div>
           <div className="city">
             <p className="profile-title">CITY</p>
-            <p className="num">Orlando</p>
+            <p className="num">{props.address}</p>
           </div>
           <div>
             <p className="profile-title">TREATS</p>
-            <p className="num">77</p>
+            <p className="num">{props.treats}</p>
           </div>
         </div>
         <div className="love-me-not">
-          <button>
+          <button onClick={() => console.log('clicked NO!')}>
             <img className="sad-btn" src={noSoSad} alt="no love me" />
           </button>
-          <button>
+          <button onClick={() => console.log('clicked YES!')}>
             <img className="love-btn" src={yes} alt="yes love me" />
           </button>
         </div>

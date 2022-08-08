@@ -8,7 +8,7 @@ import './FrontProfile.css';
 
 const fakeData = {
   name: "Sleepy Head",
-  bio: "this is my description",
+  bio: "I love going for a walk with my frends and chasing cats at the park",
   treats: 7,
   profile_picture: "https://img.freepik.com/premium-vector/cute-welsh-corgi-dog-waving-paw-cartoon_42750-623.jpg",
   age: 26,

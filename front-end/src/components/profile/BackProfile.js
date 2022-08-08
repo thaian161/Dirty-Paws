@@ -14,11 +14,11 @@ export default function BackProfile(props) {
           />
         </div>
         <div className="back-content">
-          <h2 className="bio">{props.bio}</h2>
+          <h2 className="bio">A little bit about me...</h2>
         </div>
         <div className="profile-footer-bio">
           <div>
-            <p className="profile-bio">I love going for a walk with my frends and chasing cats at the park</p>
+            <p className="profile-bio">{props.bio}</p>
           </div>
         </div>
         <div className="love-me-not">
