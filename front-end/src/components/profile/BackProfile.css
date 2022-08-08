@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
 
-/* -------FRONT profile card---------- */
-img.front-profile-pic {
+/* -------BACK profile card---------- */
+
+img.back-profile-pic {
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: -3rem;
   margin-left: 1rem;
   margin-right: 1rem;
 
   padding: 0;
-  height: 17.5rem;
-  width: 17.5rem;
-  border-radius: 2rem;
-  border: dashed 5px #406ca6;
+  height: 12rem;
+  width: 12rem;
+  border-radius: 65% 35% 38% 62% / 62% 61% 39% 38%;
+  border: dashed 5px #f78c8c;
 }
 
 .container {
@@ -23,7 +24,7 @@ img.front-profile-pic {
   margin-bottom: 1rem;
 }
 
-.front-wrapper {
+.back-wrapper {
   max-width: 20rem;
   background-color: #fff;
   border-radius: 15px;
@@ -32,15 +33,15 @@ img.front-profile-pic {
   border: solid 5px #204a80;
 }
 
-.front-wrapper:hover {
-  border: 4px solid #204a80;
+.back-wrapper:hover {
+  border: 4px solid #f78c8c;
 
-  box-shadow: #5985ca 8px 8px 0px 0px, #5985ca 8px 8px 0px 0px,
-    #5985ca 6px 6px 0px 0px, #5985ca 8px 8px 0px 0px, black 8px 8px 0px 0px;
+  box-shadow: #ffdad7 8px 8px 0px 0px, #ffdad7 8px 8px 0px 0px,
+    #ffdad7 6px 6px 0px 0px, #ffdad7 8px 8px 0px 0px, black 8px 8px 0px 0px;
 }
 
-h2.user-name {
-  margin-top: 1rem;
+h2.bio {
+  margin-top: -0.5rem;
   font-family: roboto mono;
   font-weight: 900;
   -webkit-text-stroke: 1px #204a80;
@@ -50,16 +51,16 @@ h2.user-name {
   font-weight: 700;
 }
 
-.profile-footer {
+.profile-footer-bio {
   display: flex;
   justify-content: space-between;
-  padding: 1.8rem 3.12rem;
+  padding: 1.5rem;
 }
 
-.profile-footer p.profile-title {
+.profile-footer-bio p.profile-bio {
   font-family: Roboto Mono;
   margin-bottom: 0;
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 900;
   color: #646464e7;
   -webkit-text-stroke: 0.3px #646464e7;
@@ -78,46 +79,36 @@ div.empty-bottom {
   height: 4rem;
 }
 
-.love-me-not button {
-  background-color: transparent;
-  border: none;
-}
-
-img.sad-btn {
-  height: 4rem;
-  width: 4rem;
+img.user-badge {
+  height: 5rem;
+  width: 5rem;
   margin-right: 1.2rem;
-
   margin-bottom: -2rem;
+  margin-left: 1rem;
 }
 
-img.love-btn {
-  height: 4.2rem;
-  width: 4rem;
-  margin-left: 1.2rem;
-  margin-bottom: -2rem;
-}
-
-div.empty-bottom {
-  background-color: #ffdad7;
+div.empty-bottom-back {
+  background-color: #d8e9ff;
   opacity: 1;
-  background-image: radial-gradient(#f78c8c 1.6px, transparent 1.8px),
-    radial-gradient(#f78c8c 1.6px, #ffdad7 1.8px);
+  background-image: radial-gradient(#406ca6 1.8px, transparent 1.8px),
+    radial-gradient(#406ca6 1.8px, #d8e9ff 1.8px);
   background-size: 64px 64px;
   background-position: 0 0, 32px 32px;
 
   height: 4rem;
 }
 
-div.profile-top {
-  background-color: #ffdad7;
+div.profile-top-back {
+  background-color: #d8e9ff;
   opacity: 1;
-  background-image: radial-gradient(#f78c8c 1.6px, transparent 1.8px),
-    radial-gradient(#f78c8c 1.6px, #ffdad7 1.8px);
+  background-image: radial-gradient(#406ca6 1.8px, transparent 1.8px),
+    radial-gradient(#406ca6 1.8px, #d8e9ff 1.8px);
   background-size: 64px 64px;
   background-position: 0 0, 32px 32px;
+
+  height: 8rem;
 }
 
-div.city {
-  margin-left: 1rem;
+div.back-content {
+  margin-top: 8rem;
 }

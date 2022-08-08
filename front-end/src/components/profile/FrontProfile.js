@@ -5,7 +5,7 @@ import noSoSad from './images/noSoSad.png';
 export default function FrontProfile() {
   return (
     <div className="container">
-      <div className="wrapper">
+      <div className="front-wrapper">
         <div className="profile-top">
           <img
             className="front-profile-pic"

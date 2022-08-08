@@ -8,6 +8,7 @@ import SexyCat from './lotties/SexyCat';
 import FrontProfile from './components/profile/FrontProfile';
 import Nav from './components/nav-bar/Nav';
 import LandingPage from './components/landing/LandingPage';
+import BackProfile from './components/profile/BackProfile';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
  
 
       <FrontProfile />
+      <BackProfile/>
     </div>
   );
 }
