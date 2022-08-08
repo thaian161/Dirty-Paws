@@ -170,11 +170,11 @@ div.chat-box {
 }
 
 div.landing-animation-container {
-  background-color: #fcefee78;
+  background-color: #fffdfdaa;
   border-radius: 100% 54% 74% 80% / 100% 54% 100% 64%;
 
   padding-top: 2rem;
-  margin-right: 1rem;
+  margin-right: 2rem;
   height: 750px;
   width: 750px;
 }
