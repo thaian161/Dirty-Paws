@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import FrontProfile from './FrontProfile';
+import BackProfile from './BackProfile';
+
 import Carousel from 'react-bootstrap/Carousel';
 
 import './FrontProfile.css';
@@ -16,8 +18,8 @@ export default function Profile() {
       <Carousel.Item>
         <FrontProfile />
       </Carousel.Item>
-      <Carousel.Item interval={500}>
-        <FrontProfile />
+      <Carousel.Item >
+        <BackProfile />
       </Carousel.Item>
       <Carousel.Item>
         <FrontProfile />
@@ -29,3 +31,5 @@ export default function Profile() {
     </Carousel>
   );
 }
+
+// to make the Carousel slide auto run, add interval={500} to CarouselItem tag

@@ -6,6 +6,7 @@ import HumanCat from './lotties/HumanCat';
 import SexyCat from './lotties/SexyCat';
 
 import FrontProfile from './components/profile/FrontProfile';
+import Profile from './components/profile/Profile';
 import Nav from './components/nav-bar/Nav';
 import LandingPage from './components/landing/LandingPage';
 import BackProfile from './components/profile/BackProfile';
@@ -29,6 +30,7 @@ function App() {
 
       <FrontProfile />
       <BackProfile/>
+      <Profile/>
     </div>
   );
 }

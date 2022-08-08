@@ -30,7 +30,7 @@ export default function BackProfile() {
             />
           </button>
         </div>
-        <div className="empty-bottom-back">......</div>
+        <div className="empty-bottom-back">.</div>
       </div>
     </div>
   );

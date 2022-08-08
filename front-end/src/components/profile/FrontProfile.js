@@ -38,7 +38,7 @@ export default function FrontProfile() {
             <img className="love-btn" src={yes} alt="yes love me" />
           </button>
         </div>
-        <div className="empty-bottom">......</div>
+        <div className="empty-bottom">.</div>
       </div>
     </div>
   );
