@@ -6,8 +6,18 @@ import Carousel from 'react-bootstrap/Carousel';
 
 import './FrontProfile.css';
 
+const fakeData = {
+  name: "Sleepy Head",
+  bio: "this is my description",
+  treats: 7,
+  profile_picture: "https://img.freepik.com/premium-vector/cute-welsh-corgi-dog-waving-paw-cartoon_42750-623.jpg",
+  age: 26,
+  address: "Toronto"
+}
+
 export default function Profile() {
   const [index, setIndex] = useState(0);
+  const [data, setData] = useState(fakeData);
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
@@ -16,17 +26,10 @@ export default function Profile() {
   return (
     <Carousel activeIndex={index} onSelect={handleSelect} slide={false}>
       <Carousel.Item>
-        <FrontProfile />
+        <FrontProfile {...data}/>
       </Carousel.Item>
       <Carousel.Item >
-        <BackProfile />
-      </Carousel.Item>
-      <Carousel.Item>
-        <FrontProfile />
-      </Carousel.Item>
-
-      <Carousel.Item>
-        <FrontProfile />
+        <BackProfile {...data}/>
       </Carousel.Item>
     </Carousel>
   );
