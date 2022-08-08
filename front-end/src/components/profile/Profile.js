@@ -1,10 +1,8 @@
 import { useState } from 'react';
-import EachProfileCard from './EachProfileCard';
-import TestCard from './TestCard';
-import TestCard2 from './TestCard2';
+import FrontProfile from './FrontProfile';
 import Carousel from 'react-bootstrap/Carousel';
 
-import './Profile.css';
+import './FrontProfile.css';
 
 export default function Profile() {
   const [index, setIndex] = useState(0);
@@ -16,17 +14,17 @@ export default function Profile() {
   return (
     <Carousel activeIndex={index} onSelect={handleSelect} slide={false}>
       <Carousel.Item>
-        <EachProfileCard />
+        <FrontProfile />
       </Carousel.Item>
       <Carousel.Item interval={500}>
-        <TestCard />
+        <FrontProfile />
       </Carousel.Item>
       <Carousel.Item>
-        <TestCard2 />
+        <FrontProfile />
       </Carousel.Item>
 
       <Carousel.Item>
-        <EachProfileCard />
+        <FrontProfile />
       </Carousel.Item>
     </Carousel>
   );

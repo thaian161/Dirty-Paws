@@ -5,8 +5,7 @@ import RainbowCat from './lotties/RainbowCat';
 import HumanCat from './lotties/HumanCat';
 import SexyCat from './lotties/SexyCat';
 
-import EachProfileCard from './components/profile/EachProfileCard';
-import Profile from './components/profile/Profile';
+import FrontProfile from './components/profile/FrontProfile';
 import Nav from './components/nav-bar/Nav';
 import LandingPage from './components/landing/LandingPage';
 
@@ -25,9 +24,9 @@ function App() {
 
       <HumanCat/>
 
-      <EachProfileCard />
+ 
 
-      <Profile />
+      <FrontProfile />
     </div>
   );
 }
