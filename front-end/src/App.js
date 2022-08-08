@@ -4,33 +4,30 @@ import PurpleCat from './lotties/PurpleCat';
 import RainbowCat from './lotties/RainbowCat';
 import HumanCat from './lotties/HumanCat';
 import SexyCat from './lotties/SexyCat';
+import Matchhh from './lotties/Matchhh';
 
 import FrontProfile from './components/profile/FrontProfile';
 import Profile from './components/profile/Profile';
 import Nav from './components/nav-bar/Nav';
 import LandingPage from './components/landing/LandingPage';
 import BackProfile from './components/profile/BackProfile';
+import MatchProfile from './components/profile/MatchProfile';
 
 function App() {
   return (
     <div className="App">
       <Nav />
       <LandingPage />
-
-      <SexyCat/>
-     
-
+      <SexyCat />
       <PurpleCat />
       <RainbowCat />
       <ChatBubble />
-
-      <HumanCat/>
-
- 
-
+      <HumanCat />
+      <Matchhh/>
       <FrontProfile />
-      <BackProfile/>
-      <Profile/>
+      <BackProfile />
+      <MatchProfile />
+      <Profile />
     </div>
   );
 }

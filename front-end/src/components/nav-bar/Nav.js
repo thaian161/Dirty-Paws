@@ -1,7 +1,7 @@
 import './Nav.css';
 import clearLogo from './images/clearLogo.png';
-import whiteLogo from './images/whiteLogo.png';
-import match from './images/match.png';
+// import whiteLogo from './images/whiteLogo.png';
+// import match from './images/match.png';
 import { Link } from "react-router-dom";
 
 export default function Nav() {
