@@ -12,6 +12,7 @@ import Nav from './components/nav-bar/Nav';
 import LandingPage from './components/landing/LandingPage';
 import BackProfile from './components/profile/BackProfile';
 import MatchProfile from './components/profile/MatchProfile';
+import ChatList from './components/chat-page/chatContent/ChatList';
 
 function App() {
   return (
@@ -23,11 +24,13 @@ function App() {
       <RainbowCat />
       <ChatBubble />
       <HumanCat />
-      <Matchhh/>
+      <Matchhh />
       <FrontProfile />
       <BackProfile />
       <MatchProfile />
       <Profile />
+
+      <ChatList />
     </div>
   );
 }
