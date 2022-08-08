@@ -13,7 +13,6 @@ img.front-profile-pic {
   width: 17.5rem;
   border-radius: 2rem;
   border: dashed 5px #406ca6;
- 
 }
 
 .container {
@@ -33,6 +32,14 @@ img.front-profile-pic {
   border: solid 5px #204a80;
 }
 
+.wrapper:hover {
+  border: 4px solid #204a80;
+
+  box-shadow: #5985ca 8px 8px 0px 0px, #5985ca 8px 8px 0px 0px,
+    #5985ca 6px 6px 0px 0px, #5985ca 8px 8px 0px 0px, black 8px 8px 0px 0px;
+
+}
+
 h2.user-name {
   margin-top: 1rem;
   font-family: roboto mono;
@@ -48,7 +55,6 @@ h2.user-name {
   display: flex;
   justify-content: space-between;
   padding: 1.8rem 3.12rem;
-
 }
 
 .profile-footer p.profile-title {
