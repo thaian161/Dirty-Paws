@@ -1,6 +1,7 @@
 import './FrontProfile.css';
 import yes from './images/yes.png';
 import noSoSad from './images/noSoSad.png';
+import axios from 'axios';
 
 export default function FrontProfile(props) {
   return (
@@ -9,7 +10,7 @@ export default function FrontProfile(props) {
         <div className="profile-top">
           <img
             className="front-profile-pic"
-            src="https://img.freepik.com/premium-vector/cute-welsh-corgi-dog-waving-paw-cartoon_42750-623.jpg"
+            src={props.profile_picture}
             alt="front profile card"
           />
         </div>
@@ -31,10 +32,10 @@ export default function FrontProfile(props) {
           </div>
         </div>
         <div className="love-me-not">
-          <button onClick={() => console.log('clicked NO!')}>
+          <button onClick={props.swipeLeft}>
             <img className="sad-btn" src={noSoSad} alt="no love me" />
           </button>
-          <button onClick={() => console.log('clicked YES!')}>
+          <button onClick={props.swipeRight}>
             <img className="love-btn" src={yes} alt="yes love me" />
           </button>
         </div>

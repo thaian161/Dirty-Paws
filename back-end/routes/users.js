@@ -11,6 +11,13 @@ module.exports = (db) => {
       res.json(data.rows);
     })
   });
+  
+    router.get('/random', (req, res) => {
+      const queryString = `SELECT * FROM users ORDER BY RANDOM() LIMIT 1`;
+      db.query(queryString).then(data => {
+        res.json(data.rows);
+      })
+    })
 
   router.get('/:id', (req, res) => {
     
