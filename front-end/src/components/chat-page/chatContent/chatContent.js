@@ -10,6 +10,9 @@ export default function ChatContent() {
           <div className="current-chatting-user">
             <Avatar />
             <p> Sexi Boi</p>
+
+
+            
           </div>
         </div>
       </div>
