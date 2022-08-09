@@ -1,5 +1,5 @@
 import './App.css';
-import ChatBubble from './lotties/ChatBubble';
+
 import PurpleCat from './lotties/PurpleCat';
 import RainbowCat from './lotties/RainbowCat';
 import HumanCat from './lotties/HumanCat';
@@ -21,18 +21,7 @@ import Chat from './components/chat-page/Chat';
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <LandingPage />
-      <SexyCat />
-      <PurpleCat />
-      <RainbowCat />
-      <ChatBubble />
-      <HumanCat />
-      <Matchhh />
-      <FrontProfile />
-      <BackProfile />
-      <MatchProfile />
-      <Profile />
+     
 
       <ChatList />
 

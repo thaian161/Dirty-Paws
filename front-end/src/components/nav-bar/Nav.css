@@ -41,7 +41,7 @@
   color: #406ca6;
   border: 4px dashed #406ca6;
   border-radius: 10% 28% 10% 10% / 0% 55% 0% 0%;
-  background-color: #f8afa8;
+  background-color: #ff9389;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 10px;
@@ -62,7 +62,7 @@ img.match-icon {
 }
 a.nav-btn::before {
   /* Highlight color */
-  background-color: #ffbbb5;
+  background-color: #ffc8c3;
 
   content: '';
   position: absolute;

@@ -1,0 +1,27 @@
+div.chat-box {
+  background-color: transparent;
+  width: 12.5rem;
+  height: 12.5rem;
+
+  bottom: -4rem;
+  right: -3.5rem;
+
+  z-index: 9000;
+  position: fixed;
+}
+
+.logo-chatbot img {
+  height: 6rem;
+  animation: boucingAnnLOL 1.8s ease infinite forwards;
+}
+@keyframes boucingAnnLOL {
+  0% {
+    transform: translateY(-0.4rem);
+  }
+  50% {
+    transform: translateY(0.4rem);
+  }
+  100% {
+    transform: translateY(-0.4rem);
+  }
+}
