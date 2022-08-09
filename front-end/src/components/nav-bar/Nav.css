@@ -71,7 +71,7 @@ a.nav-btn::before {
   left: -2px;
   bottom: 0;
   z-index: -1;
-  transform: rotate(-1.8deg);
+  transform: rotate(-2deg);
 }
 
 nav.navbar {
