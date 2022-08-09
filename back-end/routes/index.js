@@ -18,6 +18,18 @@ module.exports = (db) => {
     res.json('made it to login and the userId is ' + userId)
   })
 
+  router.get('/myprofile', (req, res)=>{ //get current user profile
+
+    const queryString = `SELECT * FROM users WHERE users.id = $1`;
+    const queryParams = [req.cookies.user_id]; // <- from the cookie
+    db.query(queryString, queryParams)
+      .then(data => {
+        res.json(data.rows)
+      })
+    //res.json("OK here is my profile LOL, Dan and Dex Helps me wrote thisssssss <3<3<3");
+    //use req.cookies.user_id to make a database query
+  })
+
   return router;
 
 }

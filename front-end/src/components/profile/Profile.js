@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import FrontProfile from './FrontProfile';
 import BackProfile from './BackProfile';
 import MatchProfile from './MatchProfile';
@@ -20,12 +20,12 @@ const fakeData = {
 
 export default function Profile() {
   const [PROFILE, MATCH] = ["SHOW", "MATCH"]
-  
+
   const [index, setIndex] = useState(0);
-  const [data, setData  ] = useState(fakeData);
-  const [mode, setMode  ] = useState(PROFILE) // show Front/Back by default
-  
-  
+  const [data, setData] = useState(fakeData);
+  const [mode, setMode] = useState(PROFILE) // show Front/Back by default
+  const [myProfile, setMyProfile] = useState(null)
+
   const transition = (mode) => {
     setMode(mode);
   }
@@ -41,14 +41,27 @@ export default function Profile() {
     });
   };
 
+  const getMyProfile = () => {
+    axios.get(`/myprofile`).then((res) => {
+      console.log('This is my profile:   ', res.data);
+      setMyProfile(res.data[0]);
+    });
+  };
+  useEffect(() => {
+    getMyProfile();
+  }, [])
+
   const swipeRight = () => {
     console.log('swiped right!');
     // we want to send the ID of the profile we're viewing
-    console.log('the liked user has id:  ',data.id);
+    console.log('the liked user has id:  ', data.id);
     const likedUserId = data.id;
     // GET /matches/likedUserId
     axios.get(`/matches/${likedUserId}`).then(res => {
       console.log('axios request gave us res:  ', res.data);
+      //if () {transition}
+      // else getNewUser
+
       transition(MATCH);
     })
     // the transition should only happen if a match is 'completed'. UPDATE THE ROUTE so that res.data is convenient
@@ -60,7 +73,7 @@ export default function Profile() {
     getNewUser();
   };
 
-  const frontAndBack =         
+  const frontAndBack =
     <Carousel activeIndex={index} onSelect={handleSelect} slide={false}>
       <Carousel.Item>
         <FrontProfile {...data} swipeLeft={swipeLeft} swipeRight={swipeRight} />
@@ -75,14 +88,14 @@ export default function Profile() {
     <div className="complete-profile-container">
       <div className="complete-profile-wrapper">
         {mode === PROFILE && frontAndBack}
-        {mode === MATCH && <MatchProfile />}
+        {mode === MATCH && <MatchProfile {...data} myPicture={myProfile.profile_picture}/>}
       </div>
     </div>
   );
 }
 
 // to make the Carousel slide auto run, add interval={500} to CarouselItem tag
-  /* 
- PLAN TO IMPLEMENT TRANSITION IN SWIPERIGHT
+/*
+PLAN TO IMPLEMENT TRANSITION IN SWIPERIGHT
 
 */
