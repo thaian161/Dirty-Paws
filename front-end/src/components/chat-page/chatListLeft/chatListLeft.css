@@ -2,7 +2,7 @@
   border-right: 1px solid #ebe7fb;
   padding: 1rem;
 
-  background-color: #fbe4e4;
+  background-color: #ffe0dd;
 
   border-radius: 0.5rem;
   width: 18rem;
@@ -40,7 +40,7 @@
   margin: 0.5rem;
   margin-top: 30px;
   overflow: auto;
-  max-height: calc(100vh - calc(100vh / 2));
+  max-height: calc(100vh - calc(100vh / 2.15));
 }
 
 .chatlist__item {
@@ -135,6 +135,9 @@ div.chat-list-item {
   margin-bottom: 1rem;
   border-bottom: 1px dashed #607ea5;
   padding-bottom: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  height: 3.8rem;
 }
 
 span.activeTime {
@@ -157,3 +160,4 @@ h2.chatlist__heading {
   font-size: 2rem;
   font-weight: 700;
 }
+

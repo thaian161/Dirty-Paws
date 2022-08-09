@@ -1,17 +1,17 @@
 .main__chatcontent {
   flex-grow: 1;
   padding: 20px 40px;
-  max-width: 63%;
-  border-right: 1px solid #ebe7fb;
-  background-color: rgb(240, 240, 240);
+  max-width: 70%;
+
+  background-color: white;
 
   border-radius: 0.5rem;
-  width: 44rem;
+  width: 46rem;
+  height: 35rem;
 }
 .content__header {
-  padding-bottom: 15px;
+  padding-bottom: 1rem;
   border-bottom: 1px dashed #607ea5;
-  
 }
 .current-chatting-user {
   display: flex;
@@ -25,11 +25,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .content__body {
-  max-height: calc(100vh - calc(100vh / 2));
+  max-height: calc(100vh - calc(100vh / 2.17));
   overflow: auto;
 }
 .chat__item {
@@ -48,7 +47,7 @@
   animation-fill-mode: both;
   animation-delay: 0.2s;
 
-  margin-top:0.2rem;
+  margin-top: 0.2rem;
 }
 @keyframes showIn {
   0% {
@@ -65,12 +64,8 @@
   padding: 1px;
 }
 .chat__item__content {
-  background: rgb(255, 183, 182);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 183, 182, 0.8371848739495799) 0%,
-    rgba(135, 171, 218, 0.8203781512605042) 69%
-  );
+  background: #7bb6ff;
+
   color: #fff;
   padding: 15px;
   border-radius: 10px 10px 0 10px;
@@ -157,4 +152,10 @@ img.mes-icon {
 img.senddd {
   height: 1.8rem;
   width: 1.8rem;
+}
+
+input.input-message {
+  background-color: #e2efff;
+  border-radius: 0.3rem;
+  border: 1px dashed #24456f;
 }

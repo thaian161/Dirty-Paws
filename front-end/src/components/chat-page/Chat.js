@@ -3,8 +3,12 @@ import ChatBody from './chatBody/ChatBody';
 
 function Chat() {
   return (
-    <div className="__main">
-      <ChatBody />
+    <div className="complete-chat-container">
+      <div className="complete-chat-wrapper">
+        <div className="__main">
+          <ChatBody />
+        </div>
+      </div>
     </div>
   );
 }

@@ -5,7 +5,7 @@ import App from './App';
 import LandingPage from './components/landing/LandingPage';
 import Profile from './components/profile/Profile';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from './components/nav-bar/Nav';
 import Chat from './components/chat-page/Chat';
 import ChatBubble from './components/chat-bubble/ChatBubble';
@@ -17,26 +17,23 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <Nav />
-    <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/profile" element={<Profile />} />
+      {/* DO NOT REMOVE Nav COMPONENT FROM HERE */}
+      <Nav />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/profile" element={<Profile />} />
 
-      <Route path="/messages" element={<Chat />} />
+        <Route path="/messages" element={<Chat />} />
 
-
-
-      
-
-{/* testing purposed */}
-      <Route path="/test" element={<App />} />
-      <Route path="/front" element={<FrontProfile/>} />
-      <Route path="/back" element={<BackProfile/>} />
-      <Route path="/match" element={<MatchProfile />} />
-
-    </Routes>
-
-    <ChatBubble/>
+        {/* testing purposed */}
+        <Route path="/test" element={<App />} />
+        <Route path="/front" element={<FrontProfile />} />
+        <Route path="/back" element={<BackProfile />} />
+        <Route path="/match" element={<MatchProfile />} />
+        
+      </Routes>
+      {/* DO NOT REMOVE ChatBubble COMPONENT FROM HERE */}
+      <ChatBubble />
     </BrowserRouter>
   </React.StrictMode>
 );

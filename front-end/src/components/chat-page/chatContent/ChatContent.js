@@ -21,6 +21,17 @@ export default function ChatContent() {
         <div className="chat__items">
           <ChatContentItem />
         </div>
+        <div className="chat__items">
+          <ChatContentItem />
+        </div>
+
+        <div className="chat__items">
+          <ChatContentItem />
+        </div>
+
+        <div className="chat__items">
+          <ChatContentItem />
+        </div>
 
         <div className="chat__items">
           <ChatContentItem />
@@ -32,7 +43,7 @@ export default function ChatContent() {
       </div>
       <div className="content__footer">
         <div className="sendNewMessage">
-          <input type="text" placeholder="Type a message here" />
+          <input className="input-message" type="text" placeholder="Type a message here" />
           <button className="btnSendMsg" id="sendMsgBtn">
             <button className="search-btn">
               <img
