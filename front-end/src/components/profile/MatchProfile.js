@@ -4,14 +4,14 @@ import noSoSad from './images/noSoSad.png';
 import Matchhh from '../../lotties/Matchhh.jsx';
 import { Link } from 'react-router-dom';
 
-export default function MatchProfile() {
+export default function MatchProfile(props) {
   return (
     <div className="container">
       <div className="match-wrapper">
         <div className="profile-match">
           <img
             className="match-profile-pic1"
-            src="https://img.freepik.com/premium-vector/cute-welsh-corgi-dog-waving-paw-cartoon_42750-623.jpg"
+            src={props.profile_picture}
             alt="front profile card"
           />
 
@@ -19,7 +19,7 @@ export default function MatchProfile() {
 
           <img
             className="match-profile-pic2"
-            src="https://i.imgur.com/sKdbm4Vh.jpg"
+            src={props.myPicture}
             alt="front profile card"
           />
         </div>
@@ -37,7 +37,7 @@ export default function MatchProfile() {
             </Link>
 
             <br />
-            <Link className="keep-search" to="/profile">
+            <Link className="keep-search" to="/profile" onClick={()=>props.transition("SHOW")}>
               KEEP SEARCHING
             </Link>
           </div>
@@ -52,3 +52,6 @@ export default function MatchProfile() {
     </div>
   );
 }
+
+// if you click the LINK we should do transition(PROFILE).
+//To get the transition function, go into Profile.js and give 'transition' to MatchProfile as a prop. Then we can use it in here as props.transition to transition back to PROFILE
