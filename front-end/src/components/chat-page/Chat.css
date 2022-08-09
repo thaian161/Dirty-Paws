@@ -2,16 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  height: 100%;
-}
-#root {
-  background-color: #f0f0f0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
 .__main {
   margin: auto;
   background-color: rgba(255, 192, 203, 0.629);

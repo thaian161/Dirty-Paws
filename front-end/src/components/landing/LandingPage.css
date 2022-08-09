@@ -1,14 +1,14 @@
 section {
   padding: 2.5rem 3%;
 }
-.home {
+.home-land {
   min-height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
   background-size: cover;
   background-position: center center;
-
+  
   /* The image used */
   /* background: url('./images/blue.png'); */
   /* background: url('./images/blueBBD9FF.png'); */
@@ -25,19 +25,18 @@ section {
   padding-top: 0%;
 }
 
-.home .homeContent {
+.home-land .homeContent {
   width: 50%;
 
   padding: 3.6rem;
   margin-left: 4rem;
 
-  background-color: rgba(255, 255, 255, 0.077);
+  background-color: rgba(255, 255, 255, 0.105);
   border-radius: 9rem;
   margin-top: -1.5rem;
-  
 }
 
-section#home.home {
+section#homee.home-land {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -178,7 +177,7 @@ div.landing-animation-container {
   margin-right: 3.3rem;
   height: 750px;
   width: 750px;
-  margin-top:25px;
+  margin-top: 25px;
 }
 img.landing-pic {
   height: 650px;
