@@ -1,14 +1,10 @@
-
-import "./Chat.css";
-import ChatBody from "./chatBody/ChatBody";
-
+import './Chat.css';
+import ChatBody from './chatBody/ChatBody';
 
 function Chat() {
   return (
     <div className="__main">
-
-<ChatBody/>
-     
+      <ChatBody />
     </div>
   );
 }
