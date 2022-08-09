@@ -42,14 +42,13 @@ img.love-btn-match {
 
 .match-wrapper {
   max-width: 20rem;
- 
+
   border-radius: 15px;
   overflow: hidden;
   border-radius: 3rem;
   border: solid 5px #204a80;
 
   background-color: #fff4f3;
-  
 }
 
 .match-wrapper:hover {
@@ -60,7 +59,7 @@ img.love-btn-match {
 }
 
 h2.user-name1 {
-  margin-top:0.5rem;
+  margin-top: 0.5rem;
   font-family: roboto mono;
   font-weight: 900;
   -webkit-text-stroke: 1px #204a80;
@@ -152,7 +151,6 @@ div.city {
   opacity: 1;
   background-image: radial-gradient(#406ca6 0.75px, transparent 0.75px),
     radial-gradient(#406ca6 0.75px, #d8e9ff 0.75px);
- 
 
   border: 3px solid #d8e9ff;
   border-radius: 4rem;
@@ -188,4 +186,8 @@ a.keep-search {
   font-weight: bold;
   text-underline-offset: 0.5rem;
   margin-top: -2rem;
+}
+
+.im-from-match-profile {
+  text-decoration: none;
 }

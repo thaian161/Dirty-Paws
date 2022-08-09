@@ -26,15 +26,18 @@ export default function MatchProfile() {
 
         <div className="content">
           <h2 className="user-name1"> Yassss! </h2>
-          <h3 className="user-name">  </h3>
+          <h3 className="user-name"> </h3>
         </div>
         <div className="profile-footer-match">
           <div>
-            <button className="profile-title button-chat">
-              Send A Message
-            </button>
-            <br/>
-            <Link className="keep-search" to="/">
+            <Link to="/messages" className="im-from-match-profile">
+              <button className="profile-title button-chat">
+                Send A Message
+              </button>
+            </Link>
+
+            <br />
+            <Link className="keep-search" to="/profile">
               KEEP SEARCHING
             </Link>
           </div>
