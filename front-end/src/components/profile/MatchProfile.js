@@ -1,7 +1,7 @@
 import './MatchProfile.css';
 import yes from './images/yes.png';
 import noSoSad from './images/noSoSad.png';
-import Matchhh from '../../lotties/Matchhh';
+import Matchhh from '../../lotties/Matchhh.jsx';
 import { Link } from 'react-router-dom';
 
 export default function MatchProfile() {

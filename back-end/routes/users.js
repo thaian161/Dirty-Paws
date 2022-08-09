@@ -5,12 +5,31 @@ const router = require('express').Router();
 module.exports = (db) => {
   // all routes will go here 
   router.get('/', (req, res) => {
-    const command = 'SELECT * FROM users';
+    const queryString = 'SELECT * FROM users';
 
-    db.query(command).then(data => {
+    db.query(queryString).then(data => {
       res.json(data.rows);
     })
   });
+  
+    router.get('/random', (req, res) => {
+      const queryString = `SELECT * FROM users ORDER BY RANDOM() LIMIT 1`;
+      db.query(queryString).then(data => {
+        res.json(data.rows);
+      })
+    })
+
+  router.get('/:id', (req, res) => {
+    
+    const queryString = `SELECT * FROM users WHERE users.id = $1`
+
+    const queryParams = [req.params.id]
+
+    db.query(queryString, queryParams)
+      .then(data => {
+        res.json(data.rows)
+      })
+  })
 
   return router;
 }
