@@ -6,6 +6,7 @@ import axios from 'axios';
 import Carousel from 'react-bootstrap/Carousel';
 
 import './FrontProfile.css';
+import "./Profile.css"
 
 const fakeData = {
   name: 'Sleepy Head',
@@ -46,20 +47,22 @@ export default function Profile() {
   };
 
   return (
-    <section>
-      <Carousel activeIndex={index} onSelect={handleSelect} slide={false}>
-        <Carousel.Item>
-          <FrontProfile
-            {...data}
-            swipeLeft={swipeLeft}
-            swipeRight={swipeRight}
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <BackProfile {...data} />
-        </Carousel.Item>
-      </Carousel>
-    </section>
+    <div className="complete-profile-container">
+      <div className="complete-profile-wrapper">
+        <Carousel activeIndex={index} onSelect={handleSelect} slide={false}>
+          <Carousel.Item>
+            <FrontProfile
+              {...data}
+              swipeLeft={swipeLeft}
+              swipeRight={swipeRight}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <BackProfile {...data} />
+          </Carousel.Item>
+        </Carousel>
+      </div>
+    </div>
   );
 }
 

@@ -9,6 +9,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Nav from './components/nav-bar/Nav';
 import Chat from './components/chat-page/Chat';
 import ChatBubble from './components/chat-bubble/ChatBubble';
+import FrontProfile from './components/profile/FrontProfile';
+import BackProfile from './components/profile/BackProfile';
+import MatchProfile from './components/profile/MatchProfile';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,7 +26,14 @@ root.render(
 
 
 
+      
+
+{/* testing purposed */}
       <Route path="/test" element={<App />} />
+      <Route path="/front" element={<FrontProfile/>} />
+      <Route path="/back" element={<BackProfile/>} />
+      <Route path="/match" element={<MatchProfile />} />
+
     </Routes>
 
     <ChatBubble/>
