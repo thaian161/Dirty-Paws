@@ -4,7 +4,7 @@ import './ChatBubble.css';
 export default function ChatBubble() {
   return (
     <div className="chat-box">
-      <a href="/" className="logo-chatbot">
+      <a href="/messages" className="logo-chatbot">
         <img src={chatbot} alt="" />
       </a>
     </div>
