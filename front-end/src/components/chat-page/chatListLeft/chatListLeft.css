@@ -7,16 +7,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.btn-nobg {
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-  font-size: 18px;
-  cursor: pointer;
-  padding: 10px;
-  color: #dad9dd;
-  outline: none;
-}
+
 .search_wrap {
   background-color: #e6e5ea;
   border-radius: 5px;

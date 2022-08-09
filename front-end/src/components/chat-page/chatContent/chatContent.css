@@ -21,9 +21,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.settings .btn-nobg {
-  color: #000;
-}
+
 .content__body {
   max-height: calc(100vh - calc(100vh / 2));
   overflow: auto;
@@ -37,17 +35,12 @@
   transform: scale(0);
   transform-origin: right;
   animation-name: showIn;
-  animation-duration: 0.2s; 
+  animation-duration: 0.2s;
   animation-iteration-count: 1;
-  animation-direction: normal; 
-  animation-timing-function: cubic-bezier(
-    0.88,
-    0.19,
-    0.37,
-    1.11
-  ); 
-  animation-fill-mode: both; 
-  animation-delay: 0.2s; 
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.88, 0.19, 0.37, 1.11);
+  animation-fill-mode: both;
+  animation-delay: 0.2s;
 }
 @keyframes showIn {
   0% {
@@ -64,7 +57,12 @@
   padding: 1px;
 }
 .chat__item__content {
-  background-color: #4462ff;
+  background: rgb(255, 183, 182);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 183, 182, 0.8371848739495799) 0%,
+    rgba(135, 171, 218, 0.8203781512605042) 69%
+  );
   color: #fff;
   padding: 15px;
   border-radius: 10px 10px 0 10px;
@@ -141,6 +139,12 @@
   outline: none;
 }
 #sendMsgBtn {
-  background-color: #3b5bfe;
-  color: #fff;
+  height: 2rem;
+  width: 2rem;
+  background-color: #d8e9ff;
+}
+
+img.mes-icon {
+  height: 1.5rem;
+  width: 1.5rem;
 }

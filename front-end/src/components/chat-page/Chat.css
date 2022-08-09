@@ -13,7 +13,6 @@ body {
   height: 100%;
 }
 .__main {
-
   margin: auto;
   background-color: rgba(255, 192, 203, 0.629);
   min-height: 80vh;
@@ -22,9 +21,6 @@ body {
   padding: 2rem;
   display: flex;
   justify-content: center;
-  
-  
- 
 }
 
 .btn {
@@ -70,16 +66,16 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: white;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #6c84ff;
+  background: #607ea5;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #3b5bfe;
+  background: #406ca6;
 }

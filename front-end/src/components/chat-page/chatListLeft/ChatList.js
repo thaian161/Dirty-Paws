@@ -4,16 +4,17 @@ function ChatList() {
   return (
     <div className="main__chatlist">
       <div className="chatlist__heading">
-        <h2>Messages 🐾 </h2>
-        <button className="btn-nobg">
-          <i className="fa fa-ellipsis-h"></i>
-        </button>
+        <h2> Messages</h2>
       </div>
       <div className="chatList__search">
         <div className="search_wrap">
-          <input type="text" placeholder="Search For My Maches" required />
+          <input type="text" placeholder="Search" required />
           <button className="search-btn">
-            <i className="fa fa-search"></i>
+            <img
+              className="mes-icon"
+              src="https://cdn-icons-png.flaticon.com/512/64/64673.png"
+              alt="search icon"
+            />
           </button>
         </div>
       </div>

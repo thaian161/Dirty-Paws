@@ -8,19 +8,8 @@ export default function ChatContent() {
       <div className="content__header">
         <div className="blocks">
           <div className="current-chatting-user">
-            <Avatar
-              
-              image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA78Na63ws7B7EAWYgTr9BxhX_Z8oLa1nvOA&usqp=CAU"
-            />
+            <Avatar image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA78Na63ws7B7EAWYgTr9BxhX_Z8oLa1nvOA&usqp=CAU" />
             <p>Sexi Boi</p>
-          </div>
-        </div>
-
-        <div className="blocks">
-          <div className="settings">
-            <button className="btn-nobg">
-              <i className="fa fa-cog"></i>
-            </button>
           </div>
         </div>
       </div>
@@ -40,19 +29,18 @@ export default function ChatContent() {
       </div>
       <div className="content__footer">
         <div className="sendNewMessage">
-          <button className="addFiles">
-            <i className="fa fa-plus"></i>
-          </button>
           <input
             type="text"
             placeholder="Type a message here"
             // INPUT also go with onChange and Value
             // onChange={}
             // value={}
-
           />
           <button className="btnSendMsg" id="sendMsgBtn">
-            <i className="fa fa-paper-plane"></i>
+            <img className="mes-icon"
+              src="https://cdn-icons-png.flaticon.com/512/8016/8016417.png"
+              alt="send message icon"
+            />
           </button>
         </div>
       </div>
