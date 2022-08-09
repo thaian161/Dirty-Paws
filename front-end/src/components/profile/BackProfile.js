@@ -9,7 +9,7 @@ export default function BackProfile(props) {
         <div className="profile-top-back">
           <img
             className="back-profile-pic"
-            src="https://img.freepik.com/premium-vector/cute-welsh-corgi-dog-waving-paw-cartoon_42750-623.jpg"
+            src={props.profile_picture}
             alt="front profile card"
           />
         </div>
@@ -22,7 +22,7 @@ export default function BackProfile(props) {
           </div>
         </div>
         <div className="love-me-not">
-          <button> 
+          <button>
             <img
               className="user-badge"
               src="https://cdn-icons-png.flaticon.com/512/5229/5229380.png"
