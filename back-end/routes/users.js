@@ -31,5 +31,17 @@ module.exports = (db) => {
       })
   })
 
+  router.get('/treats/:id', (req, res) => {
+
+    const queryString = `UPDATE users SET treats = treats + 1 WHERE users.id = $1`
+
+    const queryParams = [req.params.id]
+
+    db.query(queryString, queryParams)
+      .then(data => {
+        res.json(["A treat has been given!", data])
+      })
+  })
+
   return router;
 }
