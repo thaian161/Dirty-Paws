@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import FrontProfile from './FrontProfile';
 import BackProfile from './BackProfile';
+import MatchProfile from './MatchProfile';
 import axios from 'axios';
 
 import Carousel from 'react-bootstrap/Carousel';
@@ -19,8 +20,16 @@ const fakeData = {
 };
 
 export default function Profile() {
+  const [SHOW, MATCH] = ["SHOW", "MATCH"]
+  
   const [index, setIndex] = useState(0);
   const [data, setData] = useState(fakeData);
+  const [mode, setMode] = useState("SHOW") // show Front/Back by default
+  
+  
+  const transition = (mode) => {
+    setMode(mode);
+  }
 
   const handleSelect = (selectedIndex, e) => {
     //
@@ -35,11 +44,23 @@ export default function Profile() {
 
   const swipeRight = () => {
     console.log('swiped right!');
+    // we want to send the ID of the profile we're viewing
+    console.log('the liked user has id:  ',data.id);
+    const likedUserId = data.id;
+    // GET /matches/likedUserId
+    axios.get(`/matches/${likedUserId}`).then(res => {
+      console.log('axios request gave us res:  ', res.data);
+    }) // .then(() => {render a different component omg})
     // use the current state (data) to send an axios request to matches
-    // (stretch) if the match is 'completed', show the 'you jsut matched' card
-    // .then getNewUser
+    // show MatchProfile
     getNewUser();
   };
+
+/* 
+ PLAN TO IMPLEMENT TRANSITION IN SWIPERIGHT
+
+*/
+
 
   const swipeLeft = () => {
     console.log('swiped left!');
