@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.__main {
+div.__main {
   margin: auto;
   background-color: rgba(255, 192, 203, 0.629);
   min-height: 80vh;
