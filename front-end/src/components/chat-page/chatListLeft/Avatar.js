@@ -7,7 +7,7 @@ function Avatar() {
           alt="user chat avatar"
         />
       </div>
-      <span className="isOnline"></span>
+      <span className="isOnline isOnline-active"></span>
     </div>
   );
 }

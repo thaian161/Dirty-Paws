@@ -2,7 +2,10 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: lightseagreen;
-  border-radius: 10px;
-  padding: 2rem;
+  background-color: #82a1ca;
+  border-radius: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  width: 80vw;
 }

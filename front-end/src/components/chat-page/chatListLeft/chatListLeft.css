@@ -1,8 +1,14 @@
 .main__chatlist {
   border-right: 1px solid #ebe7fb;
-  padding: 0 40px 0 0px;
+  padding: 1rem;
+
+  background-color: #fbe4e4;
+
+  border-radius: 0.5rem;
+  width: 18rem;
 }
 .chatlist__heading {
+  font-size: Lora;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,12 +19,13 @@
   border-radius: 5px;
 }
 .search_wrap input {
-  background-color: transparent;
+  background-color: white;
   border: none;
   padding: 15px 15px;
   outline: none;
   width: 80%;
   padding-right: 0;
+  border-radius: 0.5rem;
 }
 .search-btn {
   height: 46px;
@@ -30,6 +37,7 @@
   font-size: 20px;
 }
 .chatlist__items {
+  margin: 0.5rem;
   margin-top: 30px;
   overflow: auto;
   max-height: calc(100vh - calc(100vh / 2));
@@ -82,7 +90,7 @@
 }
 
 .chatlist__item .user-chat-content p {
-  margin: 0;
+  margin-bottom: 0;
   padding: 0;
   color: #000;
   font-weight: 600;
@@ -93,7 +101,7 @@
   padding: 0;
   color: #ceccd3;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 10px;
   display: block;
 }
 .chatlist__item:hover,
@@ -114,11 +122,38 @@
   border: 2px solid #fff;
 }
 .isOnline-active {
-  background-color: rgb(255, 72, 39);
+  background-color: rgb(251, 142, 123);
 }
 .avatar-img {
   overflow: hidden;
   border-radius: 50%;
   width: 100%;
   height: 100%;
+}
+
+div.chat-list-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px dashed #607ea5;
+  padding-bottom: 0.2rem;
+}
+
+span.activeTime {
+  font-size: 0.8rem;
+  color: #646464e7;
+}
+
+p.info-chat-list-item {
+  margin-bottom: -0.3rem;
+
+  font-weight: 400;
+}
+
+h2.chatlist__heading {
+  font-family: roboto mono;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #204a80;
+  text-shadow: #b5cae5 3px 3px;
+  color: #406ca6;
+  font-size: 2rem;
+  font-weight: 700;
 }

@@ -4,7 +4,7 @@ function ChatList() {
   return (
     <div className="main__chatlist">
       <div className="chatlist__heading">
-        <h2> Messages</h2>
+        <h2 className="chatlist__heading"> Messages</h2>
       </div>
       <div className="chatList__search">
         <div className="search_wrap">

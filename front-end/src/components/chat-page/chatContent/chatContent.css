@@ -3,6 +3,10 @@
   padding: 20px 40px;
   max-width: 63%;
   border-right: 1px solid #ebe7fb;
+  background-color: rgb(240, 240, 240);
+
+  border-radius: 0.5rem;
+  width: 44rem;
 }
 .content__header {
   padding-bottom: 15px;
@@ -119,7 +123,6 @@
   outline: none;
   cursor: pointer;
   font-size: 16px;
-  color: #4665ff;
   padding: 0;
   border-radius: 5px;
   line-height: 36px;
