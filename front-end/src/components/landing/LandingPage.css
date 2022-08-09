@@ -31,9 +31,10 @@ section {
   padding: 3.6rem;
   margin-left: 4rem;
 
-  background-color: rgba(249, 249, 249, 0.063);
+  background-color: rgba(255, 255, 255, 0.077);
   border-radius: 9rem;
-  margin-top: -2rem;
+  margin-top: -1.5rem;
+  
 }
 
 section#home.home {

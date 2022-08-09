@@ -16,6 +16,7 @@ export default function LandingPage() {
             Dirty Paws - more than just a dating app. Find Your Paws Today
           </p>
           <br />
+          
           <a href="/#">
             <button className="land-btn">Explore More</button>
           </a>
