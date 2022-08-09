@@ -3,13 +3,11 @@ import FrontProfile from './FrontProfile';
 import BackProfile from './BackProfile';
 import MatchProfile from './MatchProfile';
 import axios from 'axios';
-
 import Carousel from 'react-bootstrap/Carousel';
-
 import './FrontProfile.css';
 import "./Profile.css"
-
 const fakeData = {
+  id: 2,
   name: 'Sleepy Head',
   bio: 'I love going for a walk with my frends and chasing cats at the park',
   treats: 7,
@@ -19,12 +17,13 @@ const fakeData = {
   address: 'Toronto',
 };
 
+
 export default function Profile() {
-  const [SHOW, MATCH] = ["SHOW", "MATCH"]
+  const [PROFILE, MATCH] = ["SHOW", "MATCH"]
   
   const [index, setIndex] = useState(0);
-  const [data, setData] = useState(fakeData);
-  const [mode, setMode] = useState("SHOW") // show Front/Back by default
+  const [data, setData  ] = useState(fakeData);
+  const [mode, setMode  ] = useState(PROFILE) // show Front/Back by default
   
   
   const transition = (mode) => {
@@ -50,41 +49,40 @@ export default function Profile() {
     // GET /matches/likedUserId
     axios.get(`/matches/${likedUserId}`).then(res => {
       console.log('axios request gave us res:  ', res.data);
-    }) // .then(() => {render a different component omg})
-    // use the current state (data) to send an axios request to matches
-    // show MatchProfile
+      transition(MATCH);
+    })
+    // the transition should only happen if a match is 'completed'. UPDATE THE ROUTE so that res.data is convenient
     getNewUser();
   };
-
-/* 
- PLAN TO IMPLEMENT TRANSITION IN SWIPERIGHT
-
-*/
-
 
   const swipeLeft = () => {
     console.log('swiped left!');
     getNewUser();
   };
 
+  const frontAndBack =         
+    <Carousel activeIndex={index} onSelect={handleSelect} slide={false}>
+      <Carousel.Item>
+        <FrontProfile {...data} swipeLeft={swipeLeft} swipeRight={swipeRight} />
+      </Carousel.Item>
+      <Carousel.Item>
+        <BackProfile {...data} />
+      </Carousel.Item>
+    </Carousel>
+
+
   return (
     <div className="complete-profile-container">
       <div className="complete-profile-wrapper">
-        <Carousel activeIndex={index} onSelect={handleSelect} slide={false}>
-          <Carousel.Item>
-            <FrontProfile
-              {...data}
-              swipeLeft={swipeLeft}
-              swipeRight={swipeRight}
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <BackProfile {...data} />
-          </Carousel.Item>
-        </Carousel>
+        {mode === PROFILE && frontAndBack}
+        {mode === MATCH && <MatchProfile />}
       </div>
     </div>
   );
 }
 
 // to make the Carousel slide auto run, add interval={500} to CarouselItem tag
+  /* 
+ PLAN TO IMPLEMENT TRANSITION IN SWIPERIGHT
+
+*/
