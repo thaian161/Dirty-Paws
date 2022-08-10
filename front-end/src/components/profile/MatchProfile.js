@@ -10,7 +10,7 @@ export default function MatchProfile(props) {
         <div className="profile-match">
           <img
             className="match-profile-pic1"
-            src={props.profile_picture}
+            src={props.myPicture}
             alt="front profile card"
           />
 
@@ -18,7 +18,7 @@ export default function MatchProfile(props) {
 
           <img
             className="match-profile-pic2"
-            src={props.myPicture}
+            src={props.profile_picture}
             alt="front profile card"
           />
         </div>
@@ -36,7 +36,11 @@ export default function MatchProfile(props) {
             </Link>
 
             <br />
-            <Link className="keep-search" to="/profile" onClick={props.getNewUser}>
+            <Link
+              className="keep-search"
+              to="/profile"
+              onClick={props.getNewUser}
+            >
               KEEP SEARCHING
             </Link>
           </div>
