@@ -1,45 +1,68 @@
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 import Avatar from '../chatListLeft/Avatar';
 import './chatContent.css';
 import ChatContentItem from './ChatContentItem';
 
-export default function ChatContent() {
+export default function ChatContent(props) {
+
+  const [myUser, setMyUser] = useState({})
+
+  const getMyProfile = () => {
+    axios.get('/users/1')
+         .then(res => setMyUser(res.data[0]))
+  }
+
+  useEffect(() => {
+    getMyProfile()
+  }, [])
+
+  // props.messages is available, with all the logged-in user's messages
+  // props.selected is available, with the 'selected' userid
+
+
+  const getMessages = () => {
+    const messages = [];
+    for (const message of props.messages) {
+      if (message.sender_id === props.selected || message.receiver_id === props.selected) {
+        messages.push(message);
+      }
+
+    }
+    return messages;
+  }
+
+  console.log("These are our messages:   ", getMessages())
+
+  const messages = getMessages()
+
+  const oneMessage = messages.map(message => {
+    return (
+      <div className="chat__items" key={message.id}>
+        <ChatContentItem
+        sender={message.sender_id}
+        receiver={message.receiver_id}
+        content={message.content}
+        users={props.users}
+        />
+      </div>
+    )
+  })
+ 
+
+  
   return (
     <div className="main__chatcontent">
       <div className="content__header">
         <div className="blocks">
           <div className="current-chatting-user">
-            <Avatar />
-            <p> Sexi Boiiii</p>
+            <Avatar picture={myUser.profile_picture}/>
+            <p> {myUser.name}</p>
           </div>
         </div>
       </div>
       <div className="content__body">
-        <div className="chat__items">
-          <ChatContentItem />
-        </div>
-
-        <div className="chat__items">
-          <ChatContentItem />
-        </div>
-        <div className="chat__items">
-          <ChatContentItem />
-        </div>
-
-        <div className="chat__items">
-          <ChatContentItem />
-        </div>
-
-        <div className="chat__items">
-          <ChatContentItem />
-        </div>
-
-        <div className="chat__items">
-          <ChatContentItem />
-        </div>
-
-        <div className="chat__items">
-          <ChatContentItem />
-        </div>
+        {oneMessage}
       </div>
       <div className="content__footer">
         <div className="sendNewMessage">

@@ -4,9 +4,11 @@ module.exports = (db) => {
 
   router.get('/', (req, res) => {
 
-    const queryString = `SELECT content FROM messages WHERE sender_id = $1 AND receiver_id = $2 OR sender_id = $2 AND receiver_id = $1;`
-    const queryParams = [1, 2]
+    // const queryString = `SELECT content FROM messages WHERE sender_id = $1 AND receiver_id = $2 OR sender_id = $2 AND receiver_id = $1;`
+    // const queryParams = [1, 2]
 
+    const queryString = `SELECT * FROM messages WHERE sender_id = $1 OR receiver_id = $1`
+    const queryParams = [req.cookies.user_id]
     db.query(queryString, queryParams).then(data => {
       res.json(data.rows)
     })
