@@ -23,7 +23,7 @@ module.exports = (db) => {
         const queryString = `
           UPDATE matches SET userOne_likes_userTwo = true, userTwo_likes_userOne = true WHERE id = $1 RETURNING *`;
         db.query(queryString, queryParams).then(data => {
-          res.json(['a row has been updated in the matches table', data.rows[0]]);
+          res.json(['update row', data.rows[0]]);
         })
       }
       if (data.rows.length == 0) { // create a match if none was found:
@@ -31,7 +31,7 @@ module.exports = (db) => {
         const queryString = `
           INSERT INTO matches (userOne_id, userTwo_id, userOne_likes_userTwo, userTwo_likes_userOne) VALUES ($1, $2, true, false) RETURNING *`;
         db.query(queryString,queryParams).then(data => {
-          res.json(["a new row has been created in the matches table", data.rows[0]]);
+          res.json(['new row', data.rows[0]]);
         })
       }
     })
