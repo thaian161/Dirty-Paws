@@ -17,7 +17,7 @@ export default function ChatBody() {
   useEffect(() => {
     getMatchedUserIds();
   }, []);
-
+  console.log("from chatbody: ", userIds)
   return (
     <div className="main__chatbody">
       <ChatList userIds={userIds}/>

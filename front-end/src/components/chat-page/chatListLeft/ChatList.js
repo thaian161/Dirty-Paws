@@ -1,6 +1,8 @@
 import ChatListItem from './ChatListItem';
 
 function ChatList(props) {
+
+  console.log("chatlist props: ", props)
   const userIds = props.userIds;
 
   const chatListItemArray = userIds.map(id => {
