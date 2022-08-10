@@ -12,12 +12,12 @@ import ChatBubble from './components/chat-bubble/ChatBubble';
 import FrontProfile from './components/profile/FrontProfile';
 import BackProfile from './components/profile/BackProfile';
 import MatchProfile from './components/profile/MatchProfile';
-<<<<<<< HEAD
+
 import Treat from './components/treat/Treat';
-=======
+
 import RainbowCat from './lotties/RainbowCat';
 import Loading from './components/loading/Loading';
->>>>>>> reconstruct-FE
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -36,11 +36,11 @@ root.render(
         <Route path="/front" element={<FrontProfile />} />
         <Route path="/back" element={<BackProfile />} />
         <Route path="/match" element={<MatchProfile />} />
-<<<<<<< HEAD
+
         <Route path="testing-treat" element={<Treat />} />
 
-=======
->>>>>>> reconstruct-FE
+
+
       </Routes>
       {/* DO NOT REMOVE ChatBubble COMPONENT FROM HERE */}
       <ChatBubble />
