@@ -11,7 +11,7 @@ function ChatListItem(props) {
       <Avatar picture={props.picture}/>
       <div className="user-chat-content">
         <p className="info-chat-list-item">{props.name || "sexy boii"}</p>
-        <span className="activeTime">{activeTime(60)}</span>
+        <span className="activeTime">{activeTime(60)}, user ID: {props.id}</span>
       </div>
     </div>
   );
