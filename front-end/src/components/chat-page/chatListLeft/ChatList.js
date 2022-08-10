@@ -6,7 +6,7 @@ function ChatList(props) {
   // console.log("props passed to chatlist:   ", props)
 
   const chatListItemArray = userIds.map(id => {
-    return <ChatListItem id={id} users={props.users} setSelected={props.setSelected}/>
+    return <ChatListItem key={id} id={id} users={props.users} setSelected={props.setSelected}/>
   })
 
 

@@ -38,9 +38,8 @@ export default function ChatContent(props) {
 
   const oneMessage = messages.map(message => {
     return (
-      <div className="chat__items">
+      <div className="chat__items" key={message.id}>
         <ChatContentItem
-        key={message.id}
         sender={message.sender_id}
         receiver={message.receiver_id}
         content={message.content}
