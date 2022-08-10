@@ -15,11 +15,11 @@ INSERT INTO messages (sender_id, receiver_id, content) VALUES
 INSERT INTO messages (sender_id, receiver_id, content) VALUES
 (6, 1, 'no I do not');
 INSERT INTO messages (sender_id, receiver_id, content) VALUES
-(7, 1, 'did it hurt when you fell from heaven?');
+(4, 1, 'did it hurt when you fell from heaven?');
 INSERT INTO messages (sender_id, receiver_id, content) VALUES
-(1, 7, 'no, fortunately I had a parachute handy.');
+(1, 4, 'no, fortunately I had a parachute handy.');
 INSERT INTO messages (sender_id, receiver_id, content) VALUES
-(2, 3, 'omg u r my bfff (best fluffy friend forevs)');
+(1, 8, 'omg u r my bfff (best fluffy friend forevs)');
 INSERT INTO messages (sender_id, receiver_id, content) VALUES
-(3, 2, 'F');
+(8, 1, 'F');
 

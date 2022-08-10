@@ -20,3 +20,22 @@ INSERT INTO user_badges (badge_id, user_id) VALUES (2,19);
 INSERT INTO user_badges (badge_id, user_id) VALUES (5,20);
 INSERT INTO user_badges (badge_id, user_id) VALUES (1,21);
 INSERT INTO user_badges (badge_id, user_id) VALUES (2,22);
+
+INSERT INTO user_badges (badge_id, user_id) VALUES (3,1);
+INSERT INTO user_badges (badge_id, user_id) VALUES (2,3);
+INSERT INTO user_badges (badge_id, user_id) VALUES (2,5);
+INSERT INTO user_badges (badge_id, user_id) VALUES (3,6);
+INSERT INTO user_badges (badge_id, user_id) VALUES (2,8);
+INSERT INTO user_badges (badge_id, user_id) VALUES (3,10);
+INSERT INTO user_badges (badge_id, user_id) VALUES (4,11);
+INSERT INTO user_badges (badge_id, user_id) VALUES (4,14);
+INSERT INTO user_badges (badge_id, user_id) VALUES (1,17);
+INSERT INTO user_badges (badge_id, user_id) VALUES (4,18);
+INSERT INTO user_badges (badge_id, user_id) VALUES (1,20);
+INSERT INTO user_badges (badge_id, user_id) VALUES (3,22);
+
+INSERT INTO user_badges (badge_id, user_id) VALUES (4,1);
+INSERT INTO user_badges (badge_id, user_id) VALUES (3,5);
+INSERT INTO user_badges (badge_id, user_id) VALUES (3,8);
+INSERT INTO user_badges (badge_id, user_id) VALUES (5,14);
+INSERT INTO user_badges (badge_id, user_id) VALUES (1,22);
