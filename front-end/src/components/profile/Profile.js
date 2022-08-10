@@ -34,10 +34,12 @@ export default function Profile() {
     //
     setIndex(selectedIndex);
   };
+
   const getNewUser = () => {
     axios.get('/users/random').then((res) => {
       console.log('received data from axios request: ', res.data[0]);
       setData(res.data[0]);
+      transition(PROFILE);
     });
   };
 
@@ -47,11 +49,16 @@ export default function Profile() {
       setMyProfile(res.data[0]);
     });
   };
+
   useEffect(() => {
+     // useEffect will INTENTIONALLY render *twice*. it is not a problem.
+     // thats why the console.log from getMyProfile shows up twice.
     getMyProfile();
+    getNewUser();
   }, [])
 
   const swipeRight = () => {
+    //new row, update row
     console.log('swiped right!');
     // we want to send the ID of the profile we're viewing
     console.log('the liked user has id:  ', data.id);
@@ -59,13 +66,13 @@ export default function Profile() {
     // GET /matches/likedUserId
     axios.get(`/matches/${likedUserId}`).then(res => {
       console.log('axios request gave us res:  ', res.data);
-      //if () {transition}
-      // else getNewUser
-
-      transition(MATCH);
+      if (res.data[0] === 'update row') {
+        transition(MATCH);
+      }
+      if (res.data[0] === 'new row') {
+        getNewUser();
+      }
     })
-    // the transition should only happen if a match is 'completed'. UPDATE THE ROUTE so that res.data is convenient
-    getNewUser();
   };
 
   const swipeLeft = () => {
@@ -88,7 +95,7 @@ export default function Profile() {
     <div className="complete-profile-container">
       <div className="complete-profile-wrapper">
         {mode === PROFILE && frontAndBack}
-        {mode === MATCH && <MatchProfile {...data} myPicture={myProfile.profile_picture}/>}
+        {mode === MATCH && <MatchProfile {...data} myPicture={myProfile.profile_picture} getNewUser={getNewUser}/>}
       </div>
     </div>
   );

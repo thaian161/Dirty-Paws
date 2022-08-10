@@ -37,7 +37,7 @@ export default function MatchProfile(props) {
             </Link>
 
             <br />
-            <Link className="keep-search" to="/profile" onClick={()=>props.transition("SHOW")}>
+            <Link className="keep-search" to="/profile" onClick={props.getNewUser}>
               KEEP SEARCHING
             </Link>
           </div>
