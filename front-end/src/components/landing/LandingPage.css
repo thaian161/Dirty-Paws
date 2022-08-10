@@ -8,11 +8,11 @@ section {
   align-items: center;
   background-size: cover;
   background-position: center center;
-  
+
   /* The image used */
   /* background: url('./images/blue.png'); */
   /* background: url('./images/blueBBD9FF.png'); */
-  background: url('./images/layer4.7.png'), url('./images/layer2.png'),
+  background: url('./images/layer5.png'), url('./images/layer2.png'),
     url('./images/layer3.png'), url('./images/blueD8E9FF.png');
 
   /* Full height */
@@ -29,11 +29,11 @@ section {
   width: 50%;
 
   padding: 3.6rem;
-  margin-left: 4rem;
+  margin-left: 3rem;
 
-  background-color: rgba(255, 255, 255, 0.105);
+  background-color: rgba(255, 255, 255, 0.027);
   border-radius: 9rem;
-  margin-top: -1.5rem;
+  margin-top: -1rem;
 }
 
 section#homee.home-land {
@@ -44,29 +44,21 @@ section#homee.home-land {
 }
 
 h2.intro-large {
-  /* font-family: Lora;
-  font-style: italic;
-  font-weight: 900;
-  color: #406ca6;
- 
-  margin-bottom: 0;
-
-  margin-right: 21px;
-  line-height: 4rem; */
   margin-top: -0.5rem;
-  font-family: roboto mono;
-  font-weight: 900;
+  font-family: Lora;
+
   -webkit-text-stroke: 1px #406ca6;
   text-shadow: #b5cae5 3px 3px;
   color: #406ca6;
-  font-size: 3rem;
+  font-size: 2.8rem;
   text-transform: uppercase;
-  text-align: right;
+  text-align: left;
 
   font-weight: 900;
 }
 h3.intro-small {
-  font-family: lora;
+  font-family: Lora;
+  font-style: italic;
   color: #f07e74;
   text-align: left;
   margin-right: 28px;
@@ -94,15 +86,15 @@ p.landing-p {
 
   font-family: Roboto Mono;
   margin-bottom: 0;
-  font-size: 1.3rem;
-  font-weight: 900;
-  line-height: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2.2rem;
   color: #646464e7;
-  -webkit-text-stroke: 0.3px #646464e7;
+  -webkit-text-stroke: 0.5px #646464e7;
 }
 
 .land-btn {
-  font-family: Lora;
+  font-family: roboto;
   font-weight: 600;
 
   color: #406ca6;

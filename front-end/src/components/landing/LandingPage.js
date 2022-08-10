@@ -9,10 +9,10 @@ export default function LandingPage() {
         <h3 className="intro-small"> It's Never Too Late To Fall In Love</h3>
         <p className="landing-p">
           One day, someone will walk into your life and make you see why it
-          never worked out with anyone else. Finding a paws is a hug highlight,
-          but with Dirty Paws...you are swiping right on this one. Dirty Paws -
+          never worked out with anyone else. Finding a paws is a hug highlight, with Dirty Paws,you are swiping right on this one. Dirty Paws;
           more than just a dating app. Find Your Paws Today
         </p>
+        <br />
         <br />
 
         <a href="/#">
