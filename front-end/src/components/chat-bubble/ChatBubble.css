@@ -3,25 +3,25 @@ div.chat-box {
   width: 12.5rem;
   height: 12.5rem;
 
-  bottom: -4rem;
-  right: -3.5rem;
+  bottom: -3.5rem;
+  right: -3rem;
 
   z-index: 9000;
   position: fixed;
 }
 
 .logo-chatbot img {
-  height: 6rem;
-  animation: boucingAnnLOL 1.8s ease infinite forwards;
+  height: 6.5rem;
+  animation: boucingAnnLOL 1.5s ease-in-out infinite forwards;
 }
 @keyframes boucingAnnLOL {
   0% {
-    transform: translateY(-0.4rem);
+    transform: translateY(-0.6rem);
   }
   50% {
-    transform: translateY(0.4rem);
+    transform: translateY(0.5rem);
   }
   100% {
-    transform: translateY(-0.4rem);
+    transform: translateY(-0.6rem);
   }
 }
