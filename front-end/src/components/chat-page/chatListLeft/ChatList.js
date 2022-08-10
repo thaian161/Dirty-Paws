@@ -1,6 +1,13 @@
 import ChatListItem from './ChatListItem';
 
-function ChatList() {
+function ChatList(props) {
+  const userIds = props.userIds;
+
+  const chatListItemArray = userIds.map(id => {
+    return <ChatListItem id={id}/>
+  })
+
+
   return (
     <div className="main__chatlist">
       <div className="chatlist__heading">
@@ -19,12 +26,7 @@ function ChatList() {
         </div>
       </div>
       <div className="chatlist__items">
-        <ChatListItem />
-        <ChatListItem />
-        <ChatListItem />
-        <ChatListItem />
-        <ChatListItem />
-        <ChatListItem />
+        {chatListItemArray}
       </div>
     </div>
   );

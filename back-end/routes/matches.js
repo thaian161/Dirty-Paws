@@ -15,6 +15,26 @@ module.exports = (db) => {
     })
   });
   
+  router.get('/ids', (req, res) => { // get ids of current user's matches
+    const queryParams = [req.cookies.user_id];
+    const queryString = `
+      SELECT userOne_id, userTwo_id FROM matches 
+      WHERE (userOne_id = $1 OR userTwo_id = $1)
+      AND userOne_likes_userTwo = true
+      AND userTwo_likes_userOne = true
+      LIMIT 6`;
+    db.query(queryString, queryParams).then(data => {
+      const ids = [];
+      data.rows.forEach(row => {
+        ids.push(row.userone_id);
+        ids.push(row.usertwo_id);
+      });
+      const filteredIds = ids.filter(id => id != req.cookies.user_id);
+      res.json(filteredIds);
+    });
+
+  });
+
   router.get('/:id', (req, res) => { // 'Like' another user
     const userOne = req.cookies.user_id;
     const userTwo = req.params.id;
