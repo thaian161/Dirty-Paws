@@ -2,8 +2,17 @@ const router = require('express').Router();
 
 module.exports = (db) => {
   
-  router.get('/', (req, res) => {
-    res.json('made it to /matches')
+  router.get('/', (req, res) => { // get current user's matches
+    const queryParams = [req.cookies.user_id];
+    const queryString = `
+      SELECT * FROM matches 
+      WHERE (userOne_id = $1 OR userTwo_id = $1)
+      AND userOne_likes_userTwo = true
+      AND userTwo_likes_userOne = true
+      LIMIT 5`;
+    db.query(queryString, queryParams).then(data => {
+      return res.json(data.rows);
+    })
   });
   
   router.get('/:id', (req, res) => { // 'Like' another user
