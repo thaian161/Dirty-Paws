@@ -2,7 +2,7 @@ const router = require('express').Router();
 
 module.exports = (db) => {
   
-  router.get('/', (req, res) => {
+  router.get('/:id', (req, res) => {
 
     const queryString = `
     SELECT badges.* 
@@ -11,7 +11,7 @@ module.exports = (db) => {
     JOIN users ON user_badges.user_id = users.id
     WHERE users.id = $1
     `
-    const queryParams = [1]
+    const queryParams = [req.params.id]
 
     db.query(queryString, queryParams).then(data => {
       res.json(data.rows);
