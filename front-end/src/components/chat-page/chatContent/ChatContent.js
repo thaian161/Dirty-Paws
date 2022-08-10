@@ -32,8 +32,6 @@ export default function ChatContent(props) {
     return messages;
   }
 
-  console.log("These are our messages:   ", getMessages())
-
   const messages = getMessages()
 
   const oneMessage = messages.map(message => {

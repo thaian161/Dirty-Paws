@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react';
 function ChatListItem(props) {
   // idea: pass a prop 'selected' to indicate which chat item is selected and make the className depend on whether selected === props.userID
   const [user, setUser] = useState("")
-  console.log("props passed to chatlistitem: ",props )
   const getUserInfo = () => {
     axios.get(`/users/${props.id}`)
          .then((res) => setUser(res.data[0]))
