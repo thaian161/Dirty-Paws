@@ -33,7 +33,7 @@ module.exports = (db) => {
 
   router.get('/treats/:id', (req, res) => {
 
-    const queryString = `UPDATE users SET treats = treats + 1 WHERE users.id = $1`
+    const queryString = `UPDATE users SET treats = treats + 1 WHERE users.id = $1 RETURNING treats`
 
     const queryParams = [req.params.id]
 
