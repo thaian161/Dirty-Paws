@@ -39,7 +39,7 @@ module.exports = (db) => {
 
     db.query(queryString, queryParams)
       .then(data => {
-        res.json(["A treat has been given!", data])
+        res.json(data)
       })
   })
 

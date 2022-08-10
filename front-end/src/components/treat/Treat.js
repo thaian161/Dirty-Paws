@@ -28,9 +28,8 @@ export default function Treat() {
   }, randomInterval());
 
   const useHideButton = () => {
-    axios.get('users/treats/1'); // update treats in database
-    axios.get('/users/1').then((res) => { // update treats in state
-      setTreats(res.data[0].treats + 1);
+    axios.get('/users/treats/1').then((res) => { // update treats in database and state
+      setTreats(res.data.rows[0].treats);
       console.log('treats:  ', treats);
     });
 
