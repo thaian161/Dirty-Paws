@@ -15,8 +15,8 @@ const RainbowCat = () => {
     <div>
       <Lottie
         options={defaultOptions}
-        height={450}
-        width={450}
+        height={1000}
+        width={1000}
       />
     </div>
   );

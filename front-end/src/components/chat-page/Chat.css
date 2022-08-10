@@ -1,5 +1,5 @@
 div.complete-chat-container {
-  padding-top: 7.5rem;
+  padding-top: 7rem;
   background-color: rgb(249, 242, 242);
   background: url('./images/layer4.72.png'), url('./images/layer2.png'),
     url('./images/layer3.png'), url('./images/blueBBD9FF.png');
@@ -9,6 +9,7 @@ div.complete-chat-container {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 98vh;
 }
 
 div.complete-chat-wrapper {
@@ -75,4 +76,3 @@ div.complete-chat-wrapper {
 ::-webkit-scrollbar-thumb:hover {
   background: #607ea5;
 }
-

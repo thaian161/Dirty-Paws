@@ -1,10 +1,12 @@
-import React from 'react'
-import RainbowCat from '../../lotties/RainbowCat'
+import RainbowCat from '../../lotties/RainbowCat';
+import './Loading.css';
 
-export default function Loading () {
+export default function Loading() {
   return (
-    <>
-      <RainbowCat/>
-    </>
-  )
+    <div className="wrapper-loading">
+      <div className="animation-swopout">
+        <RainbowCat />
+      </div>
+    </div>
+  );
 }

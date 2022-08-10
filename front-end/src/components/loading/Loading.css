@@ -1,0 +1,36 @@
+div.animation-swopout {
+  margin-top: -2rem;
+  animation: weeeSwuppp 5s 1 ease forwards;
+  color: transparent;
+  background-color: transparent;
+}
+
+@keyframes weeeSwuppp {
+  0% {
+    position: absolute;
+    left: 100px;
+    top: -5px;
+    opacity: 0.8;
+  }
+  100% {
+    position: absolute;
+    left: 2500px;
+    top: -5px;
+    opacity: 0.8;
+  }
+}
+
+div.wrapper-loading {
+  padding-top: 7rem;
+  background: url('./images/layer4.72.png'), url('./images/layer2.png'),
+    url('./images/layer3.png'), url('./images/blueBBD9FF.png');
+
+  background-size: cover;
+  background-position: center center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 115vh;
+  width: 100vw;
+}

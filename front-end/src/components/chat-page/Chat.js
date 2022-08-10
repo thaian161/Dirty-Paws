@@ -9,7 +9,7 @@ function Chat() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 2300);
   }, []);
 
   return (
