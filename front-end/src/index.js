@@ -12,6 +12,7 @@ import ChatBubble from './components/chat-bubble/ChatBubble';
 import FrontProfile from './components/profile/FrontProfile';
 import BackProfile from './components/profile/BackProfile';
 import MatchProfile from './components/profile/MatchProfile';
+import Treat from './components/treat/Treat';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -30,10 +31,12 @@ root.render(
         <Route path="/front" element={<FrontProfile />} />
         <Route path="/back" element={<BackProfile />} />
         <Route path="/match" element={<MatchProfile />} />
-        
+        <Route path="testing-treat" element={<Treat />} />
+
       </Routes>
       {/* DO NOT REMOVE ChatBubble COMPONENT FROM HERE */}
       <ChatBubble />
+      <Treat />
     </BrowserRouter>
   </React.StrictMode>
 );
