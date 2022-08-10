@@ -2,11 +2,11 @@ import ChatListItem from './ChatListItem';
 
 function ChatList(props) {
 
-  console.log("chatlist props: ", props)
   const userIds = props.userIds;
+  // console.log("props passed to chatlist:   ", props)
 
   const chatListItemArray = userIds.map(id => {
-    return <ChatListItem id={id}/>
+    return <ChatListItem id={id} users={props.users} setSelected={props.setSelected}/>
   })
 
 
