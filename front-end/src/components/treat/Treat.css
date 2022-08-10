@@ -1,6 +1,29 @@
-.treat {
-  position: absolute;
-  top: 50px;
-  left: 50px;
-      
+button.treat {
+  background-color: red;
+  height: 5rem;
+  width: 5rem;
+  transition: all 0.3s cubic-bezier(0.88, 0.19, 0.37, 1.11);
+}
+
+button.treat:hover {
+  transform: scale(1.2);
+}
+
+img.treat-button {
+  height: 2rem;
+  width: 2rem;
+
+  animation: boucingAnnLOL 2s ease infinite forwards;
+}
+
+@keyframes boucingAnnLOL {
+  0% {
+    transform: translateY(-0.4rem);
+  }
+  50% {
+    transform: translateY(0.4rem);
+  }
+  100% {
+    transform: translateY(-0.4rem);
+  }
 }
