@@ -13,12 +13,13 @@ export default function Treat() {
   }
 
   const moveButton = () => {
+    console.log("inside moveButton");
     // collect all the divs
     let divs = document.getElementsByClassName('treat');
     // get window width and height
     let winWidth = window.innerWidth;
     let winHeight = window.innerHeight;
-
+    console.log(divs.length);
     for (let i = 0; i < divs.length; i++) {
 
       // shortcut! the current div in the list
@@ -30,9 +31,10 @@ export default function Treat() {
 
       // update top and left position
       console.log("updating the div position");
-      thisDiv.style.top = randomTop + "px";
-      thisDiv.style.left = randomLeft + "px";
-
+      // thisDiv.style.top = "800px";
+      // thisDiv.style.left = randomLeft + "px";
+      setTopState(randomTop);
+      setLeftState(randomLeft);
     }
 
   };
@@ -46,9 +48,12 @@ export default function Treat() {
 
   let treatCount;
 
-
+  console.log("setting the state for Treat:  ");
   const [hidden, setHidden] = useState(false);
   const [treats, setTreats] = useState(0);
+  const [topState, setTopState] = useState(200);
+  const [leftState, setLeftState] = useState(200);
+  console.log(leftState);
 
   const useHideButton = () => {
 
@@ -58,7 +63,6 @@ export default function Treat() {
     // should these two be chained? Actually, maybe we can grab the treat from the first axios.get by adjusting the route's query to end with RETURNING
     axios.get('/users/1').then((res) => {
       
-      console.log(res.data[0].treats)
       setTreats(res.data[0].treats + 1)
     });
 
@@ -76,7 +80,7 @@ export default function Treat() {
 
   return (
     <>
-      {!hidden && <button className="treat" onClick={useHideButton}>I'm a treat!</button>}
+      {!hidden && <button className='treat' style={{top:`${topState}px`, left:`${leftState}px`, position:'absolute'}} onClick={useHideButton}>I'm a treat!</button>}
     </>
   );
 }
