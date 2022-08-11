@@ -40,7 +40,7 @@ export default function BackProfile(props) {
         <div className="love-me-not">
           {oneBadge}
         </div>
-        <div className="empty-bottom-back">.</div>
+        <div className="empty-bottom-back"></div>
       </div>
     </div>
   );

@@ -44,7 +44,7 @@ export default function Treat() {
     return Math.random() * (max - min) + min;
   }
   const randomInterval = () => {
-    let num = Math.floor(Math.random() * 5000) + 1000;
+    let num = Math.floor(Math.random() * 8000) + 3000;
     return num;
   };
 
