@@ -15,20 +15,26 @@ export default function ChatContent(props) {
   };
 
   useEffect(() => {
+    console.log("in the useEffect!");
     getMyProfile();
   }, []);
 
   const sendMessage = () => {
+    // 1. update db with the new message:
     console.log("sending message: ", newMessage)
-    axios.post(`/messages/${props.selected}`, {newMessage})
-         .then((res) => console.log(res))
+    axios.post(`/messages/${props.selected}`, {newMessage}).then(() => {
+    // 2. clear the form:
+    setNewMessage("")
+    // 3. call the function that produced the messages in the first place
+    props.getStateFromDatabase();
+    })
   }
 
   // props.messages is available, with all the logged-in user's messages
   // props.selected is available, with the 'selected' userid
 
 
-  const getMessages = () => {
+  const getMessages = () => { // filter messages to selected conversation
     const messages = [];
     for (const message of props.messages) {
       if (message.sender_id === props.selected || message.receiver_id === props.selected) {
@@ -39,7 +45,7 @@ export default function ChatContent(props) {
     return messages;
   };
 
-  const messages = getMessages();
+  const messages = getMessages(); // turn this into state!!
 
   const oneMessage = messages.map(message => {
     return (
@@ -71,8 +77,8 @@ export default function ChatContent(props) {
       </div>
       <div className="content__footer">
         <div className="sendNewMessage">
-          <form onSubmit={event => {event.preventDefault()}}>
-            <input className="input-message" type="text" placeholder="Type a message here" onChange={event => setNewMessage(event.target.value)}/>
+          <form  className="input-message" onSubmit={event => event.preventDefault()}>
+            <input type="text" value={newMessage} placeholder="Type a message here" onInput={event => setNewMessage(event.target.value)}/>
           </form>
           <button className="btnSendMsg" id="sendMsgBtn">
             <button className="search-btn">

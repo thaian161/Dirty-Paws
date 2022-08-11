@@ -24,7 +24,8 @@ export default function ChatBody() {
     getMatchedUserIds();
   }, []);
 
-  useEffect(() => {
+
+  const getStateFromDatabase = () => {
     Promise.all([
       axios.get('/users'), 
       axios.get('/messages'), 
@@ -32,12 +33,16 @@ export default function ChatBody() {
     ]).then((all) => {
       setState(prev => ({...prev, users: all[0].data, messages: all[1].data, matches: all[2].data}))
     })
-  }, [])  
+  }
+
+  useEffect(() => {
+    getStateFromDatabase();
+  }, [])
 
   return (
     <div className="main__chatbody">
       <ChatList userIds={userIds} users={state.users} setSelected={setSelected}/>
-      <ChatContent userIds={userIds} messages={state.messages} selected={selected} users={state.users}/>
+      <ChatContent getStateFromDatabase={getStateFromDatabase} userIds={userIds} messages={state.messages} selected={selected} users={state.users}/>
     </div>
   )
 }
