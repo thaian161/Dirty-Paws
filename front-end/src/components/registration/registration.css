@@ -1,0 +1,98 @@
+section {
+  padding: 2.5rem 3%;
+}
+.home-land {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+
+  /* The image used */
+  /* background: url('./images/blue.png'); */
+  /* background: url('./images/blueBBD9FF.png'); */
+  background: url('./images/layer5.png'), url('./images/layer2.png'),
+    url('./images/layer3.png'), url('./images/blueD8E9FF.png');
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0%;
+}
+
+.home-land .homeContent {
+  width: 50%;
+
+  padding: 3.6rem;
+  margin-left: 3rem;
+
+  background-color: rgba(255, 255, 255, 0.027);
+  border-radius: 9rem;
+  margin-top: -1rem;
+}
+
+section#homee.home-land {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 6%;
+}
+
+h2.intro-large {
+  margin-top: -0.5rem;
+  font-family: Lora;
+
+  -webkit-text-stroke: 1px #406ca6;
+  text-shadow: #b5cae5 3px 3px;
+  color: #406ca6;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  text-align: left;
+
+  font-weight: 900;
+}
+h3.intro-small {
+  font-family: Lora;
+  font-style: italic;
+  color: #f07e74;
+  text-align: left;
+  margin-right: 28px;
+
+  font-size: 2.2rem;
+  line-height: 3rem;
+  font-weight: 600;
+}
+.landing-p {
+  /* font-family: Lora;
+  font-style: italic;
+  text-align: left;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  color: rgb(69, 69, 69);  */
+
+  font-family: Roboto Mono;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  color: #646464e7;
+  -webkit-text-stroke: 0.5px #646464e7;
+}
+
+input.sign-up {
+  background-color: transparent;
+  border: none;
+
+  border-bottom: dashed 5px #646464e7;
+  margin-bottom: 0.5rem;
+}
+
+button.signup-btn {
+  margin-top: 1rem;
+}
