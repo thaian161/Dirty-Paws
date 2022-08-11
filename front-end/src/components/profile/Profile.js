@@ -79,9 +79,9 @@ export default function Profile() {
     console.log('swiped left!');
     getNewUser();
   };
-
+ 
   const frontAndBack =
-    <Carousel activeIndex={index} onSelect={handleSelect} slide={false}>
+    <Carousel style={{height: '40rem', width:'27rem', backgroundColor: 'red'}} activeIndex={index} onSelect={handleSelect} slide={false}>
       <Carousel.Item>
         <FrontProfile {...data} swipeLeft={swipeLeft} swipeRight={swipeRight} />
       </Carousel.Item>

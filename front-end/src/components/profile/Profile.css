@@ -12,7 +12,7 @@ div.complete-profile-container {
 }
 
 div.complete-profile-wrapper {
-  min-height: 100vh;
+  min-height: 75vh;
   width: 100vw;
   display: flex;
   justify-content: center;
