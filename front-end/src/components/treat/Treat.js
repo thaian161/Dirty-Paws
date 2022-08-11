@@ -28,18 +28,10 @@ export default function Treat() {
     'https://cdn-icons-png.flaticon.com/512/720/720898.png?w=740&t=st=1660167068~exp=1660167668~hmac=3737c9f1987b258d2ae838449f702a5132eaef7f2e3e29506a8959ad966f401e',
     
     'https://cdn-icons-png.flaticon.com/512/5793/5793514.png']
-
-  const [hidden, setHidden] = useState(false);
-  const [treats, setTreats] = useState(0);
-  const [topState, setTopState] = useState(200);
-  const [leftState, setLeftState] = useState(200);
-  const [treatPicture, setTreatPicture] = useState("https://cdn-icons-png.flaticon.com/512/5793/5793514.png")
-  
   const getRandomTreatPicture = () => { // choose a random index and use it to change treatPicture
     const randomTreatIndex = Math.floor(Math.random() * arrTreatPics.length);
     setTreatPicture( arrTreatPics[randomTreatIndex]);
   };
-
   const getRandomNumber = (min, max) => { 
     return Math.random() * (max - min) + min;
   }
@@ -48,16 +40,22 @@ export default function Treat() {
     return num;
   };
 
+  const [hidden, setHidden] = useState(false);
+  const [treats, setTreats] = useState(0);
+  const [topState, setTopState] = useState(getRandomNumber(0.25 * window.innerHeight, 0.75 * window.innerHeight));
+  const [leftState, setLeftState] = useState(getRandomNumber(0.25 * window.innerWidth, 0.75 * window.innerWidth));
+  const [treatPicture, setTreatPicture] = useState(arrTreatPics[0]);
+
   const moveButton = () => {
-    let randomTop = getRandomNumber(300, window.innerHeight);
-    let randomLeft = getRandomNumber(300, window.innerWidth);
+    let randomTop = getRandomNumber(0.25 * window.innerHeight, 0.75 * window.innerHeight);
+    let randomLeft = getRandomNumber(0.25 * window.innerWidth, 0.75 * window.innerWidth);
     setTopState(randomTop);
     setLeftState(randomLeft);
     getRandomTreatPicture();
     }
 
   const useHideButton = () => {
-    axios.get('/users/treats/1').then((res) => { // update treats in database and state
+    axios.post('/users/treats').then((res) => { // update treats in database and state
       setTreats(res.data.rows[0].treats);
       console.log('treats:  ', treats);
     });
