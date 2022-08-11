@@ -10,7 +10,7 @@ function Chat() {
   useEffect(() => {
     setTimeout(function () {
       setFlyingCat(false);
-    }, 10000);
+    }, 300000);
   }, []);
 
   return (

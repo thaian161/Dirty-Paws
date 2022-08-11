@@ -78,6 +78,7 @@ div.complete-chat-wrapper {
 }
 
 .flyingCat {
+  margin-top: 40px;
   position: relative;
   width: 100px;
   height: 100px;
@@ -85,7 +86,7 @@ div.complete-chat-wrapper {
   background-size: cover;
   background-repeat: no-repeat;
   animation: slide 5s linear forwards;
-  animation: ass 5s 1 ease forwards;
+  animation: weeeSwuppp 6s 1 ease forwards;
 } 
 
 @keyframes weeeSwuppp {
@@ -97,25 +98,11 @@ div.complete-chat-wrapper {
   }
   100% {
     position: absolute;
-    left: 2200px;
+    left: 2000px;
     top: -5px;
-    opacity: 0;
+    opacity: 0.5;
     display: none;
   }
 }
 
 
- @keyframes ass {
-  0% {
-    position: relative;
-    left: 0;
-    top: -5px;
-    opacity: 1;
-  }
-  100% {
-    position: relative;
-    left: 100%;
-    top: -5px;
-    opacity: 0;
-  }
-} 

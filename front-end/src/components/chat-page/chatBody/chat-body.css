@@ -13,7 +13,7 @@
 }
 
 div.main__chatbody {
-  animation: chatFlow 6s 1 ease forwards;
+  animation: chatFlow 10s 1 ease forwards;
   color: transparent;
   background-color: transparent;
 }
@@ -21,13 +21,13 @@ div.main__chatbody {
 @keyframes chatFlow {
   0% {
     position: relative;
-    left: -3500px;
+    left: -2500px;
     
     opacity: 0;
   }
   50% {
     position: relative;
-    left: calc(100vw / 800);
+    left: calc(100vw / 1950);
     
     opacity: 1;
   }
