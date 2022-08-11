@@ -10,7 +10,7 @@ function Chat() {
   useEffect(() => {
     setTimeout(function () {
       setFlyingCat(false);
-    }, 2000);
+    }, 10000);
   }, []);
 
   return (
@@ -18,7 +18,7 @@ function Chat() {
       <div className="complete-chat-container">
         <div className="complete-chat-wrapper">
           {showFlyingCat ? (
-            <div className="slide-box">
+            <div className="flyingCat">
               <RainbowCat />
             </div>
           ) : (
