@@ -122,7 +122,7 @@
   border: 2px solid #fff;
 }
 .isOnline-active {
-  background-color: rgb(251, 142, 123);
+  background-color: #6adf7a;
 }
 .avatar-img {
   overflow: hidden;
@@ -138,6 +138,13 @@ div.chat-list-item {
   display: flex;
   flex-direction: row;
   height: 3.8rem;
+
+  cursor: pointer;
+}
+
+.chat-list-item:hover {
+  background-color: #fff1f099;
+  border-radius: 0.5rem;
 }
 
 span.activeTime {
@@ -149,6 +156,7 @@ p.info-chat-list-item {
   margin-bottom: -0.3rem;
 
   font-weight: 400;
+  color:black;
 }
 
 h2.chatlist__heading {
@@ -160,4 +168,3 @@ h2.chatlist__heading {
   font-size: 2rem;
   font-weight: 700;
 }
-

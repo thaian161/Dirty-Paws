@@ -6,15 +6,15 @@ import Loading from '../loading/Loading';
 function Chat() {
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2300);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 3800);
+  // }, []);
 
   return (
     <>
-      {isLoading === false ? (
+     
       <div className="complete-chat-container">
         <div className="complete-chat-wrapper">
           <div className="__main">
@@ -23,9 +23,9 @@ function Chat() {
         </div>
       </div>
 
-      ) : (
+      
         <Loading/>
-      )}
+      
     </>
   );
 }
