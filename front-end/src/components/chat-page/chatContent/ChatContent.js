@@ -5,49 +5,49 @@ import './chatContent.css';
 import ChatContentItem from './ChatContentItem';
 
 export default function ChatContent(props) {
-
   const [myUser, setMyUser] = useState({});
-  const [newMessage, setNewMessage] = useState("")
+  const [newMessage, setNewMessage] = useState('');
 
   const getMyProfile = () => {
-    axios.get('/users/1')
-      .then(res => setMyUser(res.data[0]));
+    axios.get('/users/1').then((res) => setMyUser(res.data[0]));
   };
 
   useEffect(() => {
-    console.log("in the useEffect!");
+    console.log('in the useEffect!');
     getMyProfile();
   }, []);
 
   const sendMessage = () => {
     // 1. update db with the new message:
-    console.log("sending message: ", newMessage)
-    axios.post(`/messages/${props.selected}`, {newMessage}).then(() => {
-    // 2. clear the form:
-    setNewMessage("")
-    // 3. call the function that produced the messages in the first place
-    props.getStateFromDatabase();
-    })
-  }
+    console.log('sending message: ', newMessage);
+    axios.post(`/messages/${props.selected}`, { newMessage }).then(() => {
+      // 2. clear the form:
+      setNewMessage('');
+      // 3. call the function that produced the messages in the first place
+      props.getStateFromDatabase();
+    });
+  };
 
   // props.messages is available, with all the logged-in user's messages
   // props.selected is available, with the 'selected' userid
 
-
-  const getMessages = () => { // filter messages to selected conversation
+  const getMessages = () => {
+    // filter messages to selected conversation
     const messages = [];
     for (const message of props.messages) {
-      if (message.sender_id === props.selected || message.receiver_id === props.selected) {
+      if (
+        message.sender_id === props.selected ||
+        message.receiver_id === props.selected
+      ) {
         messages.push(message);
       }
-
     }
     return messages;
   };
 
   const messages = getMessages(); // turn this into state!!
 
-  const oneMessage = messages.map(message => {
+  const oneMessage = messages.map((message) => {
     return (
       <div className="chat__items" key={message.id}>
         <ChatContentItem
@@ -60,8 +60,6 @@ export default function ChatContent(props) {
     );
   });
 
-
-
   return (
     <div className="main__chatcontent">
       <div className="content__header">
@@ -72,16 +70,23 @@ export default function ChatContent(props) {
           </div>
         </div>
       </div>
-      <div className="content__body">
-        {oneMessage}
-      </div>
+      <div className="content__body">{oneMessage}</div>
       <div className="content__footer">
         <div className="sendNewMessage">
-          <form  className="input-message" onSubmit={event => event.preventDefault()}>
-            <input type="text" value={newMessage} placeholder="Type a message here" onInput={event => setNewMessage(event.target.value)}/>
+          <form
+            className="input-message"
+            onSubmit={(event) => event.preventDefault()}
+          >
+            <input
+              className="input-message"
+              type="text"
+              value={newMessage}
+              placeholder="Type a message here"
+              onInput={(event) => setNewMessage(event.target.value)}
+            />
           </form>
           <button className="btnSendMsg" id="sendMsgBtn">
-            <button className="search-btn">
+            <button className="search-btn search">
               <img
                 className="mes-icon senddd"
                 src="https://cdn-icons-png.flaticon.com/512/6056/6056769.png"

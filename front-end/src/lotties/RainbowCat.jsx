@@ -13,11 +13,7 @@ const RainbowCat = () => {
 
   return (
     <div>
-      <Lottie
-        options={defaultOptions}
-        height={1000}
-        width={1000}
-      />
+      <Lottie options={defaultOptions} height={700} width={700} style={{marginTop: '2rem'}}/>
     </div>
   );
 };

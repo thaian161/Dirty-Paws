@@ -15,8 +15,7 @@ import MatchProfile from './components/profile/MatchProfile';
 
 import Treat from './components/treat/Treat';
 
-import RainbowCat from './lotties/RainbowCat';
-import Loading from './components/loading/Loading';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -32,7 +31,7 @@ root.render(
         <Route path="/messages" element={<Chat />} />
 
         {/* testing purposed */}
-        <Route path="/test" element={<Loading />} />
+       
         <Route path="/front" element={<FrontProfile />} />
         <Route path="/back" element={<BackProfile />} />
         <Route path="/match" element={<MatchProfile />} />

@@ -50,7 +50,7 @@ export default function MatchProfile(props) {
             <Matchhh />
           </button>
         </div>
-        <div className="empty-bottom-match">.</div>
+       
       </div>
     </div>
   );

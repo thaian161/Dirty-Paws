@@ -81,7 +81,7 @@ export default function Profile() {
   };
  
   const frontAndBack =
-    <Carousel style={{height: '40rem', width:'27rem', backgroundColor: 'red'}} activeIndex={index} onSelect={handleSelect} slide={false}>
+    <Carousel style={{height: '40rem', width:'27rem'}} activeIndex={index} onSelect={handleSelect} slide={false}>
       <Carousel.Item>
         <FrontProfile {...data} swipeLeft={swipeLeft} swipeRight={swipeRight} />
       </Carousel.Item>

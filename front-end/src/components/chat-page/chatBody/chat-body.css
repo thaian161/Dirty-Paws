@@ -22,13 +22,13 @@ div.main__chatbody {
   0% {
     position: relative;
     left: -3500px;
-    top: -5px;
-    opacity: 1;
+    
+    opacity: 0;
   }
-  100% {
+  50% {
     position: relative;
-    left:  calc(100vw /800);
-    top: -5px;
+    left: calc(100vw / 800);
+    
     opacity: 1;
   }
 }

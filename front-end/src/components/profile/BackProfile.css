@@ -17,15 +17,18 @@ img.back-profile-pic {
 
 .container {
   text-align: center;
-  background-color: rgba(255, 192, 203, 0.132);
+
 
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
+ 
 }
 
 .back-wrapper {
   max-width: 20rem;
+  min-height: 37rem;
+  max-height: 38rem;
   background-color: #fff;
   border-radius: 15px;
   overflow: hidden;
