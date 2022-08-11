@@ -41,15 +41,21 @@ img.love-btn-match {
 }
 
 .match-wrapper {
-  max-width: 20rem;
+  max-width: 23rem;
 
   border-radius: 15px;
   overflow: hidden;
   border-radius: 3rem;
   border: solid 5px #204a80;
 
-  background-color: #fbebe9;
+  /* background-color: #fcf1ef; */
   height: 82vh;
+
+  background-color: #f8fbff;
+opacity: 1;
+background-image:  radial-gradient(#9ac6ff 1.3px, transparent 1.3px), radial-gradient(#9ac6ff 1.3px, #f8fbff 1.3px);
+background-size: 52px 52px;
+background-position: 0 0,26px 26px;
 }
 
 .match-wrapper:hover {
@@ -60,7 +66,7 @@ img.love-btn-match {
 }
 
 h2.user-name1 {
-  margin-top: 1.8rem;
+  margin-top: 25px;
   font-family: roboto mono;
   font-weight: 900;
   -webkit-text-stroke: 1px #204a80;
@@ -134,12 +140,12 @@ div.empty-bottom-match {
 }
 
 div.profile-match {
-  background-color: #fff4f3;
-  opacity: 1;
+  /* background-color: #fff4f3; */
 
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: 2rem;
 }
 
 div.city {
