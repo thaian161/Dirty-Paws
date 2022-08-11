@@ -9,11 +9,12 @@ export default function ChatContent(props) {
   const [newMessage, setNewMessage] = useState('');
 
   const getMyProfile = () => {
-    axios.get('/users/1').then((res) => setMyUser(res.data[0]));
+    console.log(props.messages)
+    axios.get(`/users/1`).then((res) => setMyUser(res.data[0]));
   };
 
   useEffect(() => {
-    console.log('in the useEffect!');
+    console.log('in the useEffect! get my profile');
     getMyProfile();
   }, []);
 
@@ -24,10 +25,14 @@ export default function ChatContent(props) {
       // 2. clear the form:
       setNewMessage('');
       // 3. call the function that produced the messages in the first place
-      props.getStateFromDatabase();
+      props.getMessagesFromDatabase();
+      
     });
   };
 
+
+
+  
   // props.messages is available, with all the logged-in user's messages
   // props.selected is available, with the 'selected' userid
 

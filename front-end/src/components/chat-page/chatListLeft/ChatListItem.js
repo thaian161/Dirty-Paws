@@ -15,8 +15,10 @@ function ChatListItem(props) {
     getUserInfo()
   }, [])
 
-  const activeTime = (max) => {
-    return (Math.floor(Math.random() * max) + " mins ago");
+  const activeTime = () => {
+    // temporarily, we steal the user.id to assign each user an "active X minutes ago"
+    //return (Math.floor(Math.random() * 20) + " mins ago");
+    return user.id + " mins ago"
   }
   // console.log("chat list item : ", props.users)
 
@@ -26,7 +28,7 @@ function ChatListItem(props) {
       <Avatar picture={user.profile_picture}/>
       <div className="user-chat-content">
         <p className="info-chat-list-item">{user.name || "sexy boii"}</p>
-        <span className="activeTime">{activeTime(60)}, user ID: {user.id}</span>
+        <span className="activeTime">{activeTime()}, user ID: {user.id}</span>
       </div>
     </div>
   );

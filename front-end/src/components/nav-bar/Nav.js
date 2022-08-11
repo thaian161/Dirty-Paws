@@ -8,7 +8,7 @@ export default function Nav() {
   const [user, setUser] = useState(null);
 
   const loginUser = () => {
-    axios.get('/login/1').then((res) => {
+    axios.get('/login/2').then((res) => {
       console.log(res);
       setUser(user);
     });
