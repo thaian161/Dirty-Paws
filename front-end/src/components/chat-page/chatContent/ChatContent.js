@@ -80,7 +80,7 @@ export default function ChatContent(props) {
         <div className="sendNewMessage">
           <form
             className="input-message"
-            onSubmit={(event) => event.preventDefault()}
+            onSubmit={(event) => { event.preventDefault(); sendMessage(); }}
           >
             <input
               className="input-message"

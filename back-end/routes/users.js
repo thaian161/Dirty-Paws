@@ -31,6 +31,16 @@ module.exports = (db) => {
         })
     })
 
+    router.post('/treats', (req, res) => { // get user by req.cookies and add a treat
+      const queryString = `UPDATE users SET treats = treats + 1 WHERE users.id = $1 RETURNING treats`
+      const id = req.cookies.id || 1;
+      const queryParams = [id]
+  
+      db.query(queryString, queryParams)
+        .then(data => {
+          res.json(data)
+        })
+    });
 
   router.get('/:id', (req, res) => {
     
