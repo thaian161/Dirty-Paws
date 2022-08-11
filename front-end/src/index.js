@@ -14,9 +14,7 @@ import BackProfile from './components/profile/BackProfile';
 import MatchProfile from './components/profile/MatchProfile';
 
 import Treat from './components/treat/Treat';
-
-
-
+import Registration from './components/registration/Registration';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -31,19 +29,20 @@ root.render(
         <Route path="/messages" element={<Chat />} />
 
         {/* testing purposed */}
-       
+
         <Route path="/front" element={<FrontProfile />} />
         <Route path="/back" element={<BackProfile />} />
         <Route path="/match" element={<MatchProfile />} />
 
         <Route path="testing-treat" element={<Treat />} />
 
+        <Route path="register" element={<Registration />} />
 
 
       </Routes>
       {/* DO NOT REMOVE ChatBubble COMPONENT FROM HERE */}
       <ChatBubble />
-      <Treat />
+      {/* <Treat /> */}
     </BrowserRouter>
   </React.StrictMode>
 );
