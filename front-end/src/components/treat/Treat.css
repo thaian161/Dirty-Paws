@@ -10,8 +10,8 @@ button.treat:hover {
 }
 
 img.treat-button {
-  height: 8rem;
-  width: 8rem;
+  height: 5.5rem;
+  width: 5.5rem;
   rotate: 10deg;
 
   animation: wiggleeeAye 1.5s linear infinite;

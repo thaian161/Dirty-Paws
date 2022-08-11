@@ -11,3 +11,24 @@
 
   border: dashed 6px #406ca6;
 }
+
+div.main__chatbody {
+  animation: chatFlow 6s 1 ease forwards;
+  color: transparent;
+  background-color: transparent;
+}
+
+@keyframes chatFlow {
+  0% {
+    position: relative;
+    left: -3500px;
+    top: -5px;
+    opacity: 1;
+  }
+  100% {
+    position: relative;
+    left:  calc(100vw /800);
+    top: -5px;
+    opacity: 1;
+  }
+}

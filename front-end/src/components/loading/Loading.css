@@ -1,6 +1,6 @@
 div.animation-swopout {
   margin-top: -2rem;
-  animation: weeeSwuppp 2.5s 1 ease-in forwards;
+  animation: weeeSwuppp 4s 1 ease-in forwards;
   color: transparent;
   background-color: transparent;
 }
@@ -8,7 +8,7 @@ div.animation-swopout {
 @keyframes weeeSwuppp {
   0% {
     position: absolute;
-    left: 10px;
+    left: -1000px;
     top: -5px;
     opacity: 0.8;
   }
@@ -33,4 +33,6 @@ div.wrapper-loading {
 
   min-height: 115vh;
   width: 100vw;
+
+  z-index: 500;
 }
