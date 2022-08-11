@@ -21,6 +21,7 @@
   margin: 0;
   font-weight: 600;
   color: black;
+  font-size: 1.5rem;
 }
 .content__header {
   display: flex;
@@ -96,10 +97,8 @@
 }
 
 .sendNewMessage {
-  background-color: #fff;
   display: flex;
-  justify-content: space-between;
-  border-radius: 0.5rem;
+  justify-content: space-cbetween;
 }
 
 .sendNewMessage button {
@@ -119,10 +118,11 @@
 }
 
 .sendNewMessage button:hover {
-  transform: scale(1.2);
+  transform: scale(1.119);
 }
 
-.sendNewMessage button i {
+.sendNewMessage button img {
+  margin-top:-0.11rem;
   display: block;
 }
 
@@ -135,8 +135,7 @@
 }
 
 #sendMsgBtn {
-  height: 3rem;
-  width: 3rem;
+  margin: auto;
 }
 
 img.mes-icon {
@@ -145,8 +144,8 @@ img.mes-icon {
 }
 
 img.senddd {
-  height: 1.8rem;
-  width: 1.8rem;
+  height: 1.9rem;
+  width: 1.9rem;
 }
 
 input.input-message {
@@ -154,7 +153,19 @@ input.input-message {
   border-radius: 0.3rem;
   border: 1px dashed #24456f;
 
-  border-radius: 10px 10px 0 10px;
+  border-radius: 0.5rem;
+
+  width: 39.5rem;
+  height: 2.3rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+Div.endNewMessage {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
 }
 
 /* ----CHAT ITEM STYLING FOR LEFT AND RIGHT---- */

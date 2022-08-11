@@ -1,31 +1,35 @@
 import { useEffect, useState } from 'react';
 import './Chat.css';
 import ChatBody from './chatBody/ChatBody';
-import Loading from '../loading/Loading';
+
+import RainbowCat from '../../lotties/RainbowCat';
 
 function Chat() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [showFlyingCat, setFlyingCat] = useState(true);
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setIsLoading(false);
-  //   }, 3800);
-  // }, []);
+  useEffect(() => {
+    setTimeout(function () {
+      setFlyingCat(false);
+    }, 2000);
+  }, []);
 
   return (
     <>
-     
       <div className="complete-chat-container">
         <div className="complete-chat-wrapper">
+          {showFlyingCat ? (
+            <div className="slide-box">
+              <RainbowCat />
+            </div>
+          ) : (
+            <></>
+          )}
+
           <div className="__main">
             <ChatBody />
           </div>
         </div>
       </div>
-
-      
-        <Loading/>
-      
     </>
   );
 }
