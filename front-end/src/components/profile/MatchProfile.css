@@ -48,7 +48,8 @@ img.love-btn-match {
   border-radius: 3rem;
   border: solid 5px #204a80;
 
-  background-color: #fff4f3;
+  background-color: #fbebe9;
+  height: 82vh;
 }
 
 .match-wrapper:hover {
@@ -59,7 +60,7 @@ img.love-btn-match {
 }
 
 h2.user-name1 {
-  margin-top: 0.5rem;
+  margin-top: 1.8rem;
   font-family: roboto mono;
   font-weight: 900;
   -webkit-text-stroke: 1px #204a80;
@@ -82,6 +83,7 @@ h3.user-name {
 }
 
 div.profile-footer-match {
+  margin-top: 2rem;
   padding: 1.5rem;
   display: flex;
   justify-content: center;
@@ -115,7 +117,7 @@ div.empty-bottom {
 .love-me button {
   background-color: transparent;
   border: none;
-  margin-bottom: -3rem;
+  margin-bottom: -10rem;
 }
 
 img.sad-btn {
