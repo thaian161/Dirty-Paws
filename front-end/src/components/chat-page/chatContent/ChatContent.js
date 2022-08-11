@@ -10,7 +10,7 @@ export default function ChatContent(props) {
 
   const getMyProfile = () => {
     console.log(props.messages)
-    axios.get(`/users/1`).then((res) => setMyUser(res.data[0]));
+    axios.get(`/users/myuser`).then((res) => setMyUser(res.data[0]));
   };
 
   useEffect(() => {

@@ -19,6 +19,19 @@ module.exports = (db) => {
       })
     })
 
+    router.get('/myuser', (req, res) => {
+    
+      const queryString = `SELECT * FROM users WHERE users.id = $1`
+  
+      const queryParams = [req.cookies.user_id]
+  
+      db.query(queryString, queryParams)
+        .then(data => {
+          res.json(data.rows)
+        })
+    })
+
+
   router.get('/:id', (req, res) => {
     
     const queryString = `SELECT * FROM users WHERE users.id = $1`
