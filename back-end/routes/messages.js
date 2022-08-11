@@ -14,10 +14,10 @@ module.exports = (db) => {
     })
   })
 
-  router.post('/', (req, res) => {
+  router.post('/:id', (req, res) => {
 
     const queryString = `INSERT INTO messages (sender_id, receiver_id, content) VALUES ($1, $2, $3)`
-    const queryParams = [1, 2, "They sure are!"]
+    const queryParams = [req.cookies.user_id, req.params.id, req.body.newMessage]
 
     db.query(queryString, queryParams).then(data => {
       res.json(data)
