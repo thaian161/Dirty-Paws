@@ -47,14 +47,17 @@ img.love-btn-match {
   border-radius: 3rem;
   border: solid 5px #204a80;
 
-  /* background-color: #fcf1ef; */
   height: 82vh;
 
-  background-color: #f8fbff;
-opacity: 1;
-background-image:  radial-gradient(#9ac6ff 1.3px, transparent 1.3px), radial-gradient(#9ac6ff 1.3px, #f8fbff 1.3px);
-background-size: 52px 52px;
-background-position: 0 0,26px 26px;
+  background-color: #f4f9ff;
+  opacity: 1;
+  background-image: radial-gradient(
+      #9ac6ff 1.7000000000000002px,
+      transparent 1.7000000000000002px
+    ),
+    radial-gradient(#9ac6ff 1.7000000000000002px, #f4f9ff 1.7000000000000002px);
+  background-size: 68px 68px;
+  background-position: 0 0, 34px 34px;
 }
 
 .match-wrapper:hover {
