@@ -6,16 +6,23 @@ import ChatContentItem from './ChatContentItem';
 
 export default function ChatContent(props) {
 
-  const [myUser, setMyUser] = useState({})
+  const [myUser, setMyUser] = useState({});
+  const [newMessage, setNewMessage] = useState("")
 
   const getMyProfile = () => {
     axios.get('/users/1')
-         .then(res => setMyUser(res.data[0]))
-  }
+      .then(res => setMyUser(res.data[0]));
+  };
 
   useEffect(() => {
-    getMyProfile()
-  }, [])
+    getMyProfile();
+  }, []);
+
+  const sendMessage = () => {
+    console.log("sending message: ", newMessage)
+    axios.post(`/messages/${props.selected}`, {newMessage})
+         .then((res) => console.log(res))
+  }
 
   // props.messages is available, with all the logged-in user's messages
   // props.selected is available, with the 'selected' userid
@@ -30,31 +37,31 @@ export default function ChatContent(props) {
 
     }
     return messages;
-  }
+  };
 
-  const messages = getMessages()
+  const messages = getMessages();
 
   const oneMessage = messages.map(message => {
     return (
       <div className="chat__items" key={message.id}>
         <ChatContentItem
-        sender={message.sender_id}
-        receiver={message.receiver_id}
-        content={message.content}
-        users={props.users}
+          sender={message.sender_id}
+          receiver={message.receiver_id}
+          content={message.content}
+          users={props.users}
         />
       </div>
-    )
-  })
- 
+    );
+  });
 
-  
+
+
   return (
     <div className="main__chatcontent">
       <div className="content__header">
         <div className="blocks">
           <div className="current-chatting-user">
-            <Avatar picture={myUser.profile_picture}/>
+            <Avatar picture={myUser.profile_picture} />
             <p> {myUser.name}</p>
           </div>
         </div>
@@ -64,13 +71,16 @@ export default function ChatContent(props) {
       </div>
       <div className="content__footer">
         <div className="sendNewMessage">
-          <input className="input-message" type="text" placeholder="Type a message here" />
+          <form onSubmit={event => {event.preventDefault()}}>
+            <input className="input-message" type="text" placeholder="Type a message here" onChange={event => setNewMessage(event.target.value)}/>
+          </form>
           <button className="btnSendMsg" id="sendMsgBtn">
             <button className="search-btn">
               <img
                 className="mes-icon senddd"
                 src="https://cdn-icons-png.flaticon.com/512/6056/6056769.png"
                 alt="send message"
+                onClick={sendMessage}
               />
             </button>
           </button>

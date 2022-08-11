@@ -12,7 +12,6 @@ export default function ChatBody() {
   })
   const [userIds, setUserIds] = useState([]);
   const [selected, setSelected] = useState(null)
-  console.log(userIds)
 
 
   const getMatchedUserIds = () => {
