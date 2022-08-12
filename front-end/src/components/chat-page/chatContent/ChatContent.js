@@ -21,7 +21,7 @@ export default function ChatContent(props) {
   const sendMessage = () => {
     // 1. update db with the new message:
     console.log('sending message: ', newMessage);
-    axios.post(`/messages/${props.selected}`, { newMessage }).then(() => {
+    axios.post(`/messages/${props.selected || 1}`, { newMessage }).then(() => {
       // 2. clear the form:
       setNewMessage('');
       // 3. call the function that produced the messages in the first place
