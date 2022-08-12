@@ -60,7 +60,7 @@ export default function ChatContent(props) {
           sender={message.sender_id}
           receiver={message.receiver_id}
           content={message.content}
-          users={props.users}
+          myUser={myUser}
         />
       </div>
     );
