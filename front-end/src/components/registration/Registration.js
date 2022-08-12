@@ -10,62 +10,100 @@ export default function Registration() {
     document.title = 'Update My Profile';
   }, []);
 
-  const defaultUser = {
-    id: 1,
-    name: 'Sleepy Head',
-    age: 18,
-    address: 'Pupland',
-    treats: 7,
-    profile_picture:
-      'https://img.freepik.com/premium-vector/cute-welsh-corgi-dog-waving-paw-cartoon_42750-623.jpg',
-    bio: 'I love going for a walk with my frends and chasing cats at the park. woof wooffff',
-    badges_id: 'https://cdn-icons-png.flaticon.com/512/5229/5229380.png',
-  };
+  const [name, setName] = useState()
+  const [age, setAge] = useState()
+  const [city, setCity] = useState()
+  const [bio, setBio] = useState()
+  const [avatar, setAvatar] = useState()
 
-  const [user, setUser] = useState(defaultUser);
+  const handleChangeName = (event) => {
+    
+    setName(event.target.value)
+  }
+
+  const handleChangeAge = (event) => {
+
+    setAge(event.target.value)
+  }
+
+  const handleChangeCity = (event) => {
+
+    setCity(event.target.value)
+  }
+
+  const handleChangeBio = (event) => {
+
+
+    setBio(event.target.value)
+  }
+
+  const handleChangeAvatar= (event) => {
+
+    setAvatar(event.target.value)
+  }
+
+  if (!name) {
+    setName('Sleepy Head')
+  }
+
+  if (!age) {
+    setAge(18)
+  }
+
+  if (!city) {
+    setCity("Pupland")
+  }
+
+  if (!bio) {
+    setBio("I love going for a walk with my frends and chasing cats at the park. woof wooffff")
+  }
+
+  if (!avatar) {
+    setAvatar('https://img.freepik.com/premium-vector/cute-welsh-corgi-dog-waving-paw-cartoon_42750-623.jpg')
+  }
 
   return (
     <section className="register-section">
       <div className="register-wrapper">
         <div>
-          <FrontProfile {...user} />
+          <FrontProfile name={name} age={age} address={city} bio={bio} profile_picture={avatar} treats={0} id={3}/>
         </div>
 
         <div>
-          <BackProfile {...user} />
+          <BackProfile bio={bio} profile_picture={avatar} id={9}/>
         </div>
         <div className="register-form">
           <h2 className="intro-large sign-up"> Update Your Profile </h2>
-          <form action="/" method="POST">
+          <form action="/" method="POST" onSubmit={(event) => {event.preventDefault(); }}>
             <div>
               {/* <!-- NAME --> */}
               <div>
                 <label className="landing-p">Name</label>
-                <input class="form sign-up" required />
+                <input class="form sign-up" required onChange={handleChangeName}/>
               </div>
 
               {/* <!-- AGE --> */}
               <div class="form-group">
                 <label className="landing-p">Age</label>
-                <input class="form sign-up" required />
+                <input class="form sign-up" required onChange={handleChangeAge}/>
               </div>
 
               {/* <!-- CITY --> */}
               <div class="form-group">
                 <label className="landing-p">City</label>
-                <input class="form sign-up" required />
+                <input class="form sign-up"required onChange={handleChangeCity}/>
               </div>
 
               {/* <!-- BIO --> */}
               <div class="form-group">
                 <label className="landing-p">Bio</label>
-                <input class="form sign-up" required />
+                <input class="form sign-up" required onChange={handleChangeBio}/>
               </div>
 
               {/* <!-- AVATAR --> */}
               <div class="form-group">
                 <label className="landing-p">Avatar</label>
-                <input class="form sign-up" required />
+                <input class="form sign-up" required onChange={handleChangeAvatar}/>
               </div>
             </div>
 
