@@ -10,6 +10,9 @@ div.complete-chat-container {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 98vh;
+
+  /* TO HIDE THE FREAKING CAT, set parent div to overflow hidden */
+  overflow: hidden;
 }
 
 div.complete-chat-wrapper {
@@ -77,7 +80,7 @@ div.complete-chat-wrapper {
   background: #607ea5;
 }
 
-.flyingCat {
+div.flyingCat {
   margin-top: 40px;
   position: relative;
   width: 100px;
@@ -87,7 +90,7 @@ div.complete-chat-wrapper {
   background-repeat: no-repeat;
 
   animation: weeeSwuppp 6s 1 ease forwards;
-} 
+}
 
 @keyframes weeeSwuppp {
   0% {
@@ -104,5 +107,3 @@ div.complete-chat-wrapper {
     display: none;
   }
 }
-
-

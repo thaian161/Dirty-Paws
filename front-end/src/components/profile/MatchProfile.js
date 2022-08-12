@@ -5,54 +5,71 @@ import { Link } from 'react-router-dom';
 
 export default function MatchProfile(props) {
   return (
-    <div className="container">
-      <div className="match-wrapper">
-        <div className="profile-match">
-          <img
-            className="match-profile-pic1"
-            src={props.myPicture}
-            alt="front profile card"
-          />
+    <>
+      <div className="pyro">
+        <div className="before"></div>
+        <div className="after"></div>
+      </div>
 
-          <img className="love-btn-match" src={yes} alt="yes love me" />
+      <div className="container">
+        <div className="match-wrapper">
+          <div className="profile-match">
+            <img
+              className="match-profile-pic1"
+              src={props.myPicture}
+              alt="front profile card"
+            />
 
-          <img
-            className="match-profile-pic2"
-            src={props.profile_picture}
-            alt="front profile card"
-          />
-        </div>
+            <img className="love-btn-match" src={yes} alt="yes love me" />
 
-        <div className="content">
-          <h2 className="user-name1"> Yassss! </h2>
-          <h3 className="user-name"> </h3>
-        </div>
-        <div className="profile-footer-match">
-          <div>
-            <Link to="/messages" className="im-from-match-profile">
-              <button className="profile-title button-chat">
-                Send A Message
-              </button>
-            </Link>
+            <img
+              className="match-profile-pic2"
+              src={props.profile_picture}
+              alt="front profile card"
+            />
+          </div>
 
-            <br />
-            <Link
-              className="keep-search"
-              to="/profile"
-              onClick={props.getNewUser}
-            >
-              KEEP SEARCHING
-            </Link>
+          <div className="content">
+            <h2 className="user-name1"> Yassss! </h2>
+            <h3 className="user-name"> </h3>
+          </div>
+          <div className="profile-footer-match">
+            <div>
+              <Link to="/messages" className="im-from-match-profile">
+                <button className="profile-title button-chat">
+                  Send A Message
+                </button>
+              </Link>
+
+              <br />
+              <Link
+                className="keep-search"
+                to="/profile"
+                onClick={props.getNewUser}
+              >
+                KEEP SEARCHING
+              </Link>
+            </div>
+
+            <div className="pyro">
+              <div className="before"></div>
+              <div className="after"></div>
+            </div>
+          </div>
+
+          <div className="love-me">
+            <button>
+              <Matchhh />
+            </button>
+          </div>
+
+          <div className="pyro">
+            <div className="before"></div>
+            <div className="after"></div>
           </div>
         </div>
-        <div className="love-me">
-          <button>
-            <Matchhh />
-          </button>
-        </div>
-       
       </div>
-    </div>
+    </>
   );
 }
 

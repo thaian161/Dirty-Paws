@@ -38,7 +38,10 @@ h2.intro-large {
 }
 h2.sign-up {
   margin-left: 1rem;
+  font-family: Roboto;
+  font-weight: 600;
 }
+
 
 .landing-p {
   font-family: Roboto Mono;
