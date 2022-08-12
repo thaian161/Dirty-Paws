@@ -2,8 +2,8 @@ const router = require('express').Router();
 
 module.exports = (db) => {
   
-  router.get('/', (req, res) => { // get current user's matches
-    const queryParams = [req.cookies.user_id];
+  router.get('/', (req, res) => { // get current user's matches (default to user 1)
+    const queryParams = [req.cookies.user_id || 1];
     const queryString = `
       SELECT * FROM matches 
       WHERE (userOne_id = $1 OR userTwo_id = $1)
@@ -15,8 +15,8 @@ module.exports = (db) => {
     })
   });
   
-  router.get('/ids', (req, res) => { // get ids of current user's matches
-    const queryParams = [req.cookies.user_id];
+  router.get('/ids', (req, res) => { // get ids of current user's matches (default to user 1)
+    const queryParams = [req.cookies.user_id || 1];
     const queryString = `
       SELECT userOne_id, userTwo_id FROM matches 
       WHERE (userOne_id = $1 OR userTwo_id = $1)
@@ -39,7 +39,7 @@ module.exports = (db) => {
     const userOne = req.cookies.user_id;
     const userTwo = req.params.id;
     // find match, if it exists:
-    const queryParams = [userOne, userTwo];
+    const queryParams = [userOne || 1, userTwo || 2];
     const queryString = `
       SELECT * FROM matches 
       WHERE ( userOne_id = $1 AND userTwo_id = $2 ) 
@@ -56,7 +56,7 @@ module.exports = (db) => {
         })
       }
       if (data.rows.length == 0) { // create a match if none was found:
-        const queryParams = [userOne, userTwo];
+        const queryParams = [userOne || 1, userTwo || 2];
         const queryString = `
           INSERT INTO matches (userOne_id, userTwo_id, userOne_likes_userTwo, userTwo_likes_userOne) VALUES ($1, $2, true, false) RETURNING *`;
         db.query(queryString,queryParams).then(data => {
