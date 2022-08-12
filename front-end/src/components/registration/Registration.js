@@ -5,7 +5,7 @@ import BackProfile from '../../components/profile/BackProfile';
 import { useState, useEffect } from 'react';
 
 export default function Registration() {
-
+  //update page title when show case Registration component
   useEffect(() => {
     document.title = 'Update My Profile';
   }, []);

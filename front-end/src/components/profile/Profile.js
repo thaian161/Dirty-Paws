@@ -18,6 +18,7 @@ const fakeData = {
 };
 
 export default function Profile() {
+  //update page title when show case Profile component
   useEffect(() => {
     document.title = 'Find Your Perfect Paws';
   }, []);
