@@ -26,9 +26,11 @@ img.back-profile-pic {
 }
 
 .back-wrapper {
-  max-width: 20rem;
-  min-height: 37rem;
+  max-width: 19rem;
+  min-height: 35rem;
   max-height: 38rem;
+  min-width: 18rem;
+
   background-color: #fff;
   border-radius: 15px;
   overflow: hidden;

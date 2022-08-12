@@ -5,58 +5,56 @@ import BackProfile from '../../components/profile/BackProfile';
 export default function Registration() {
   return (
     <section className="register-section">
-      <div className="register-form">
-        <h2 className="intro-large"> Create Your Profile </h2>
-        <form action="/" method="POST">
-          <div>
-            <h3 className="intro-small">
-              To start pawsing, fill out the form below:
-            </h3>
-          </div>
-          <div>
-            {/* <!-- NAME --> */}
+      <div className="register-wrapper">
+        <div>
+          <FrontProfile />
+        </div>
+
+        <div>
+          <BackProfile />
+        </div>
+        <div className="register-form">
+          <h2 className="intro-large"> Create Your Profile </h2>
+          <form action="/" method="POST">
             <div>
-              <label className="landing-p">Name</label>
-              <input class="form-control sign-up" required />
+              {/* <!-- NAME --> */}
+              <div>
+                <label className="landing-p">Name</label>
+                <input class="form-control sign-up" required />
+              </div>
+
+              {/* <!-- AGE --> */}
+              <div class="form-group">
+                <label className="landing-p">Age</label>
+                <input class="form-control sign-up" required />
+              </div>
+
+              {/* <!-- CITY --> */}
+              <div class="form-group">
+                <label className="landing-p">City</label>
+                <input class="form-control sign-up" required />
+              </div>
+
+              {/* <!-- BIO --> */}
+              <div class="form-group">
+                <label className="landing-p">Bio</label>
+                <input class="form-control sign-up" required />
+              </div>
+
+              {/* <!-- AVATAR --> */}
+              <div class="form-group">
+                <label className="landing-p">Avatar</label>
+                <input class="form-control sign-up" required />
+              </div>
             </div>
 
-            {/* <!-- AGE --> */}
-            <div class="form-group">
-              <label className="landing-p">Age</label>
-              <input class="form-control sign-up" required />
-            </div>
+            {/* <!-- SUBMIT BUTTON --> */}
 
-            {/* <!-- CITY --> */}
-            <div class="form-group">
-              <label className="landing-p">City</label>
-              <input class="form-control sign-up" required />
-            </div>
-
-            {/* <!-- BIO --> */}
-            <div class="form-group">
-              <label className="landing-p">Bio</label>
-              <input class="form-control sign-up" required />
-            </div>
-
-            {/* <!-- AVATAR --> */}
-            <div class="form-group">
-              <label className="landing-p">Avatar</label>
-              <input class="form-control sign-up" required />
-            </div>
-          </div>
-
-          {/* <!-- SUBMIT BUTTON --> */}
-
-          <button type="submit" className="land-btn signup-btn ">
-            Let's Paws
-          </button>
-        </form>
-      </div>
-      <div>
-        <FrontProfile />
-      </div>
-      <div>
-        <BackProfile />
+            <button type="submit" className="land-btn signup-btn ">
+              Let's Paws
+            </button>
+          </form>
+        </div>
       </div>
     </section>
   );

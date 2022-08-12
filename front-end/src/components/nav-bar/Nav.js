@@ -1,5 +1,6 @@
 import './Nav.css';
 import clearLogo from './images/clearLogo.png';
+import yes from './images/yes.png';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
@@ -28,9 +29,6 @@ export default function Nav() {
         <a className="nav-btn" href="#sign-up">Sign Up</a>
         <a className="nav-btn" href="#sign-up">Search</a> */}
 
-        <Link className="nav-btn" to="/">
-          About
-        </Link>
         <Link className="nav-btn" to="/profile">
           My Profile
         </Link>
@@ -43,8 +41,8 @@ export default function Nav() {
         <Link className="nav-btn" to="/" onClick={loginUser}>
           Login
         </Link>
-        <Link className="nav-btn" to="/#">
-          DarkMode
+        <Link to="/">
+          <img className="love-btn go-to-match" src={yes} alt="yes love me" />
         </Link>
       </nav>
     </header>

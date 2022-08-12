@@ -71,10 +71,15 @@ a.nav-btn::before {
   left: -2px;
   bottom: 0;
   z-index: -1;
-  transform: rotate(-2deg);
+  /* transform: rotate(-2deg); */
 }
 
 nav.navbar {
   padding-left: 2rem;
   padding-right: -2rem;
 }
+ img.go-to-match{
+ background-color: red;
+ height: 3rem;
+ width: 3rem;
+ }

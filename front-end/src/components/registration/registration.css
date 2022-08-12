@@ -5,6 +5,8 @@ section.register-section {
   min-height: 100vh;
   width: 100vw;
   display: flex;
+  justify-content: space-evenly;
+
   align-items: center;
   background-size: cover;
   background-position: center center;
@@ -12,8 +14,8 @@ section.register-section {
   /* The image used */
   /* background: url('./images/blue.png'); */
   /* background: url('./images/blueBBD9FF.png'); */
-  background: url('./images/layer2.png'),
-  url('./images/layer3.png'), url('./images/blueBBD9FF.png'),url('./images/layer4.5.png');
+  background: url('./images/layer5.png'), url('./images/layer2.png'),
+    url('./images/layer3.png'), url('./images/blueD8E9FF.png');
 
   /* Full height */
   height: 100%;
@@ -23,24 +25,6 @@ section.register-section {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 0%;
-}
-
-.home-land .homeContent {
-  width: 50%;
-
-  padding: 3.6rem;
-  margin-left: 3rem;
-
-  background-color: rgba(255, 255, 255, 0.027);
-  border-radius: 9rem;
-  margin-top: -1rem;
-}
-
-section#homee.home-land {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 6%;
 }
 
 h2.intro-large {
@@ -95,4 +79,24 @@ input.sign-up {
 
 button.signup-btn {
   margin-top: 1rem;
+  margin-left: 14rem;
+}
+
+div.register-wrapper {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 6rem;
+  margin-right: 1rem;
+}
+div.register-form {
+  padding-top: 1rem;
+
+  margin: 1rem;
+
+  margin-left: 2rem;
+  width: 35rem;
+
+  /* background-color: rgba(255, 255, 255, 0.422);
+  border-radius: 35% 65% 71% 29% / 57% 52% 48% 43%; */
 }

@@ -25,8 +25,9 @@ img.front-profile-pic {
 
 .front-wrapper {
   max-width: 20rem;
-  min-height: 37rem;
+  min-height: 35rem;
   max-height: 38rem;
+  min-width: 19rem;
 
   max-width: 20rem;
   background-color: #fff;
