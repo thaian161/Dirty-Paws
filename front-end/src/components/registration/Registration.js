@@ -2,9 +2,14 @@ import './registration.css';
 import FrontProfile from '../../components/profile/FrontProfile';
 import BackProfile from '../../components/profile/BackProfile';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Registration() {
+
+  useEffect(() => {
+    document.title = 'Update My Profile';
+  }, []);
+
   const defaultUser = {
     name: 'Sleepy Head',
     age: 18,

@@ -24,9 +24,9 @@ root.render(
       <Nav />
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/pawsss" element={<Profile />} />
 
-        <Route path="/messages" element={<Chat />} />
+        <Route path="/messages" element={<Chat/>} />
 
         {/* testing purposed */}
 
@@ -36,9 +36,7 @@ root.render(
 
         <Route path="testing-treat" element={<Treat />} />
 
-        <Route path="register" element={<Registration />} />
-
-
+        <Route path="my-profile" element={<Registration />} />
       </Routes>
       {/* DO NOT REMOVE ChatBubble COMPONENT FROM HERE */}
       <ChatBubble />

@@ -8,6 +8,10 @@ function Chat() {
   const [showFlyingCat, setFlyingCat] = useState(true);
 
   useEffect(() => {
+    document.title = "Dirty Paws - Messages"
+  }, [])
+
+  useEffect(() => {
     setTimeout(function () {
       setFlyingCat(false);
     }, 300000);

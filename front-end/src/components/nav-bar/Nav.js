@@ -28,10 +28,10 @@ export default function Nav() {
         <a className="nav-btn" href="#log-in">Sign In</a>
         <a className="nav-btn" href="#sign-up">Sign Up</a>
         <a className="nav-btn" href="#sign-up">Search</a> */}
-        <Link className="nav-btn" to="/profile">
+        <Link className="nav-btn" to="/pawsss">
           Paws
         </Link>
-        <Link className="nav-btn" to="/register">
+        <Link className="nav-btn" to="/my-profile">
           My Profile
         </Link>
         <Link className="nav-btn" to="/messages">
