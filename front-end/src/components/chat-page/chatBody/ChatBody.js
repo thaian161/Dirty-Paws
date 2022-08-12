@@ -12,6 +12,7 @@ export default function ChatBody() {
   })
   const [userIds, setUserIds] = useState([]);
   const [selected, setSelected] = useState(null)
+  const [messagesLength, setMessagesLength] = useState(30)
 
 
   const getMatchedUserIds = () => {
@@ -25,11 +26,21 @@ export default function ChatBody() {
   }, []);
 
   // const checkTheLengthAndMaybeSetState = function...
+
+  const checkMessagesLength = (res) => {
+    console.log("data:", res.data.length, "messagesLength:  ", messagesLength)
+    
+    if (res.data.length > messagesLength) {
+      return setState(prev => ({...prev, messages: res.data})), 
+      setMessagesLength(40)
+    }
+
+    return
+  }
   const getMessagesFromDatabase = () => {
-    console.log("inside getMessagesFromDatabase");
-    axios.get('/messages').then((res) => setState(prev => ({...prev, messages: res.data})))
+    axios.get('/messages').then((res) => checkMessagesLength(res))
     // axios.get('/messages').then((res) => checkTheLengthAndMaybeSetState(oldLength)))
-    console.log("got data from getMessages")
+
     // AUTOSCROLL: ~~NOTE~~ unfortunately, because this is tied to setInterval, it is difficult to manually scroll up. This function should check whether axios changed messages.length before attempting to set state.
     var element = document.getElementsByClassName("content__body")[0];
     element.scrollTop = element.scrollHeight;
