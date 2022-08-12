@@ -28,7 +28,7 @@ function ChatContentItem(props) {
       <div className="chat__item__content">
         <div className="chat__msg">{props.content}</div>
         <div className="chat__meta">
-          <span>16 mins ago</span>
+          <span>{props.time || 16} mins ago</span>
         </div>
       </div>
       <Avatar picture={picture} />

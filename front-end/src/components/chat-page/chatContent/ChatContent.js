@@ -52,10 +52,11 @@ export default function ChatContent(props) {
 
   const messages = getMessages(); // turn this into state!!
 
-  const oneMessage = messages.map((message) => {
+  const oneMessage = messages.map((message, messageIndex) => { // make an array of ChatContentItems
     return (
       <div className="chat__items" key={message.id}>
         <ChatContentItem
+          time ={ messages.length - messageIndex}
           sender={message.sender_id}
           receiver={message.receiver_id}
           content={message.content}
