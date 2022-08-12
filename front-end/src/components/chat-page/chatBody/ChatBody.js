@@ -58,7 +58,7 @@ export default function ChatBody() {
 
   return (
     <div className="main__chatbody">
-      <ChatList userIds={userIds} users={state.users} setSelected={setSelected}/>
+      <ChatList userIds={userIds} users={state.users} selected={selected} setSelected={setSelected}/>
       <ChatContent getMessagesFromDatabase={getMessagesFromDatabase} userIds={userIds} messages={state.messages} selected={selected} scrollDown={scrollDown} />
     </div>
   )

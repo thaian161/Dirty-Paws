@@ -12,6 +12,7 @@ function ChatList(props) {
         id={id}
         users={props.users}
         setSelected={props.setSelected}
+        selected={props.selected}
       />
     );
   });

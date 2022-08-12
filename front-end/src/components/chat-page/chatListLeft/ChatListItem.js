@@ -24,11 +24,11 @@ function ChatListItem(props) {
 
   // add class SELLECTED to chat-list-item once it gets selected
   const chatListItemClass = classNames('chat-list-item', {
-    sellected: props.setSelected,
+    sellected: props.id === props.selected
   });
   //the className thing did not work yet :"(
   return (
-    <div className="chat-list-item" onClick={() => props.setSelected(user.id)}>
+    <div className={chatListItemClass} onClick={() => props.setSelected(user.id)}>
       <Avatar picture={user.profile_picture} />
       <div className="user-chat-content">
         <p className="info-chat-list-item">{user.name || 'sexy boii'}</p>
