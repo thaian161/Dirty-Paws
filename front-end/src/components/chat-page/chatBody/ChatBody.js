@@ -24,6 +24,7 @@ export default function ChatBody() {
     var element = document.getElementsByClassName("content__body")[0];
     element.scrollTop = element.scrollHeight;
   }
+
   const checkMessagesLength = (res, length) => { // compares the messagesLength to the length of data and updates state if different
     console.log("data:", res.data.length, "messagesLength:  ", length)
     
@@ -39,7 +40,6 @@ export default function ChatBody() {
     axios.get('/messages')
          .then((res) => checkMessagesLength(res, messagesLength))
   }
-
   
   useEffect(() => { // call to getMatchedUserIds
     getMatchedUserIds();
@@ -59,7 +59,7 @@ export default function ChatBody() {
   return (
     <div className="main__chatbody">
       <ChatList userIds={userIds} users={state.users} setSelected={setSelected}/>
-      <ChatContent getMessagesFromDatabase={getMessagesFromDatabase} userIds={userIds} messages={state.messages} selected={selected} />
+      <ChatContent getMessagesFromDatabase={getMessagesFromDatabase} userIds={userIds} messages={state.messages} selected={selected} scrollDown={scrollDown} />
     </div>
   )
 }

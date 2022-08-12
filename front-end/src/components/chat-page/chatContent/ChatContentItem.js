@@ -9,12 +9,20 @@ function ChatContentItem(props) {
   //we already have: sender_id, receiver_id
   // GET users/sender_id
 
+  const scrollDown = () => { //function that scrolls down chat content on new message
+    var element = document.getElementsByClassName("content__body")[0];
+    element.scrollTop = element.scrollHeight;
+  }
+
   useEffect(() => {
     axios.get(`/users/${props.sender}`).then(res => {
       setPicture(res.data[0].profile_picture);
       console.log("from chat content item")
     })
+    scrollDown()
   }, [])
+
+
 
   //want to have: props.profile_picture
 
