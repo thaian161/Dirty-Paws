@@ -39,8 +39,8 @@ img.back-profile-pic {
 .back-wrapper:hover {
   border: 4px solid #f78c8c;
 
-  box-shadow: #ffdad7 8px 8px 0px 0px, #ffdad7 8px 8px 0px 0px,
-    #ffdad7 6px 6px 0px 0px, #ffdad7 8px 8px 0px 0px, black 8px 8px 0px 0px;
+  box-shadow: #f9c2be 8px 8px 0px 0px, #f9c2be 8px 8px 0px 0px,
+  #f9c2be 6px 6px 0px 0px, #f9c2be 8px 8px 0px 0px, black 8px 8px 0px 0px;
 }
 
 h2.bio {
