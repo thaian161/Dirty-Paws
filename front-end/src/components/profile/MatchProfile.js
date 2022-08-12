@@ -44,7 +44,7 @@ export default function MatchProfile(props) {
               <br />
               <Link
                 className="keep-search"
-                to="/profile"
+                to="/pawsss"
                 onClick={props.getNewUser}
               >
                 KEEP SEARCHING
