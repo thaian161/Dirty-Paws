@@ -2,6 +2,7 @@ import Avatar from '../chatListLeft/Avatar';
 import './chatContent.css';
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
+import classNames from "classnames";
 
 function ChatContentItem(props) {
   const [picture, setPicture] = useState(null);
@@ -22,9 +23,15 @@ function ChatContentItem(props) {
       It should look like this:
   <div className="chat__item incoming_chat_left">
   */
+  const chatItemClass = classNames("chat__item", {
+    incoming_chat_left: (props.myUser.id !== props.sender) 
+  })
+
+
+
 
   return (
-    <div style={{ animationDelay: `0.8s` }} className="chat__item incoming_chat_left">
+    <div style={{ animationDelay: `0.8s` }} className={chatItemClass}>
       <div className="chat__item__content">
         <div className="chat__msg">{props.content}</div>
         <div className="chat__meta">
