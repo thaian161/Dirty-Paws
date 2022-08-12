@@ -11,6 +11,7 @@ export default function Registration() {
   }, []);
 
   const defaultUser = {
+    id: 1,
     name: 'Sleepy Head',
     age: 18,
     address: 'Pupland',
