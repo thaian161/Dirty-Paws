@@ -49,7 +49,9 @@
   padding-bottom: 10px;
   margin-top: 10px;
   cursor: pointer;
-  padding: 10px 10px 10px 20px;
+
+  padding: 2rem;
+
   transition: all 0.3s cubic-bezier(0.88, 0.19, 0.37, 1.11);
   transform: scale(0);
   animation-name: showIn;
@@ -127,17 +129,25 @@
 }
 
 div.chat-list-item {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   border-bottom: 1px dashed #607ea5;
-  padding-bottom: 0.2rem;
+
   display: flex;
   flex-direction: row;
   height: 3.8rem;
 
   cursor: pointer;
+
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .chat-list-item:hover {
+  background-color: #fff1f099;
+  border-radius: 0.5rem;
+}
+
+.sellected {
   background-color: #fff1f099;
   border-radius: 0.5rem;
 }
@@ -163,4 +173,3 @@ h2.chatlist__heading {
   font-size: 2rem;
   font-weight: 700;
 }
-
