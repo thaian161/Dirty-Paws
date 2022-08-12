@@ -1,6 +1,4 @@
 import './BackProfile.css';
-import yes from './images/yes.png';
-import noSoSad from './images/noSoSad.png';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
@@ -37,9 +35,7 @@ export default function BackProfile(props) {
             <p className="profile-bio">{props.bio}</p>
           </div>
         </div>
-        <div className="love-me-not">
-          {oneBadge}
-        </div>
+        <div className="love-me-not">{oneBadge}</div>
         <div className="empty-bottom-back"></div>
       </div>
     </div>
@@ -53,4 +49,3 @@ export default function BackProfile(props) {
 //     alt="my badge"
 //   />
 // </button>
-

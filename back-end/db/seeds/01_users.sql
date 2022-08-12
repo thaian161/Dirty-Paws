@@ -42,7 +42,7 @@ INSERT INTO users (name, treats, password, profile_picture, bio, age, address) V
 ('Cool Dan D', 1, '123', 'https://img.freepik.com/free-vector/cute-raccoon-dabbing-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3374.jpg?w=2000', 'Hey yoooo im Dan, I know I am cool, I cannot cook but I can make super yummy cakes and dessert', 29, 'Toronto');
 
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
-('AnnnnA', 1, '123', 'https://img.freepik.com/premium-vector/cute-welsh-corgi-dog-waving-paw-cartoon_42750-623.jpg', 'Xin Chaoooo, i love beautiful thing and yummy foods. I can play instruments woof woof. Come hang out with me', 29, 'Orlando');
+('Ann Ann', 1, '123', 'https://img.freepik.com/premium-vector/cute-welsh-corgi-dog-waving-paw-cartoon_42750-623.jpg', 'Xin Chaoooo, i love beautiful thing and yummy foods. I can play instruments woof woof. Come hang out with me', 29, 'Orlando');
 
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
 ('Peach Cat', 1, '123', 'https://i.imgur.com/sKdbm4Vh.jpg', 'I love going for a walk with my frends and chasing cats at the park', 29, 'Toronto');

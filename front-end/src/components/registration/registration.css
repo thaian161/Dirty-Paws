@@ -11,11 +11,7 @@ section.register-section {
   background-size: cover;
   background-position: center center;
 
-  /* The image used */
-  /* background: url('./images/blue.png'); */
-  /* background: url('./images/blueBBD9FF.png'); */
-  background: url('./images/layer5.png'), url('./images/layer2.png'),
-    url('./images/layer3.png'), url('./images/blueD8E9FF.png');
+  background: url('./images/bbb.png'), url('./images/c.png');
 
   /* Full height */
   height: 100%;
@@ -40,26 +36,8 @@ h2.intro-large {
 
   font-weight: 900;
 }
-h3.intro-small {
-  font-family: Lora;
-  font-style: italic;
-  color: #f07e74;
-  text-align: left;
-  margin-right: 28px;
 
-  font-size: 2.2rem;
-  line-height: 3rem;
-  font-weight: 600;
-}
 .landing-p {
-  /* font-family: Lora;
-  font-style: italic;
-  text-align: left;
-  font-size: 1.3rem;
-  line-height: 2.5rem;
-  font-weight: 500;
-  color: rgb(69, 69, 69);  */
-
   font-family: Roboto Mono;
   margin-bottom: 0;
   font-size: 1.2rem;
@@ -75,18 +53,29 @@ input.sign-up {
 
   border-bottom: dashed 5px #646464e7;
   margin-bottom: 0.5rem;
+  outline: none;
 }
 
+input.form-control.sign-up {
+  background-color: transparent;
+  outline: none;
+}
 button.signup-btn {
   margin-top: 1rem;
   margin-left: 14rem;
+}
+button.signup-btn:hover {
+  margin-left: 14rem;
+}
+.form-control {
+  outline: none;
 }
 
 div.register-wrapper {
   display: flex;
   flex-direction: row;
 
-  margin-top: 6rem;
+  margin-top: 4rem;
   margin-right: 1rem;
 }
 div.register-form {
@@ -96,7 +85,23 @@ div.register-form {
 
   margin-left: 2rem;
   width: 35rem;
+}
+/* 
+h2.sign-up {
+  font-size: 2.5rem;
+} */
 
-  /* background-color: rgba(255, 255, 255, 0.422);
-  border-radius: 35% 65% 71% 29% / 57% 52% 48% 43%; */
+.form {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #f78c8c;
+
+  background-clip: padding-box;
+
+  appearance: none;
+  font-family: roboto mono;
 }

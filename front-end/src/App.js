@@ -1,10 +1,5 @@
 import './App.css';
 
-import PurpleCat from './lotties/PurpleCat';
-import RainbowCat from './lotties/RainbowCat';
-import HumanCat from './lotties/HumanCat';
-import SexyCat from './lotties/SexyCat';
-import Matchhh from './lotties/Matchhh.jsx';
 
 import FrontProfile from './components/profile/FrontProfile';
 import Profile from './components/profile/Profile';

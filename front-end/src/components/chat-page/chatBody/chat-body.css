@@ -23,7 +23,7 @@ div.main__chatbody {
     position: relative;
     left: -2500px;
     
-    opacity: 0;
+    opacity: 0.8;
   }
   50% {
     position: relative;

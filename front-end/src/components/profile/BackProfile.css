@@ -18,18 +18,16 @@ img.back-profile-pic {
 .container {
   text-align: center;
 
-
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
- 
 }
 
 .back-wrapper {
   max-width: 19rem;
   min-height: 35rem;
   max-height: 38rem;
-  min-width: 18rem;
+  min-width: 20rem;
 
   background-color: #fff;
   border-radius: 15px;
@@ -60,6 +58,7 @@ h2.bio {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem;
+  padding-top: 19px;
 }
 
 .profile-footer-bio p.profile-bio {
@@ -93,6 +92,7 @@ img.user-badge {
 }
 
 div.empty-bottom-back {
+  
   background-color: #d8e9ff;
   opacity: 1;
   background-image: radial-gradient(#406ca6 1.8px, transparent 1.8px),
