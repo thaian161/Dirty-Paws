@@ -110,6 +110,11 @@ div.empty-bottom {
   background-size: 64px 64px;
   background-position: 0 0, 32px 32px;
 
+  /* background-color: #ffe6e4;
+  opacity: 1;
+  background-image: linear-gradient(45deg, #ffc9c9 50%, #ffe6e4 50%);
+  background-size: 8px 8px; */
+
   height: 4rem;
 }
 
@@ -120,6 +125,11 @@ div.profile-top {
     radial-gradient(#f78c8c 1.6px, #ffdad7 1.8px);
   background-size: 64px 64px;
   background-position: 0 0, 32px 32px;
+
+  /* background-color: #ffe6e4;
+  opacity: 1;
+  background-image: linear-gradient(45deg, #ffc9c9 50%, #ffe6e4 50%);
+  background-size: 8px 8px; */
 }
 
 div.city {
