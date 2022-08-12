@@ -1,23 +1,18 @@
 div.complete-profile-container {
   padding-top: 7.5rem;
-  background:  url('./images/layer2.png'),
-  url('./images/layer3.png'), url('./images/blueBBD9FF.png'),url('./images/layer4.5.png');
+  background: url('./images/layer2.png'), url('./images/layer3.png'),
+    url('./images/blueBBD9FF.png'), url('./images/layer4.5.png');
 
   background-size: cover;
   background-position: center center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 div.complete-profile-wrapper {
-  min-height: 75vh;
+  min-height: 85vh;
   width: 100vw;
   display: flex;
   justify-content: center;
-
 }
-
-
-
