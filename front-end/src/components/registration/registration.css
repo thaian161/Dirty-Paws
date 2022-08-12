@@ -36,6 +36,9 @@ h2.intro-large {
 
   font-weight: 900;
 }
+h2.sign-up {
+  margin-left: 1rem;
+}
 
 .landing-p {
   font-family: Roboto Mono;
@@ -79,7 +82,7 @@ div.register-wrapper {
   margin-right: 1rem;
 }
 div.register-form {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
 
   margin: 1rem;
 

@@ -28,21 +28,20 @@ export default function Nav() {
         <a className="nav-btn" href="#log-in">Sign In</a>
         <a className="nav-btn" href="#sign-up">Sign Up</a>
         <a className="nav-btn" href="#sign-up">Search</a> */}
-
         <Link className="nav-btn" to="/profile">
+          Paws
+        </Link>
+        <Link className="nav-btn" to="/register">
           My Profile
         </Link>
         <Link className="nav-btn" to="/messages">
-          Messenger
-        </Link>
-        <Link className="nav-btn" to="/#">
-          Sign-up
+          Messages
         </Link>
         <Link className="nav-btn" to="/" onClick={loginUser}>
           Login
         </Link>
-        <Link to="/">
-          <img className="love-btn go-to-match" src={yes} alt="yes love me" />
+        <Link className="nav-btn" to="/#">
+          Logout
         </Link>
       </nav>
     </header>

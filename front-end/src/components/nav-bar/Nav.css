@@ -62,16 +62,16 @@ img.match-icon {
 }
 a.nav-btn::before {
   /* Highlight color */
-  background-color: #ffc8c3;
+  background-color: #fdc9c4;
 
   content: '';
   position: absolute;
-  width: calc(100% + 4px);
+  width: calc(100% + 3px);
   height: 60%;
   left: -2px;
   bottom: 0;
   z-index: -1;
-  /* transform: rotate(-2deg); */
+  transform: rotate(-1.8deg);
 }
 
 nav.navbar {
