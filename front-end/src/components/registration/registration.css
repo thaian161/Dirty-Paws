@@ -1,7 +1,7 @@
-section {
+section.register-section {
   padding: 2.5rem 3%;
 }
-.home-land {
+.register-section {
   min-height: 100vh;
   width: 100vw;
   display: flex;
@@ -12,8 +12,8 @@ section {
   /* The image used */
   /* background: url('./images/blue.png'); */
   /* background: url('./images/blueBBD9FF.png'); */
-  background: url('./images/layer5.png'), url('./images/layer2.png'),
-    url('./images/layer3.png'), url('./images/blueD8E9FF.png');
+  background: url('./images/layer2.png'),
+  url('./images/layer3.png'), url('./images/blueBBD9FF.png'),url('./images/layer4.5.png');
 
   /* Full height */
   height: 100%;
