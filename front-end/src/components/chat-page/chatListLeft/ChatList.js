@@ -1,14 +1,19 @@
 import ChatListItem from './ChatListItem';
 
 function ChatList(props) {
-
   const userIds = props.userIds;
   // console.log("props passed to chatlist:   ", props)
 
-  const chatListItemArray = userIds.map(id => {
-    return <ChatListItem key={id} id={id} users={props.users} setSelected={props.setSelected}/>
-  })
-
+  const chatListItemArray = userIds.map((id) => {
+    return (
+      <ChatListItem
+        key={id}
+        id={id}
+        users={props.users}
+        setSelected={props.setSelected}
+      />
+    );
+  });
 
   return (
     <div className="main__chatlist">
@@ -27,9 +32,7 @@ function ChatList(props) {
           </button>
         </div>
       </div>
-      <div className="chatlist__items">
-        {chatListItemArray}
-      </div>
+      <div className="chatlist__items">{chatListItemArray}</div>
     </div>
   );
 }
