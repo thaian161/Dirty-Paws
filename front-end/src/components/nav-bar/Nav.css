@@ -62,7 +62,12 @@ img.match-icon {
 }
 a.nav-btn::before {
   /* Highlight color */
-  background-color: #fdc9c4;
+  /* background-color: #ffdad7; */
+
+  background-color: #ffe6e4;
+  opacity: 1;
+  background-image: linear-gradient(45deg, #ffc9c9 50%, #ffe6e4 50%);
+  background-size: 8px 8px;
 
   content: '';
   position: absolute;
@@ -78,8 +83,8 @@ nav.navbar {
   padding-left: 2rem;
   padding-right: -2rem;
 }
- img.go-to-match{
- background-color: red;
- height: 3rem;
- width: 3rem;
- }
+img.go-to-match {
+  background-color: red;
+  height: 3rem;
+  width: 3rem;
+}
