@@ -39,7 +39,7 @@ Dirty Paws is a pet-themed dating app built with Node, React, Express, and Postg
 
 !["Paws"]()
 
-#### _Messages_
+#### _Messages: live chat with your matches_
 
 !["Messages"]()
 
