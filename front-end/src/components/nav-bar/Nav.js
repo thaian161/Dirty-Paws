@@ -11,8 +11,12 @@ export default function Nav() {
   const loginUser = () => {
     axios.get('/login/2').then((res) => {
       console.log(res);
-      setUser(user);
     });
+  };
+  const logoutUser = () => {
+    axios.get('/logout').then((res) => {
+      console.log(res);
+    })
   };
 
   return (
@@ -24,10 +28,6 @@ export default function Nav() {
       </div>
 
       <nav className="navbar">
-        {/* 
-        <a className="nav-btn" href="#log-in">Sign In</a>
-        <a className="nav-btn" href="#sign-up">Sign Up</a>
-        <a className="nav-btn" href="#sign-up">Search</a> */}
         <Link className="nav-btn" to="/pawsss">
           Paws
         </Link>
@@ -40,7 +40,7 @@ export default function Nav() {
         <Link className="nav-btn" to="/" onClick={loginUser}>
           Login
         </Link>
-        <Link className="nav-btn" to="/#">
+        <Link className="nav-btn" to="/" onClick={logoutUser}>
           Logout
         </Link>
       </nav>
