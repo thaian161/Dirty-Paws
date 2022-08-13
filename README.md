@@ -91,9 +91,9 @@ As well, we want to acknowledge and shout out to all the online resources we con
    - password: `labber`
    - database: `final`
 
-The root project directory contains two directories: Front-end and Back-end.
+The root project directory contains two directories: **Front-end and Back-end**
 <br>
-From here, we recommend you have two separate terminal windows opens
+From here, we recommend you have **two separate terminal window** opens
 
 #### On your Backend terminal
 
