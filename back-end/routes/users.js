@@ -31,7 +31,7 @@ module.exports = (db) => {
 
   router.post('/treats', (req, res) => { // get current user by req.cookies and add a treat (default to user 1)
     const queryString = `UPDATE users SET treats = treats + 1 WHERE users.id = $1 RETURNING treats`
-    const id = req.cookies.id || 1;
+    const id = req.cookies.user_id || 1;
     const queryParams = [id]
 
     db.query(queryString, queryParams)
