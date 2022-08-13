@@ -1,6 +1,6 @@
 # Final Project: Dirty Paws 🐾
 
-Dirty Paws is a pet-themed dating app. 
+Dirty Paws is a pet-themed dating app built with Node, React, Express, and PostgreSQL.
 
 ## Contributors:
 - 👩🏻‍🎨 [Ann Bui](https://github.com/thaian161): the frontend lover and amateur UX/UI designer
@@ -9,7 +9,7 @@ Dirty Paws is a pet-themed dating app.
 
 ## Entity Relationship Diagram (ERD)
 
-!["ERD"](###)
+!["ERD"](https://github.com/thaian161/Dirty-Paws/blob/master/front-end/public/docs/ERD.png?raw=true)
 
 ## Main Features:
 - Users can create profiles, view other profiles, and send 'likes' to form matches.
@@ -31,33 +31,19 @@ Dirty Paws is a pet-themed dating app.
 
 #### _Edit Profile_
 
-!["Edit Profile"](###)
+!["Edit Profile"](https://github.com/thaian161/Dirty-Paws/blob/master/front-end/public/docs/Profile.png?raw=true)
 
 #### _Messages_
 
-!["Messages"](###)
+!["Messages"](https://github.com/thaian161/Dirty-Paws/blob/master/front-end/public/docs/Messages.png?raw=true)
 
 #### _Paws_
 
-!["Paws"](###)
+!["Paws"](https://github.com/thaian161/Dirty-Paws/blob/master/front-end/public/docs/Paws.png?raw=true)
 
 #### _Landing Page_
 
-!["Landing Page"](###)
-
-
-
-#### _Admins Main Page_
-
-!["Admin Main Page"](###)
-
-#### _Admins Sell Baked Good Form_
-
-!["Admin Main Page"]((###)
-
-#### _Admins SOLD feature_
-
-!["Admin Main Page"](###)
+!["Landing Page"](https://github.com/thaian161/Dirty-Paws/blob/master/front-end/public/docs/Landing.png?raw=true)
 
 ## Dependencies
 - express
