@@ -49,15 +49,30 @@ Dirty Paws is a pet-themed dating app built with Node, React, Express, and Postg
 
 ## Dependencies
 
-- express
-- react
-- axios
-- bootstrap
-- classnames
-- react-router-dom
-- react-lottie
-- cookie-parser
-- pg
+### Front End
+
+- axios: ^0.27.2
+- bootstrap: ^5.2.0
+- classnames: ^2.3.1
+- react: ^18.2.0
+- react-bootstrap: ^2.5.0
+- react-dom: ^18.2.0
+- react-lottie: ^1.2.3
+- react-router-dom: ^6.3.0
+- react-scripts: 5.0.
+
+### Back End
+
+- cookie-parser: ~1.4.4
+- debug: ~2.6.9
+- dotenv: ^16.0.1
+- express: ~4.16.1
+- morgan: ~1.9.1
+- pg: ^8.7.3
+
+## Dev-Dependencies
+
+- nodemon: ^2.0.19
 
 ## Getting Started
 
