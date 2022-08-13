@@ -1,12 +1,12 @@
 # Final Project: Dirty Paws 🐾
 
-Dirty Paws is a pet-themed dating app built with Node, React, Express, and PostgreSQL.
+Dirty Paws is a cartoon pet-themed dating app built with Node, React, Express, and PostgreSQL.
 
 ## Contributors:
 
-- 👩🏻‍🎨 [Ann Bui](https://github.com/thaian161): the frontend lover and amateur UX/UI designer
+- 👩🏻‍🎨 [Ann Bui](https://github.com/thaian161): the frontend/dogs lover and amateur UX/UI designer
 - 👨🏼‍💻 [Dan Lindeblom](https://github.com/DLindeblom): the master of backend and data manipulater
-- 👨‍🏭 [Declan Davis](https://github.com/DexTheFish): the master of cats and origami
+- 👨‍🏭 [Declan Davis](https://github.com/DexTheFish): the master of functionality, cats and origami
 
 ## Main Features:
 
@@ -22,6 +22,13 @@ Dirty Paws is a pet-themed dating app built with Node, React, Express, and Postg
 - Matching uses a weighted algorithm to favour users with more treats/badges
 - Users can video chat with their matches
 - Users can unmatch
+
+## Credits
+We would like to express our appreciation and gratitude for the knowledge and unending support of our instructors, mentors, and staff at Lighthouse Labs.
+As well, we want to acknowledge and shout out to all the online resources we consulted during the development of this project.
+<br>
+***It is truly by standing on the shoulders of giants that we have made it to where we are today!***
+ 
 
 ## Final Product
 
@@ -84,18 +91,30 @@ Dirty Paws is a pet-themed dating app built with Node, React, Express, and Postg
    - password: `labber`
    - database: `final`
 
-4. Install dependencies (front-end): `npm i --force`
-5. Install dependencies (back-end): `npm i`
-6. Reset database (back-end): `npm run db:reset`
+The root project directory contains two directories: Front-end and Back-end.
+<br>
+From here, we recommend you have two separate terminal windows opens
+
+#### On your Backend terminal
+
+4. Navigate to the back-end folder. Install dependencies `npm i`
+
+5. Reset database: `npm run db:reset`
 
    - Check the db folder to see what gets created and seeded in the SDB
 
-7. Run the server (back-end): `npm start`
+6. Run the server (back-end): `npm start`
 
    - Note: nodemon is used, so you should not have to restart your server
 
+#### On your Frontend terminal
+
+7. Navigate to the front-end folder. Install dependencies `npm i --force`
+
 8. Run the client (front-end): `npm start`
-9. Visit `http://localhost:3000/`
+
+9. React will kick in and auto serve the app in your browser at `http://localhost:3000`
+
 10. Start to build your profile, treats, and paws. LET'S GET DIRTY!!!
 
 <br>
