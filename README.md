@@ -10,18 +10,19 @@ Dirty Paws is a cartoon pet-themed dating app built with Node, React, Express, a
 
 ## Main Features:
 
-- Users can create profiles, view other profiles, and send 'likes' to form matches.
-- Users can view messages and chat with their matches in real-time.
-- Users can earn treats and badges to show off.
+- Users can create/update profiles
+- Users can view other profiles and send 'a love paws' to form matches.
+- Only after two users have both liked each others, they can view messages and chat with their matches in real-time.
+- Users can earn treats to upgrade their badges to show off.
 
 ## Features we wish to accomplish:
 
+- Users can register using their Google account/ Google authentication
 - Users can enable Location Services and set a maximum search radius for other profiles
 - Users can connect to Spotify and share music with their matches
-- Users can register using their Google account
-- Matching uses a weighted algorithm to favour users with more treats/badges
 - Users can video chat with their matches
 - Users can unmatch
+- Matching uses a weighted algorithm to favour users with more treats/badges
 
 ## Credits
 We would like to express our appreciation and gratitude for the knowledge and unending support of our instructors, mentors, and staff at Lighthouse Labs.
