@@ -7,10 +7,6 @@ Dirty Paws is a pet-themed dating app built with Node, React, Express, and Postg
 - 👨🏼‍💻 [Dan Lindeblom](https://github.com/DLindeblom): the master of backend and data manipulater
 - 👨‍🏭 [Declan Davis](https://github.com/DexTheFish): the master of cats and origami
 
-## Entity Relationship Diagram (ERD)
-
-!["ERD"](https://github.com/thaian161/Dirty-Paws/blob/master/front-end/public/docs/ERD.png?raw=true)
-
 ## Main Features:
 - Users can create profiles, view other profiles, and send 'likes' to form matches.
 - Users can view messages and chat with their matches in real-time.
@@ -44,6 +40,10 @@ Dirty Paws is a pet-themed dating app built with Node, React, Express, and Postg
 #### _Landing Page_
 
 !["Landing Page"](https://github.com/thaian161/Dirty-Paws/blob/master/front-end/public/docs/Landing.png?raw=true)
+
+## Entity Relationship Diagram (ERD)
+
+!["ERD"](https://github.com/thaian161/Dirty-Paws/blob/master/front-end/public/docs/ERD.png?raw=true)
 
 ## Dependencies
 - express
