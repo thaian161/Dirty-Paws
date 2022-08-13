@@ -1,8 +1,7 @@
 import './Nav.css';
 import clearLogo from './images/clearLogo.png';
-import yes from './images/yes.png';
 import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 
 export default function Nav() {
@@ -44,6 +43,13 @@ export default function Nav() {
           Logout
         </Link>
       </nav>
+      <div className="my-photo-on-nav">
+        <img
+          className="photo-nav"
+          src="https://img.freepik.com/free-vector/cute-dog-bites-bone-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3743.jpg?w=740&t=st=1659775375~exp=1659775975~hmac=bf9c8ab42957127b945b39543036609169019f89d2ba2ccbb1962eaddc600c95"
+          alt=""
+        />
+      </div>
     </header>
   );
 }

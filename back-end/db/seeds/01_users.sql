@@ -3,7 +3,7 @@ INSERT INTO users
 ('Dexie', 7, '123', 'https://img.freepik.com/free-vector/cute-dog-bites-bone-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3743.jpg?w=740&t=st=1659775375~exp=1659775975~hmac=bf9c8ab42957127b945b39543036609169019f89d2ba2ccbb1962eaddc600c95', 'Heyyyyyyyy there. I love getting my paws dirty, i have a cute bun woft woft woft', 26, 'Toronto');
 
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
-('Mia', 1, '123', 'https://img.freepik.com/free-vector/cute-bulldog-eating-cake-cartoon-vector-illustration-animal-food-concept-isolated-vector-flat-cartoon-style_138676-1923.jpg?w=740&t=st=1659775411~exp=1659776011~hmac=1195698ebba046eb5c2c923b7646a5fa22bdfe9b6a62e2ce6fb45f161b30e6d8', 'Only here to gain instagram followers, soooo, what are you waiting for? ??? i can make cake with you', 25, 'Toronto');
+('Mia', 1, '123', 'https://img.freepik.com/free-vector/cute-cat-drink-holding-bag-cartoon-vector-icon-illustration-animal-holiday-icon-isolated-flat_138676-4754.jpg?w=740&t=st=1660433182~exp=1660433782~hmac=3e66e9e634d246c69924aa5458b1ceda3149ddf6a4de64c922f1ad1a6fe5291f', 'Only here to gain instagram followers, soooo, what are you waiting for? ??? i can make cake with you', 25, 'Toronto');
 
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
 ('Chuppy', 10, '123', 'https://img.freepik.com/free-vector/cute-corgi-dog-sleeping-pillow-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-4244.jpg?w=740&t=st=1659775491~exp=1659776091~hmac=cb36f6ec0a74a0f4fed34498fa1b98151b51ac4f9e1e64471a7d1b787b19678a', 'I enjoy long walks and catnip heheheh, sleeping is another hobby of mineeee', 27, 'Toronto');
@@ -42,10 +42,10 @@ INSERT INTO users (name, treats, password, profile_picture, bio, age, address) V
 ('Cool Dan D', 1, '123', 'https://img.freepik.com/free-vector/cute-raccoon-dabbing-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3374.jpg?w=2000', 'Hey yoooo im Dan, I know I am cool, I cannot cook but I can make super yummy cakes and dessert', 29, 'Toronto');
 
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
-('Ann Ann', 1, '123', 'https://img.freepik.com/premium-vector/cute-welsh-corgi-dog-waving-paw-cartoon_42750-623.jpg', 'Xin Chaoooo, i love beautiful thing and yummy foods. I can play instruments woof woof. Come hang out with me', 29, 'Orlando');
+('Happie', 1, '123', 'https://img.freepik.com/premium-vector/cute-welsh-corgi-dog-waving-paw-cartoon_42750-623.jpg', 'Xin Chaoooo, i love beautiful thing and yummy foods. I can play instruments woof woof. ', 28, 'Orlando');
 
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
-('Peach Cat', 1, '123', 'https://i.imgur.com/sKdbm4Vh.jpg', 'I love going for a walk with my frends and chasing cats at the park', 29, 'Toronto');
+('Peach Cat', 1, '123','https://i.imgur.com/sKdbm4Vh.jpg', 'I love going for a walk with my frends and chasing cats at the park', 29, 'Toronto');
 
 
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES

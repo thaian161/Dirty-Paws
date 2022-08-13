@@ -88,3 +88,32 @@ img.go-to-match {
   height: 3rem;
   width: 3rem;
 }
+
+div.my-photo-on-nav {
+  height: 4.5rem;
+  width: 4.5rem;
+
+  background-color: transparent;
+  margin-top: -10px;
+  border: dashed 4px white;
+
+  border-radius: 41% 59% 70% 30% / 56% 49% 51% 44%;
+
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  justify-self: center;
+}
+
+img.photo-nav {
+  margin-top: 0.27rem;
+  margin-right: 0.01rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 41% 59% 70% 30% / 56% 49% 51% 44%;
+  border: white solid 2px;
+}
+
+.navbar {
+  margin-left: 18rem;
+}
