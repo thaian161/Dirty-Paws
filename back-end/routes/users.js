@@ -64,5 +64,28 @@ module.exports = (db) => {
       })
   });
 
+  router.post('/edit', (req, res) => { // edit profile upon form submission. 
+    const id = req.body.id || 3;
+    const name = req.body.name || 'bob';
+    const city = req.body.address || 'Toronto';
+    const bio = req.body.bio || 'hello world';
+    const avatar = req.body.avatar || 'https://cdn.shoplightspeed.com/shops/633327/files/29258343/ftla-art-kit-painting-acrylic-pikachu.jpg';
+    const age = Number.isInteger(req.body.age) ? req.body.age : 22;
+    const queryParams = [id, name, city, bio, avatar, age];
+    const queryString = `
+    UPDATE users SET
+    name = $2,
+    address = $3,
+    bio = $4,
+    profile_picture = $5,
+    age = $6
+    WHERE id = $1
+    RETURNING *
+    `
+    db.query(queryString, queryParams).then(data => {
+      res.json(data.rows);
+    })
+  })
+
   return router;
 }
