@@ -82,7 +82,7 @@ Dirty Paws is a pet-themed dating app built with Node, React, Express, and Postg
 
    - username: `labber`
    - password: `labber`
-   - database: `midterm`
+   - database: `final`
 
 4. Install dependencies (front-end): `npm i --force`
 5. Install dependencies (back-end): `npm i`
@@ -99,5 +99,6 @@ Dirty Paws is a pet-themed dating app built with Node, React, Express, and Postg
 10. Start to build your profile, treats, and paws. LET'S GET DIRTY!!!
 
 <br>
+
 
 > **Hope you enjoy the app and have a nice day :D**
