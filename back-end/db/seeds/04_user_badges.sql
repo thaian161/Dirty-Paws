@@ -1,5 +1,5 @@
 INSERT INTO user_badges (badge_id, user_id) VALUES (2,1);
-INSERT INTO user_badges (badge_id, user_id) VALUES (3,2);
+INSERT INTO user_badges (badge_id, user_id) VALUES (1,2);
 INSERT INTO user_badges (badge_id, user_id) VALUES (1,3);
 INSERT INTO user_badges (badge_id, user_id) VALUES (4,4);
 INSERT INTO user_badges (badge_id, user_id) VALUES (1,5);
@@ -21,7 +21,6 @@ INSERT INTO user_badges (badge_id, user_id) VALUES (5,20);
 INSERT INTO user_badges (badge_id, user_id) VALUES (1,21);
 INSERT INTO user_badges (badge_id, user_id) VALUES (2,22);
 
-INSERT INTO user_badges (badge_id, user_id) VALUES (3,1);
 INSERT INTO user_badges (badge_id, user_id) VALUES (2,3);
 INSERT INTO user_badges (badge_id, user_id) VALUES (2,5);
 INSERT INTO user_badges (badge_id, user_id) VALUES (3,6);

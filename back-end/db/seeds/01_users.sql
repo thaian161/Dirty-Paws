@@ -64,7 +64,7 @@ INSERT INTO users (name, treats, password, profile_picture, bio, age, address) V
 ('ThyAnn', 1, '123', 'https://img.freepik.com/free-vector/cute-tiger-jumping-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-vector_138676-4382.jpg?w=740&t=st=1660160461~exp=1660161061~hmac=7a4bc3f2376fcabd6f3f5b12e2403d01c33e734dc163490039df8c1b7c273f88', 'Imma heartbreaker GRUUUU, i love to cautch moving obj not cautching feelings, yeah i no i am cool', 25, 'Winnipeg');
 
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
-('AN 2the DY', 7, '123', 'https://img.freepik.com/free-vector/cute-polar-bear-dabbing-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3361.jpg?w=740&t=st=1660161599~exp=1660162199~hmac=dcd4e51f111aa40dbaf0cad728e6e82996b32903f503b1da90cb0d62e4baccc1', 'Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy', 26, 'Toronto');
+('AN 2the DY', 7, '123', 'https://res.cloudinary.com/teepublic/image/private/s--kRN8rvIN--/t_Resized%20Artwork/c_fit,g_north_west,h_954,w_954/co_fac2cd,e_outline:48/co_fac2cd,e_outline:inner_fill:48/co_ffffff,e_outline:48/co_ffffff,e_outline:inner_fill:48/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_630,q_90,w_630/v1619598252/production/designs/21447259_0.jpg', 'Andy Andy Andy Andy Andy Andy Andy Andy Andy Andy', 26, 'Toronto');
 
 
 

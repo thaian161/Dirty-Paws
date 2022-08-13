@@ -9,6 +9,8 @@ INSERT INTO messages (sender_id, receiver_id, content) VALUES
 INSERT INTO messages (sender_id, receiver_id, content) VALUES
 (2, 1, 'wow thats great, web devs are sexy');
 INSERT INTO messages (sender_id, receiver_id, content) VALUES
+(1, 2, 'ikr, thank you 😚😁😛');
+INSERT INTO messages (sender_id, receiver_id, content) VALUES
 (1, 6, 'hey do you think web devs are sexy');
 INSERT INTO messages (sender_id, receiver_id, content) VALUES
 (6, 1, '..... bruh');
@@ -21,5 +23,5 @@ INSERT INTO messages (sender_id, receiver_id, content) VALUES
 INSERT INTO messages (sender_id, receiver_id, content) VALUES
 (1, 8, 'omg u r my bfff (best fluffy friend forevs)');
 INSERT INTO messages (sender_id, receiver_id, content) VALUES
-(8, 1, 'F');
+(8, 1, 'yassss');
 
