@@ -1,22 +1,34 @@
 import './Nav.css';
 import clearLogo from './images/clearLogo.png';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 export default function Nav() {
   const [user, setUser] = useState(null);
 
+
   const loginUser = () => {
     axios.get('/login/2').then((res) => {
       console.log(res);
-    });
+      
+    }).then(
+      setTimeout(() => {
+        axios.get('/myprofile').then((res) => {
+          console.log(res.data[0])
+          setUser(res.data[0])
+        })
+      }, 0)
+    )
   };
+  
   const logoutUser = () => {
     axios.get('/logout').then((res) => {
       console.log(res);
+      setUser(null)
     })
   };
+
 
   return (
     <header className="header">
@@ -44,11 +56,15 @@ export default function Nav() {
         </Link>
       </nav>
       <div className="my-photo-on-nav">
-        <img
+        {user ? (<img
           className="photo-nav"
-          src="https://img.freepik.com/free-vector/cute-dog-bites-bone-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3743.jpg?w=740&t=st=1659775375~exp=1659775975~hmac=bf9c8ab42957127b945b39543036609169019f89d2ba2ccbb1962eaddc600c95"
+          src={user.profile_picture}
           alt=""
-        />
+        />) : (<img
+        className="photo-nav"
+        src='https://media.istockphoto.com/vectors/cute-cat-waving-paw-cartoon-vector-illustration-vector-id1218481548?k=20&m=1218481548&s=170667a&w=0&h=Ie9thBvAdFGvKdE078wOAoWlJzdM4_sv3q9q6uitwJI='
+        alt=""
+      /> )}
       </div>
     </header>
   );
