@@ -30,7 +30,7 @@ export default function ChatContent(props) {
     });
   };
 
-
+  const selected = props.selected || props.userIds[0]
 
   
   // props.messages is available, with all the logged-in user's messages
@@ -41,8 +41,8 @@ export default function ChatContent(props) {
     const messages = [];
     for (const message of props.messages) {
       if (
-        message.sender_id === props.selected ||
-        message.receiver_id === props.selected
+        message.sender_id === selected ||
+        message.receiver_id === selected
       ) {
         messages.push(message);
       }
