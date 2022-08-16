@@ -1,12 +1,9 @@
 import './About.css';
-import annBui from './images/annBui.png';
-import Dan from './images/Dan.png';
-import Dex from './images/Dex.png';
-import TestAbout from './TestAbout';
 
-import React from 'react';
 import styled from 'styled-components';
 import { useSpring, animated, config } from 'react-spring';
+
+import Dan from './images/Dan.png';
 
 const Container = styled(animated.div)`
   min-height: 32rem;
@@ -25,9 +22,9 @@ const Container = styled(animated.div)`
   text-align: center;
 `;
 const calc = (x, y) => [
-  -(y - window.innerHeight / 2) / 20,
+  -(y - window.innerHeight / 2) / 40,
   (x - window.innerWidth / 2) / 20,
-  1,
+  1.15,
 ];
 const trans = (x, y, s) =>
   `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;

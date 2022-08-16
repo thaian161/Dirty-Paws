@@ -1,9 +1,9 @@
 import './About.css';
-import annBui from './images/annBui.png';
 
-import React from 'react';
 import styled from 'styled-components';
 import { useSpring, animated, config } from 'react-spring';
+
+import annBui from './images/annBui.png';
 
 const Container = styled(animated.div)`
   min-height: 32rem;
@@ -12,19 +12,20 @@ const Container = styled(animated.div)`
   min-width: 20rem;
   max-width: 20rem;
 
-  background-color: transparent;
   border-radius: 2rem;
   overflow: hidden;
 
   margin: 1rem;
-  background-color: rgba(255, 255, 255, 0.491);
+  background-color: pink;
 
   text-align: center;
 `;
 const calc = (x, y) => [
-  -(y - window.innerHeight / 2) / 20,
-  (x - window.innerWidth / 2) / 20,
-  1,
+  // -(y - window.innerHeight / 2) / 60,
+  // (x - window.innerWidth / 4) / 60,
+  -(y - window.innerHeight / 2) / 40,
+  (x - window.innerWidth / 1/4) / 20,
+  1.15,
 ];
 const trans = (x, y, s) =>
   `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
