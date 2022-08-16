@@ -13,18 +13,18 @@ const Container = styled(animated.div)`
   max-width: 20rem;
 
   background-color: transparent;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   overflow: hidden;
 
   margin: 1rem;
-  background-color: rgba(255, 255, 255, 0.491);
+  background-color:#e9eff6ab;
 
   text-align: center;
 `;
 const calc = (x, y) => [
   -(y - window.innerHeight / 2) / 40,
   (x - window.innerWidth / 2) / 20,
-  1.15,
+  1.1,
 ];
 const trans = (x, y, s) =>
   `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
@@ -49,6 +49,15 @@ export default function About() {
       <div className="content">
         <h2 className="about-name"> Dan Lindeblom </h2>
         <p className="dev">Fullstack Web Developer</p>
+      </div>
+      <div className="about-bio">
+        <p className="about__bio">
+          A front-end lover
+          <br />
+          Amateur UX/UI designer.
+          <br />I am passionate about designing and creating products that are
+          user-friendly and visually appealing.
+        </p>
       </div>
       <div className="about-footer">
         <div className="city">

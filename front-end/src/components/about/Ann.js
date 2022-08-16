@@ -12,11 +12,11 @@ const Container = styled(animated.div)`
   min-width: 20rem;
   max-width: 20rem;
 
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   overflow: hidden;
 
   margin: 1rem;
-  background-color: pink;
+  background-color:#e9eff6ab;
 
   text-align: center;
 `;
@@ -24,8 +24,8 @@ const calc = (x, y) => [
   // -(y - window.innerHeight / 2) / 60,
   // (x - window.innerWidth / 4) / 60,
   -(y - window.innerHeight / 2) / 40,
-  (x - window.innerWidth / 1/4) / 20,
-  1.15,
+  (x - window.innerWidth / 1 / 4) / 20,
+  1.1,
 ];
 const trans = (x, y, s) =>
   `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
@@ -60,7 +60,7 @@ export default function Ann() {
           user-friendly and visually appealing.
         </p>
       </div>
-      <div className="about-footer">
+      <div className="about-footer ann">
         <div className="city">
           <p className="about-title">
             <a href="https://github.com/thaian161">
