@@ -18,7 +18,7 @@ const Container = styled(animated.div)`
 
   margin: 1rem;
 
-  background-color: #e9eff6ab;
+  background-color: #fffdfdaa;
 
   text-align: center;
 `;
