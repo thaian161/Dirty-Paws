@@ -47,12 +47,16 @@ export default function About() {
         <img className="about-pic" src={Dex} alt="front about dev-wrapper" />
       </div>
       <div className="content">
-        <h2 className="about-name"> Declan Davis </h2>
-        <p className="dev">Fullstack Web Developer</p>
+        <a href="mailto: dexthefish@gmail.com">
+          <h2 className="about-name"> Declan Davis </h2>
+          <p className="dev">Fullstack Web Developer</p>
+        </a>
       </div>
       <div className="about-bio">
         <p className="about__bio">
-        Cat lover and mathemagical wizard. Probably outside playing guitar or skateboarding around the city. Capable of building super epic web applications in the blink of an eye. 
+          Cat lover and mathemagical wizard. Probably outside playing guitar or
+          skateboarding around the city. Capable of building super epic web
+          applications in the blink of an eye.
         </p>
       </div>
       <div className="about-footer">

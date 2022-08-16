@@ -48,8 +48,10 @@ export default function Ann() {
         <img className="about-pic" src={annBui} alt="front about dev-wrapper" />
       </div>
       <div className="content">
-        <h2 className="about-name"> Ann Bui </h2>
-        <p className="dev">Fullstack Web Developer</p>
+        <a href="mailto: hello.annbui@gmail.com" >
+          <h2 className="about-name"> Ann Bui </h2>
+          <p className="dev">Fullstack Web Developer</p>
+        </a>
       </div>
       <div className="about-bio">
         <p className="about__bio">
