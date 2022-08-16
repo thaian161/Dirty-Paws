@@ -7,28 +7,28 @@ import axios from 'axios';
 export default function Nav() {
   const [user, setUser] = useState(null);
 
-
   const loginUser = () => {
-    axios.get('/login/2').then((res) => {
-      console.log(res);
-      
-    }).then(
-      setTimeout(() => {
-        axios.get('/myprofile').then((res) => {
-          console.log(res.data[0])
-          setUser(res.data[0])
-        })
-      }, 0)
-    )
+    axios
+      .get('/login/2')
+      .then((res) => {
+        console.log(res);
+      })
+      .then(
+        setTimeout(() => {
+          axios.get('/myprofile').then((res) => {
+            console.log(res.data[0]);
+            setUser(res.data[0]);
+          });
+        }, 0)
+      );
   };
-  
+
   const logoutUser = () => {
     axios.get('/logout').then((res) => {
       console.log(res);
-      setUser(null)
-    })
+      setUser(null);
+    });
   };
-
 
   return (
     <header className="header">
@@ -48,23 +48,27 @@ export default function Nav() {
         <Link className="nav-btn" to="/messages">
           Messages
         </Link>
-        <Link className="nav-btn" to="/" onClick={loginUser}>
-          Login
-        </Link>
-        <Link className="nav-btn" to="/" onClick={logoutUser}>
-          Logout
-        </Link>
+        {!user && (
+          <Link className="nav-btn" to="/" onClick={loginUser}>
+            Login
+          </Link>
+        )}
+        {user && (
+          <Link className="nav-btn" to="/" onClick={logoutUser}>
+            Logout
+          </Link>
+        )}
       </nav>
       <div className="my-photo-on-nav">
-        {user ? (<img
-          className="photo-nav"
-          src={user.profile_picture}
-          alt=""
-        />) : (<img
-        className="photo-nav"
-        src='https://media.istockphoto.com/vectors/cute-cat-waving-paw-cartoon-vector-illustration-vector-id1218481548?k=20&m=1218481548&s=170667a&w=0&h=Ie9thBvAdFGvKdE078wOAoWlJzdM4_sv3q9q6uitwJI='
-        alt=""
-      /> )}
+        {user ? (
+          <img className="photo-nav" src={user.profile_picture} alt="" />
+        ) : (
+          <img
+            className="photo-nav"
+            src="https://media.istockphoto.com/vectors/cute-cat-waving-paw-cartoon-vector-illustration-vector-id1218481548?k=20&m=1218481548&s=170667a&w=0&h=Ie9thBvAdFGvKdE078wOAoWlJzdM4_sv3q9q6uitwJI="
+            alt=""
+          />
+        )}
       </div>
     </header>
   );
