@@ -16,7 +16,7 @@ const Container = styled(animated.div)`
   overflow: hidden;
 
   margin: 1rem;
-  background-color:#e9eff6ab;
+  background-color: #e9eff6ab;
 
   text-align: center;
 `;
@@ -56,8 +56,13 @@ export default function Ann() {
           A front-end lover
           <br />
           Amateur UX/UI designer.
-          <br />I am passionate about designing and creating products that are
-          user-friendly and visually appealing.
+          <br />I am passionate about
+          <br />
+          designing and creating products
+          <br />
+          that are user-friendly
+          <br />
+          and visually appealing.
         </p>
       </div>
       <div className="about-footer ann">
