@@ -12,6 +12,7 @@ import ChatBubble from './components/chat-bubble/ChatBubble';
 import FrontProfile from './components/profile/FrontProfile';
 import BackProfile from './components/profile/BackProfile';
 import MatchProfile from './components/profile/MatchProfile';
+import About from './components/about/About';
 
 import Treat from './components/treat/Treat';
 import Registration from './components/registration/Registration';
@@ -23,10 +24,11 @@ root.render(
       {/* DO NOT REMOVE Nav COMPONENT FROM HERE */}
       <Nav />
       <Routes>
+        <Route path="/about" element={<About />} />
         <Route path="/" element={<LandingPage />} />
         <Route path="/pawsss" element={<Profile />} />
 
-        <Route path="/messages" element={<Chat/>} />
+        <Route path="/messages" element={<Chat />} />
 
         {/* testing purposed */}
 
@@ -40,7 +42,7 @@ root.render(
       </Routes>
       {/* DO NOT REMOVE ChatBubble COMPONENT FROM HERE */}
       <ChatBubble />
-      <Treat />
+      {/* <Treat /> */}
     </BrowserRouter>
   </React.StrictMode>
 );

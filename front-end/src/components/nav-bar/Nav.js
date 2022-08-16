@@ -39,6 +39,9 @@ export default function Nav() {
       </div>
 
       <nav className="navbar">
+        <Link className="nav-btn" to="/about">
+          About
+        </Link>
         <Link className="nav-btn" to="/pawsss">
           Paws
         </Link>
