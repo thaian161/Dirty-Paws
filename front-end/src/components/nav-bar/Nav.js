@@ -7,20 +7,20 @@ import axios from 'axios';
 export default function Nav() {
   const [user, setUser] = useState(null);
 
-  const loginUser = () => {
-    axios
-      .get('/login/2')
-      .then((res) => {
-        console.log(res);
-      })
-      .then(
-        setTimeout(() => {
-          axios.get('/myprofile').then((res) => {
-            console.log(res.data[0]);
-            setUser(res.data[0]);
-          });
-        }, 0)
-      );
+  useEffect(() => {
+    // this workaround automatically assigns user 2 to the profile
+    loginUser();
+  }, []);
+
+  const loginUser = async () => {
+    try {
+      await axios.get('/login/2')
+      const profileData = await axios.get('/myprofile')
+      setUser(profileData.data[0]);
+    }
+    catch(error) {
+      console.log("it broke. error:  ", error);
+    }
   };
 
   const logoutUser = () => {

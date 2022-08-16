@@ -34,6 +34,8 @@ export default function Registration() {
     axios.post('/users/edit', {name, age, city, bio, avatar, id: user.id}).then((res) => {
       setUser(res.data[0]);
       document.getElementsByClassName("profile-form")[0].reset();      
+      // reload the window to force the profile picture in the corner to update
+      window.location.reload(false);
     })
 
   }
