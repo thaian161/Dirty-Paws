@@ -42,7 +42,7 @@ root.render(
       </Routes>
       {/* DO NOT REMOVE ChatBubble COMPONENT FROM HERE */}
       <ChatBubble />
-      {/* <Treat /> */}
+      <Treat />
     </BrowserRouter>
   </React.StrictMode>
 );
