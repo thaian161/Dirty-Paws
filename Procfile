@@ -1,1 +1,0 @@
-web: node --prefix back-end/bin/www
