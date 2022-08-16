@@ -8,9 +8,13 @@ export default function Nav() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    // this workaround automatically assigns user 2 to the profile
-    loginUser();
+    getUser();
   }, []);
+
+  const getUser = async () => {
+    const profileData = await axios.get('/myprofile')
+    setUser(profileData.data[0]);
+  }
 
   const loginUser = async () => {
     try {
