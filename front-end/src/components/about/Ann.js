@@ -25,7 +25,7 @@ const calc = (x, y) => [
   // (x - window.innerWidth / 4) / 60,
   -(y - window.innerHeight / 2) / 40,
   (x - window.innerWidth / 1 / 4) / 20,
-  1.1,
+  1,
 ];
 const trans = (x, y, s) =>
   `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;

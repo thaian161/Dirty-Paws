@@ -41,6 +41,8 @@ img.about-pic {
   border-radius: 15rem;
   border: solid 1px white;
   background-color: #4f7fbdeb;
+
+  position: relative;
 }
 
 h2.about-name {
@@ -51,16 +53,22 @@ h2.about-name {
   color: #406ca6;
   font-size: 2rem;
   font-weight: 700;
+
+  position: relative;
 }
 
 .about-footer {
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
+
+  position: relative;
 }
 
-.about-footer.ann{
+.about-footer.ann {
   padding: 1rem 2.5rem;
+
+  position: relative;
 }
 
 .about-footer p.about-title {
@@ -70,6 +78,8 @@ h2.about-name {
   font-weight: 900;
   color: #646464e7;
   -webkit-text-stroke: 0.3px #646464e7;
+
+  position: relative;
 }
 
 .about-footer p.num {
@@ -83,10 +93,14 @@ h2.about-name {
 
 div.profile-top {
   background-color: transparent;
+
+  position: relative;
 }
 
 div.city {
   margin-left: 1rem;
+
+  position: relative;
 }
 
 div.about-wrapper {
@@ -94,13 +108,17 @@ div.about-wrapper {
   flex-direction: row;
 
   justify-content: space-evenly;
+
+  position: relative;
 }
 
 div.about-container {
   background-color: transparent;
   margin: 1.5rem;
-  border:dashed 4px #4770aac4;
+  border: dashed 4px #4770aac4;
   border-radius: 1.5rem;
+
+  position: relative;
 }
 
 img.github {
@@ -125,6 +143,8 @@ p.about__bio {
   color: #646464e7;
   -webkit-text-stroke: 0.3px #646464e7;
   line-height: 1.3rem;
+
+  position: relative;
 }
 
 p.dev {
@@ -133,9 +153,11 @@ p.dev {
   font-weight: 700;
   margin-bottom: 5px;
   color: #406ca6;
+
+  position: relative;
 }
 
-.dev-wrapper {
+/* .dev-wrapper {
   min-height: 32rem;
   max-height: 33rem;
 
@@ -146,9 +168,11 @@ p.dev {
   border-radius: 1rem;
   overflow: hidden;
 
- 
   background-color: rgba(255, 255, 255, 0.491);
 
   text-align: center;
+} */
 
+.testing {
+  color: #eff4eccc;
 }

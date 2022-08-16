@@ -17,7 +17,7 @@ const Container = styled(animated.div)`
   overflow: hidden;
 
   margin: 1rem;
-  background-color:#e9eff6ab;
+  background-color: #e9eff6ab;
 
   text-align: center;
 `;
@@ -52,11 +52,7 @@ export default function About() {
       </div>
       <div className="about-bio">
         <p className="about__bio">
-          A front-end lover
-          <br />
-          Amateur UX/UI designer.
-          <br />I am passionate about designing and creating products that are
-          user-friendly and visually appealing.
+        Cat lover and mathemagical wizard. Probably outside playing guitar or skateboarding around the city. Capable of building super epic web applications in the blink of an eye. 
         </p>
       </div>
       <div className="about-footer">
