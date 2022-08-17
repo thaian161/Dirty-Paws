@@ -5,7 +5,7 @@ Dirty Paws is a cartoon pet-themed dating app built with Node, React, Express, a
 ## Contributors:
 
 - 👩🏻‍🎨 [Ann Bui](https://github.com/thaian161): the frontend/dogs lover and amateur UX/UI designer
-- 👨🏼‍💻 [Dan Lindeblom](https://github.com/DLindeblom): the master of backend and data manipulater
+- 👨🏼‍💻 [Dan Lindeblom](https://github.com/DLindeblom): the master of backend, data and a sports fanatic
 - 👨‍🏭 [Declan Davis](https://github.com/DexTheFish): the master of functionality, cats and origami
 
 ## Main Features:
@@ -25,11 +25,11 @@ Dirty Paws is a cartoon pet-themed dating app built with Node, React, Express, a
 - Matching uses a weighted algorithm to favour users with more treats/badges
 
 ## Credits
+
 We would like to express our appreciation and gratitude for the knowledge and unending support of our instructors, mentors, and staff at Lighthouse Labs.
 As well, we want to acknowledge and shout out to all the online resources we consulted during the development of this project.
 <br>
-***It is truly by standing on the shoulders of giants that we have made it to where we are today!***
- 
+**_It is truly by standing on the shoulders of giants that we have made it to where we are today!_**
 
 ## Final Product
 
@@ -119,6 +119,5 @@ From here, we recommend you have **two separate terminal window** opens
 10. Start to build your profile, treats, and paws. LET'S GET DIRTY!!!
 
 <br>
-
 
 > **Hope you enjoy the app and have a nice day :D**
