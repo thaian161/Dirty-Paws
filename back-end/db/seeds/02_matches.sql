@@ -12,4 +12,13 @@ INSERT INTO matches (userOne_id, userTwo_id, userOne_likes_userTwo, userTwo_like
 (1, 5, false, true);
 INSERT INTO matches (userOne_id, userTwo_id, userOne_likes_userTwo, userTwo_likes_userOne) VALUES
 (1, 7, false, true);
+-- create some 'likes' for user 2:
+INSERT INTO matches (userOne_id, userTwo_id, userOne_likes_userTwo, userTwo_likes_userOne) VALUES
+(2, 3, false, true);
+INSERT INTO matches (userOne_id, userTwo_id, userOne_likes_userTwo, userTwo_likes_userOne) VALUES
+(2, 5, false, true);
+INSERT INTO matches (userOne_id, userTwo_id, userOne_likes_userTwo, userTwo_likes_userOne) VALUES
+(2, 7, false, true);
+INSERT INTO matches (userOne_id, userTwo_id, userOne_likes_userTwo, userTwo_likes_userOne) VALUES
+(2, 9, false, true);
 
