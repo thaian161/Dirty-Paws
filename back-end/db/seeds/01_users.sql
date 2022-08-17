@@ -78,5 +78,10 @@ INSERT INTO users (name, treats, password, profile_picture, bio, age, address) V
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
 ('Michael', 25, '123', 'https://c8.alamy.com/comp/W2AB4M/ezo-momonga-japanese-dwarf-flying-squirrel-cute-drawing-kawaii-cartoon-animal-vector-clip-art-illustration-W2AB4M.jpg', 'tha coolest squirrel in all teh lands. Lets get NUTS together', 22, 'California');
 
+INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
+('Francis', 42, '123', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHKksLg3zHeo05RdcXjWZbu81F37h_EAFGfA&usqp=CAU
+', 'coffee lover and potato enthusiast. Wiggle wiggle yeahhhhh', 35, 'Montreal');
+
+
 
 
