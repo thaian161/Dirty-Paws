@@ -27,7 +27,7 @@ INSERT INTO user_badges (badge_id, user_id) VALUES (1,26);
 INSERT INTO user_badges (badge_id, user_id) VALUES (2,27);
 
 
-
+INSERT INTO user_badges (badge_id, user_id) VALUES (2,1);
 INSERT INTO user_badges (badge_id, user_id) VALUES (2,6);
 INSERT INTO user_badges (badge_id, user_id) VALUES (3,7);
 INSERT INTO user_badges (badge_id, user_id) VALUES (4,8);
