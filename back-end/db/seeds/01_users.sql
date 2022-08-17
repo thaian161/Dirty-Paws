@@ -73,7 +73,7 @@ INSERT INTO users (name, treats, password, profile_picture, bio, age, address) V
 ('Colleen', 7, '123', 'https://thumbs.dreamstime.com/b/cute-panda-animal-cartoon-character-hugging-love-heart-illustration-213323480.jpg', 'looking for a cute panda just like me :)', 24, 'Toronto');
 
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
-('Ryan', 5, '123', 'https://thumbs.dreamstime.com/b/cute-dinosaur-animal-cartoon-characters-green-hugging-love-cute-dinosaur-animal-cartoon-character-illustration-green-211998734.jpg', 'rrrrraaawwwwwwrrrrrrr', 25, 'Jurassic Park');
+('Ryan', 5, '123', 'https://thumbs.dreamstime.com/b/cute-dinosaur-animal-cartoon-characters-green-hugging-love-cute-dinosaur-animal-cartoon-character-illustration-green-211998734.jpg', 'rrrrraaawwwwwwrrrrrrr i am a dinosaurrrrrrrrrrrrr and im super friendly too', 25, 'Jurassic Park');
 
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
 ('Michael', 25, '123', 'https://c8.alamy.com/comp/W2AB4M/ezo-momonga-japanese-dwarf-flying-squirrel-cute-drawing-kawaii-cartoon-animal-vector-clip-art-illustration-W2AB4M.jpg', 'tha coolest squirrel in all teh lands. Lets get NUTS together', 22, 'California');
