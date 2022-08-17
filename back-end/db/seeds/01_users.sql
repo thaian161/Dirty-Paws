@@ -58,7 +58,7 @@ INSERT INTO users (name, treats, password, profile_picture, bio, age, address) V
 ('Warren', 1, '123', 'https://nerdycute.com/wp-content/uploads/2016/11/cute-water-bear-1000.png', 'Am Warren a dev instructor. My favourite programming language is PHP. Is that a joke? Anyone guess', 23, 'Toronto');
 
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
-('Haiii Bui', 1, '123', 'https://img.freepik.com/free-vector/cute-penguin-eating-doughnut-cartoon_138676-3019.jpg?w=740&t=st=1660160275~exp=1660160875~hmac=1d4e88563f10b2c40e8c2c80fd0b3eb221c155442562a2ef7556fefc5965b74c', 'just here to see if my wifey join this app, dun swipe me pls, oh btw im a tech dude ok byeeeeeeeeee', 30, 'Winnipeg');
+('Haiii Babe', 1, '123', 'https://img.freepik.com/free-vector/cute-penguin-eating-doughnut-cartoon_138676-3019.jpg?w=740&t=st=1660160275~exp=1660160875~hmac=1d4e88563f10b2c40e8c2c80fd0b3eb221c155442562a2ef7556fefc5965b74c', 'just here to see if my wifey join this app, dun swipe me pls, oh btw im a tech dude ok byeeeeeeeeee', 30, 'Winnipeg');
 
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
 ('ThyAnn', 1, '123', 'https://img.freepik.com/free-vector/cute-tiger-jumping-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-vector_138676-4382.jpg?w=740&t=st=1660160461~exp=1660161061~hmac=7a4bc3f2376fcabd6f3f5b12e2403d01c33e734dc163490039df8c1b7c273f88', 'Imma heartbreaker GRUUUU, i love to cautch moving obj not cautching feelings, yeah i no i am cool', 25, 'Winnipeg');
