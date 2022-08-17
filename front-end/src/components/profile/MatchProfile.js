@@ -6,11 +6,19 @@ import { Link } from 'react-router-dom';
 export default function MatchProfile(props) {
   return (
     <>
+      
       <div className="pyro">
         <div className="before"></div>
         <div className="after"></div>
       </div>
-
+      <div className="pyro">
+        <div className="before"></div>
+        <div className="after"></div>
+      </div>
+      <div className="pyro">
+        <div className="before"></div>
+        <div className="after"></div>
+      </div>
       <div className="container">
         <div className="match-wrapper">
           <div className="profile-match">
@@ -68,6 +76,14 @@ export default function MatchProfile(props) {
             <div className="after"></div>
           </div>
         </div>
+        <div className="pyro">
+          <div className="before"></div>
+          <div className="after"></div>
+        </div>
+      </div>
+      <div className="pyro">
+        <div className="before"></div>
+        <div className="after"></div>
       </div>
     </>
   );
