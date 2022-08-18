@@ -1,5 +1,5 @@
 import './Treat.css';
-import { React, useEffect, useState } from 'react';
+import { React, useState } from 'react';
 import axios from 'axios';
 import treatsound from './assets/treatsound.wav';
 
@@ -9,8 +9,6 @@ export default function Treat() {
   }
 
   const arrTreatPics = [
-    'https://cdn-icons-png.flaticon.com/512/4787/4787142.png',
-
     'https://cdn-icons-png.flaticon.com/512/877/877132.png',
 
     'https://cdn-icons-png.flaticon.com/512/784/784164.png',
@@ -27,11 +25,33 @@ export default function Treat() {
 
     'https://cdn-icons-png.flaticon.com/512/877/877133.png?w=740&t=st=1660166939~exp=1660167539~hmac=c9864deaf307629255b5049da6825ca737db3e26ff92aeb407c6c6e3066232ac',
 
-    'https://cdn-icons-png.flaticon.com/512/877/877132.png?w=740&t=st=1660166963~exp=1660167563~hmac=c247710597e9f376201e86357d2d9d2abed5936d531f4f36f469a9bb8070422f',
-
     'https://cdn-icons-png.flaticon.com/512/720/720898.png?w=740&t=st=1660167068~exp=1660167668~hmac=3737c9f1987b258d2ae838449f702a5132eaef7f2e3e29506a8959ad966f401e',
 
     'https://cdn-icons-png.flaticon.com/512/5793/5793514.png',
+
+    'https://cdn-icons-png.flaticon.com/512/5976/5976253.png',
+
+    'https://cdn-icons-png.flaticon.com/512/3169/3169657.png',
+
+    'https://cdn-icons-png.flaticon.com/512/8269/8269439.png',
+
+    'https://cdn-icons-png.flaticon.com/512/8242/8242536.png',
+
+    'https://cdn-icons-png.flaticon.com/512/1390/1390264.png',
+
+    'https://cdn-icons.flaticon.com/png/512/1650/premium/1650579.png?token=exp=1660841094~hmac=ecab561a8a30ed89daca8cd3ffdb8f9b',
+
+    'https://cdn-icons-png.flaticon.com/512/5002/5002251.png',
+
+    'https://cdn-icons-png.flaticon.com/512/5389/5389413.png',
+
+    'https://cdn-icons-png.flaticon.com/512/1390/1390288.png',
+
+    'https://cdn-icons-png.flaticon.com/512/3713/3713222.png',
+
+    'https://cdn-icons-png.flaticon.com/512/2641/2641244.png',
+
+    'https://cdn-icons-png.flaticon.com/512/4509/4509571.png',
   ];
   const getRandomTreatPicture = () => {
     // choose a random index and use it to change treatPicture
