@@ -37,23 +37,23 @@ As well, we want to acknowledge and shout out to all the online resources we con
 
 #### _Landing Page_
 
-!["Landing Page"]()
+!["Landing Page"](https://github.com/thaian161/Dirty-Paws/blob/master/front-end/public/docs/Landing.png?raw=true)
 
 #### _Update Your Profile_
 
-!["Edit Profile"]()
+!["Edit Profile"](https://github.com/thaian161/Dirty-Paws/blob/master/front-end/public/docs/Profile.png?raw=true)
 
 #### _Paws: searching for your perfect match_
 
-!["Paws"]()
+!["Paws"](https://github.com/thaian161/Dirty-Paws/blob/master/front-end/public/docs/Paws.png?raw=true)
 
 #### _Messages: live chat with your matches_
 
-!["Messages"]()
+!["Messages"](https://github.com/thaian161/Dirty-Paws/blob/master/front-end/public/docs/Messages.png?raw=true)
 
 ## Entity Relationship Diagram (ERD)
 
-!["ERD"]()
+!["ERD"](https://github.com/thaian161/Dirty-Paws/blob/master/front-end/public/docs/FinalERD.png?raw=true)
 
 ## Dependencies
 
