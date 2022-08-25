@@ -37,9 +37,7 @@ As well, we want to acknowledge and shout out to all the online resources we con
 
 #### _Landing Page_
 
-!["Landing Page"](https://github.com/thaian161/Dirty-Paws/blob/master/front-end/public/docs/Landing-page.mp4)
-
-https://github.com/thaian161/Dirty-Paws/blob/master/front-end/public/docs/Landing-page.mp4
+!["Landing Page"](https://media.giphy.com/media/R57dTC24YiWPYcRPpP/giphy.gif)
 
 #### _Update Your Profile_
 
