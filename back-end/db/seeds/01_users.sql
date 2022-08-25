@@ -30,7 +30,7 @@ INSERT INTO users (name, treats, password, profile_picture, bio, age, address) V
 ('Phil', 5, '123', 'https://img.freepik.com/free-vector/cute-cat-unicorn-flying-cartoon-illustration-animal-wildlife-icon-concept_138676-1909.jpg?w=740&t=st=1659776016~exp=1659776616~hmac=74908cd5aeb16052672b21acbd9461ae33df344bc1e3d1c8ee570dde742d1cd4', 'A proper classy gentlecat. My favourite hobby is hissing at stray cats. No dogs please.', 52, 'Toronto');
 
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
-('Brian', 9, '123', 'https://img.freepik.com/free-vector/cute-panda-with-skateboard-cartoon-vector-icon-illustration-animal-sport-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3932.jpg?w=740&t=st=1660161002~exp=1660161602~hmac=fedcf34d11507ab565cbdd3360101693fdbb0bf9e06141b8618213f4a65950b0', 'Aspiring writer. Interested in humans or dogs. Looking for someone smart... but not too smart.', 18, 'Toronto');
+('Bryan', 9, '123', 'https://img.freepik.com/free-vector/cute-panda-with-skateboard-cartoon-vector-icon-illustration-animal-sport-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3932.jpg?w=740&t=st=1660161002~exp=1660161602~hmac=fedcf34d11507ab565cbdd3360101693fdbb0bf9e06141b8618213f4a65950b0', 'Aspiring writer. Interested in humans or dogs. Looking for someone smart... but not too smart.', 18, 'Toronto');
 
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
 ('Megan', 1, '123', 'https://img.freepik.com/free-vector/cute-dog-with-rose-flower-cartoon-illustration_138676-3234.jpg?w=740&t=st=1659776052~exp=1659776652~hmac=05bd89bb5ba2cce8dd781f9ea93b83bc8cdfe2e1c695ecd1489f9a7e254b675e', 'Woof! I like belly rubs and playing at the park. I have a soft spot for golden retrievers.', 33, 'Toronto');
@@ -52,7 +52,7 @@ INSERT INTO users (name, treats, password, profile_picture, bio, age, address) V
 ('Spudinator', 1, '123', 'https://ih1.redbubble.net/image.450886651.0130/aps,504x498,small,transparent-pad,600x600,f8f8f8.u8.jpg', 'All i wanna say is potato potato wiggle wiggle wiggle, what am i?  a dinosaur weeeeeeeh', 29, 'Toronto');
 
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
-('Vasily', 1, '123', 'https://img.freepik.com/free-vector/cute-goat-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-vector-flat_138676-4606.jpg?w=2000', 'whatssuppppppppp I am morpheus the G.O.A.T - oh sheeet just goat serious', 21, 'Toronto');
+('Vasily', 1, '123', 'https://img.freepik.com/free-vector/cute-goat-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-vector-flat_138676-4606.jpg?w=2000', 'whatssuppppppppp I am morpheus the G.O.A.T - oh sheeet just goat serious, like very serious', 21, 'Toronto');
 
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
 ('Warren', 1, '123', 'https://nerdycute.com/wp-content/uploads/2016/11/cute-water-bear-1000.png', 'Am Warren a dev instructor. My favourite programming language is PHP. Is that a joke? Anyone guess', 23, 'Toronto');
@@ -79,16 +79,19 @@ INSERT INTO users (name, treats, password, profile_picture, bio, age, address) V
 ('Michael', 25, '123', 'https://media.istockphoto.com/vectors/japanese-dwarf-flying-squirrel-vector-id1160619935?k=20&m=1160619935&s=612x612&w=0&h=TcHjpa0AVJkOLaXjDRPlrC5_vLgawVuQdx2bdaGY7hY=', 'tha coolest squirrel in all teh lands. Lets get NUTS together!!! aye!!!', 22, 'California');
 
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
-('Francis', 42, '123', 'https://img.freepik.com/free-vector/cute-cat-with-coffee-cup-cartoon-icon-illustration_138676-2818.jpg?w=740&t=st=1660764344~exp=1660764944~hmac=3faccfd87a4d4ce7e4d14176b56bd4bf60c228cefcfa578ad576757dbe8df9dd', 'coffee lover and potato enthusiast. Wiggle wiggle yeahhhhh', 35, 'Montreal');
+('Francis', 42, '123', 'https://img.freepik.com/free-vector/cute-cat-with-coffee-cup-cartoon-icon-illustration_138676-2818.jpg?w=740&t=st=1660764344~exp=1660764944~hmac=3faccfd87a4d4ce7e4d14176b56bd4bf60c228cefcfa578ad576757dbe8df9dd', 'coffee lover and potato enthusiast. Wiggle wiggle yeahhhhh, you got this, im proud of you', 35, 'Montreal');
 
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
-('Katie', 42, '123', 'https://img.freepik.com/free-vector/cute-panda-playing-skateboard-cartoon-vector-icon-illustration-animal-sport-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3522.jpg?w=826&t=st=1660765037~exp=1660765637~hmac=ed002d2c9730477ef5547c56e6dda5865c2c661d35bd4b65a241fb9288602263', 'hey yall i love sports and love helping others with their education, i believe in a second chance so swipe me', 32, 'Toronto');
+('Katie', 42, '123', 'https://img.freepik.com/free-vector/cute-panda-playing-skateboard-cartoon-vector-icon-illustration-animal-sport-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3522.jpg?w=826&t=st=1660765037~exp=1660765637~hmac=ed002d2c9730477ef5547c56e6dda5865c2c661d35bd4b65a241fb9288602263', 'hey yall i love sports & helping others with their education, i believe in a second chance so swipe me', 32, 'Toronto');
 
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
 ('Calvin', 5, '123', 'https://img.freepik.com/free-vector/cute-slot-sitting-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-flat_138676-4995.jpg?w=826&t=st=1660767147~exp=1660767747~hmac=db383275a5d19b55b7a6d693b5bf662e5eb5db68581c9353f4fca9be6cc371f1', 'i love to learn new thing, swipe me if you are into engineering stuff... im funny in my own way', 37, 'Toronto');
 
 INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
 ('Zain', 5, '123', 'https://img.freepik.com/free-vector/cute-hamster-eating-sunflower-seed_138676-2059.jpg?w=826&t=st=1660767443~exp=1660768043~hmac=11750b56d3a33507ec7fa0d709e5c376ab3c058305eb0748984568fffec84bd4', 'mentoring newbies are my fav hobby, if i can do it, you can do it too, im rooting for you', 22, 'Toronto');
+
+INSERT INTO users (name, treats, password, profile_picture, bio, age, address) VALUES
+('Gary', 5, '123', 'https://img.freepik.com/free-vector/cute-fox-operating-laptop-cartoon-illustration_138676-2743.jpg?w=740&t=st=1660857457~exp=1660858057~hmac=aa634cd9da1dd6a66d264cbc7731457d742bc945a995ea4a930137d7d7bdf0da', 'do not use else, that is a big no no, also do you know what is the spread operator means???', 35, 'Toronto');
 
 
 
