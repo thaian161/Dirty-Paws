@@ -4,7 +4,7 @@ Dirty Paws is a cartoon pet-themed dating app built with Node, React, Express, a
 
 ## Contributors:
 
-- 👩🏻‍🎨 [Ann Bui](https://github.com/thaian161): the frontend/dogs lover and amateur UX/UI designer
+- 👩🏻‍🎨 [Ann Bui](https://github.com/thaian161): the master of frontend, an amateur UX/UI designer and dogs lover
 - 👨🏼‍💻 [Dan Lindeblom](https://github.com/DLindeblom): the master of backend, data and a sports fanatic
 - 👨‍🏭 [Declan Davis](https://github.com/DexTheFish): the master of functionality, cats and origami
 
@@ -42,12 +42,13 @@ https://user-images.githubusercontent.com/76141297/186611684-c9c734c6-35f8-478b-
 https://user-images.githubusercontent.com/76141297/186612700-af0be638-c743-457c-8ca7-86bea0b02fc6.mp4
 
 #### _Paws: searching for your perfect match_
-
-!["Paws"](https://github.com/thaian161/Dirty-Paws/blob/master/front-end/public/docs/Paws.png?raw=true)
+https://user-images.githubusercontent.com/76141297/186613925-20dfcb4f-7f05-4e8c-9787-3648710069e3.mp4
 
 #### _Messages: live chat with your matches_
+https://user-images.githubusercontent.com/76141297/186616211-1bdc6b59-7148-490f-9445-28941b9c65e4.mp4
 
-!["Messages"](https://github.com/thaian161/Dirty-Paws/blob/master/front-end/public/docs/Messages.png?raw=true)
+#### _About Page_
+https://user-images.githubusercontent.com/76141297/186616746-aa20c033-afe2-4a49-9905-561e13eac5f9.mp4
 
 ## Entity Relationship Diagram (ERD)
 
@@ -66,6 +67,8 @@ https://user-images.githubusercontent.com/76141297/186612700-af0be638-c743-457c-
 - react-lottie: ^1.2.3
 - react-router-dom: ^6.3.0
 - react-scripts: 5.0.
+- react-spring: ^9.5.2
+- styled-components: ^5.3.5
 
 #### Back End
 
