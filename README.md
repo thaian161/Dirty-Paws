@@ -39,8 +39,7 @@ As well, we want to acknowledge and shout out to all the online resources we con
 https://user-images.githubusercontent.com/76141297/186611684-c9c734c6-35f8-478b-8464-cd4a7004d821.mp4
 
 #### _Update Your Profile_
-
-!["Edit Profile"](https://github.com/thaian161/Dirty-Paws/blob/master/front-end/public/docs/Profile.png?raw=true)
+https://user-images.githubusercontent.com/76141297/186612700-af0be638-c743-457c-8ca7-86bea0b02fc6.mp4
 
 #### _Paws: searching for your perfect match_
 
