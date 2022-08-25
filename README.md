@@ -39,6 +39,8 @@ As well, we want to acknowledge and shout out to all the online resources we con
 
 !["Landing Page"](https://media.giphy.com/media/R57dTC24YiWPYcRPpP/giphy.gif)
 
+<iframe src="https://giphy.com/embed/Gd1lAoYrZLaBH7sQKV" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/Gd1lAoYrZLaBH7sQKV">Landing Page</a></p>
+
 #### _Update Your Profile_
 
 !["Edit Profile"](https://github.com/thaian161/Dirty-Paws/blob/master/front-end/public/docs/Profile.png?raw=true)
