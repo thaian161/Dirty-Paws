@@ -37,9 +37,7 @@ As well, we want to acknowledge and shout out to all the online resources we con
 
 #### _Landing Page_
 
-!["Landing Page"](https://media.giphy.com/media/R57dTC24YiWPYcRPpP/giphy.gif)
-
-<iframe src="https://giphy.com/embed/Gd1lAoYrZLaBH7sQKV" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/Gd1lAoYrZLaBH7sQKV">Landing Page</a></p>
+!["Landing Page"](https://media.giphy.com/media/Gd1lAoYrZLaBH7sQKV/giphy.mp4)
 
 #### _Update Your Profile_
 
