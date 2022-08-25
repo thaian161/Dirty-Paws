@@ -39,6 +39,8 @@ As well, we want to acknowledge and shout out to all the online resources we con
 
 !["Landing Page"](https://github.com/thaian161/Dirty-Paws/blob/master/front-end/public/docs/Landing-page.mp4)
 
+https://github.com/thaian161/Dirty-Paws/blob/master/front-end/public/docs/Landing-page.mp4
+
 #### _Update Your Profile_
 
 !["Edit Profile"](https://github.com/thaian161/Dirty-Paws/blob/master/front-end/public/docs/Profile.png?raw=true)
