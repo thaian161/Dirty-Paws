@@ -18,7 +18,7 @@ export default function Nav() {
 
   const loginUser = async () => {
     try {
-      await axios.get('/login/11')
+      await axios.get('/login/2')
       const profileData = await axios.get('/myprofile')
       setUser(profileData.data[0]);
     }
