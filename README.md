@@ -33,7 +33,7 @@ As well, we want to acknowledge and shout out to all the online resources we con
 
 ## Final Product
 
-### [👋 Watch Live Demo Here 👋](https://youtu.be/0k2WaGUxCJ0)
+### [👋 Watch Demo Presentation Here 👋](https://youtu.be/vDzoe_sz0AQ)
 
 #### _Landing Page_
 https://user-images.githubusercontent.com/76141297/186611684-c9c734c6-35f8-478b-8464-cd4a7004d821.mp4
