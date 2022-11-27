@@ -6,7 +6,7 @@ import Dex from './Dex.js';
 
 export default function About() {
   return (
-    <div>
+    <>
       <section className="home-about">
         <div className="about-wrapper">
           <div className="about-container">
@@ -20,6 +20,6 @@ export default function About() {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }
