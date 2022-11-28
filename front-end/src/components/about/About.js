@@ -10,9 +10,8 @@ export default function About(props) {
       <section className="home-about">
         <div className="about-wrapper">
           <Ann />
-          <div className="about-container">
-            <Dan />
-          </div>
+          <Dan />
+
           <div className="about-container">
             <Dex />
           </div>
