@@ -54,6 +54,18 @@ function playTreatSound() {
 }
 
 export default function Treat() {
+  const getRandomTreatPicture = () => {
+    // choose a random index and use it to change treatPicture
+    const randomTreatIndex = Math.floor(Math.random() * arrTreatPics.length);
+    setTreatPicture(arrTreatPics[randomTreatIndex]);
+  };
+  const getRandomNumber = (min, max) => {
+    return Math.random() * (max - min) + min;
+  };
+  const randomInterval = () => {
+    let num = Math.floor(Math.random() * 8000) + 3000;
+    return num;
+  };
 
   const [hidden, setHidden] = useState(false);
   const [treats, setTreats] = useState(0);
@@ -64,21 +76,6 @@ export default function Treat() {
     getRandomNumber(0.25 * window.innerWidth, 0.75 * window.innerWidth)
   );
   const [treatPicture, setTreatPicture] = useState(arrTreatPics[0]);
-
-  const getRandomTreatPicture = () => {
-    // choose a random index and use it to change treatPicture
-    const randomTreatIndex = Math.floor(Math.random() * arrTreatPics.length);
-    setTreatPicture(arrTreatPics[randomTreatIndex]);
-  };
-
-  const getRandomNumber = (min, max) => {
-    return Math.random() * (max - min) + min;
-  };
-
-  const randomInterval = () => {
-    let num = Math.floor(Math.random() * 8000) + 3000;
-    return num;
-  };
 
   const moveButton = () => {
     let randomTop = getRandomNumber(
@@ -95,6 +92,7 @@ export default function Treat() {
   };
 
   const hideTreatHandler = () => {
+   
     playTreatSound();
     moveButton();
     setHidden(true);
