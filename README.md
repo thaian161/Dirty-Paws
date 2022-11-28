@@ -1,4 +1,4 @@
-# Final Project: Dirty Paws 🐾
+# Graduation Project: Dirty Paws 🐾
 
 Dirty Paws is a cartoon pet-themed dating app built with Node, React, Express, and PostgreSQL.
 
