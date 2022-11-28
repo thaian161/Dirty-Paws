@@ -111,7 +111,7 @@ div.about-wrapper {
 div.about-container {
   background-color: transparent;
   margin: 1.5rem;
-  border: dashed 4px #4770aac4;
+  border: dashed 4px #4770aac4  ;
   border-radius: 1.5rem;
 
   position: relative;

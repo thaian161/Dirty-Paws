@@ -14,7 +14,10 @@ const Container = styled(animated.div)`
   overflow: hidden;
 
   margin: 1rem;
-  background-color: #fffdfdaa;
+  background: #fffdfd92;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
   text-align: center;
 `;

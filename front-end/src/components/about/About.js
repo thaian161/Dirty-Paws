@@ -6,17 +6,12 @@ import Dex from './Dex.js';
 
 export default function About(props) {
   return (
-    <>
-      <section className="home-about">
-        <div className="about-wrapper">
-          <Ann />
-          <Dan />
-
-          <div className="about-container">
-            <Dex />
-          </div>
-        </div>
-      </section>
-    </>
+    <section className="home-about">
+      <div className="about-wrapper">
+        <Ann />
+        <Dan />
+        <Dex />
+      </div>
+    </section>
   );
 }
