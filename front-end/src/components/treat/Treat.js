@@ -53,31 +53,31 @@ function playTreatSound() {
   new Audio(treatsound).play();
 }
 
+const getRandomNumber = (min, max) => {
+  return Math.random() * (max - min) + min;
+};
+const randomInterval = () => {
+  let num = Math.floor(Math.random() * 8000) + 3000;
+  return num;
+};
+
 export default function Treat() {
+  const [hideTheTreat, setHideTheTreat] = useState(false);
+  const [offSetTop, setOffSetTop] = useState(
+    getRandomNumber(0.25 * window.innerHeight, 0.75 * window.innerHeight)
+  );
+  const [offSetLeft, setOffSetLeft] = useState(
+    getRandomNumber(0.25 * window.innerWidth, 0.75 * window.innerWidth)
+  );
+  const [treatPicture, setTreatPicture] = useState(arrTreatPics[0]);
+
   const getRandomTreatPicture = () => {
     // choose a random index and use it to change treatPicture
     const randomTreatIndex = Math.floor(Math.random() * arrTreatPics.length);
     setTreatPicture(arrTreatPics[randomTreatIndex]);
   };
-  const getRandomNumber = (min, max) => {
-    return Math.random() * (max - min) + min;
-  };
-  const randomInterval = () => {
-    let num = Math.floor(Math.random() * 8000) + 3000;
-    return num;
-  };
 
-  const [hidden, setHidden] = useState(false);
-  const [treats, setTreats] = useState(0);
-  const [topState, setTopState] = useState(
-    getRandomNumber(0.25 * window.innerHeight, 0.75 * window.innerHeight)
-  );
-  const [leftState, setLeftState] = useState(
-    getRandomNumber(0.25 * window.innerWidth, 0.75 * window.innerWidth)
-  );
-  const [treatPicture, setTreatPicture] = useState(arrTreatPics[0]);
-
-  const moveButton = () => {
+  const moveTreatPicture = () => {
     let randomTop = getRandomNumber(
       0.25 * window.innerHeight,
       0.75 * window.innerHeight
@@ -86,19 +86,18 @@ export default function Treat() {
       0.25 * window.innerWidth,
       0.75 * window.innerWidth
     );
-    setTopState(randomTop);
-    setLeftState(randomLeft);
+    setOffSetTop(randomTop);
+    setOffSetLeft(randomLeft);
     getRandomTreatPicture();
   };
 
   const hideTreatHandler = () => {
-   
     playTreatSound();
-    moveButton();
-    setHidden(true);
+    moveTreatPicture();
+    setHideTheTreat(true);
 
     const timer = setTimeout(() => {
-      setHidden(false);
+      setHideTheTreat(false);
     }, randomInterval());
 
     return () => clearTimeout(timer);
@@ -106,12 +105,12 @@ export default function Treat() {
 
   return (
     <>
-      {!hidden && (
+      {!hideTheTreat && (
         <button
           className="treat"
           style={{
-            top: `${topState}px`,
-            left: `${leftState}px`,
+            top: `${offSetTop}px`,
+            left: `${offSetLeft}px`,
             position: 'absolute',
           }}
           onClick={hideTreatHandler}
