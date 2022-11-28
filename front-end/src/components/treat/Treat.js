@@ -1,6 +1,5 @@
 import './Treat.css';
 import { React, useState } from 'react';
-import axios from 'axios';
 import treatsound from './assets/treatsound.wav';
 
 const arrTreatPics = [
