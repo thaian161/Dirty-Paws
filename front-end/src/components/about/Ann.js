@@ -7,13 +7,29 @@ export default function Ann(props) {
     <div className="about-container">
       <TeamMember
         profilePicture={annBui}
+        email="hello.annbui@gmail.com"
         teamMemberName="Ann Bui"
         jobTitle="Full Stack Developer"
-        bio="A front-end lover, Amateur UX/UI designer.I am passionate about designing and creating products that are user-friendly and visually appealing."
+        bio={
+          <p>
+            A front-end lover
+            <br />
+            Amateur UX/UI designer.
+            <br />I am passionate about
+            <br />
+            designing and creating products
+            <br />
+            that are user-friendly
+            <br />
+            and visually appealing.
+          </p>
+        }
         gitHubURL="thaian161"
         gitHubUserName="thaian161"
         linkedInURL="thaian161"
         linkedInUserName="thaian161"
+        yNumber={(x) => (x - window.innerWidth / 1 / 4) / 20} //hovering effect requires different number depending on the postion of the glass card
+        sNumber={1.1}
       />
     </div>
   );

@@ -18,16 +18,10 @@ const Container = styled(animated.div)`
 
   text-align: center;
 `;
-const calc = (x, y) => [
-  -(y - window.innerHeight / 2) / 40,
-  (x - window.innerWidth / 1 / 4) / 20,
-  1.1,
-];
-const trans = (x, y, s) =>
-  `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
 function TeamMember({
   profilePicture,
+  email,
   teamMemberName,
   jobTitle,
   bio,
@@ -35,7 +29,17 @@ function TeamMember({
   gitHubUserName,
   linkedInURL,
   linkedInUserName,
+  yNumber,
+  sNumber,
 }) {
+  const calc = (x, y) => [
+    -(y - window.innerHeight / 2) / 40,
+    yNumber(x),
+    sNumber,
+  ];
+  const trans = (x, y, s) =>
+    `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
+
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],
     config: config.default,
@@ -57,7 +61,7 @@ function TeamMember({
         />
       </div>
       <div className="content">
-        <a href="mailto: hello.annbui@gmail.com">
+        <a href={`mailto: ${email}`}>
           <h2 className="about-name">{teamMemberName} </h2>
           <p className="dev">{jobTitle}</p>
         </a>
