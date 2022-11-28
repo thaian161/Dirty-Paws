@@ -4,14 +4,12 @@ import Ann from './Ann.js';
 import Dan from './Dan.js';
 import Dex from './Dex.js';
 
-export default function About() {
+export default function About(props) {
   return (
     <>
       <section className="home-about">
         <div className="about-wrapper">
-          <div className="about-container">
-            <Ann />
-          </div>
+          <Ann />
           <div className="about-container">
             <Dan />
           </div>
