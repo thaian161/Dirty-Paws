@@ -87,7 +87,8 @@ https://user-images.githubusercontent.com/76141297/186616746-aa20c033-afe2-4a49-
 
 1. Clone this repos.
 2. Create the `.env` by using `.env.example` as a reference: `cp .env.example .env`
-3. Update the .env file with your correct local information
+3. Create database using `psql`
+4. Update the .env file with your correct local information
 
    - username: `labber`
    - password: `labber`
@@ -99,25 +100,25 @@ From here, we recommend you have **two separate terminal window** opens
 
 #### On your Backend terminal
 
-4. Navigate to the back-end folder. Install dependencies `npm i`
+5. Navigate to the back-end folder. Install dependencies `npm i`
 
-5. Reset database: `npm run db:reset`
+6. Reset database: `npm run db:reset`
 
    - Check the db folder to see what gets created and seeded in the SDB
 
-6. Run the server (back-end): `npm start`
+7. Run the server (back-end): `npm start`
 
    - Note: nodemon is used, so you should not have to restart your server
 
 #### On your Frontend terminal
 
-7. Navigate to the front-end folder. Install dependencies `npm i --force`
+8. Navigate to the front-end folder. Install dependencies `npm i --force`
 
-8. Run the client (front-end): `npm start`
+9. Run the client (front-end): `npm start`
 
-9. React will kick in and auto serve the app in your browser at `http://localhost:3000`
+10. React will kick in and auto serve the app in your browser at `http://localhost:3000`
 
-10. Start to build your profile, treats, and paws. LET'S GET DIRTY!!!
+11. Start to build your profile, treats, and paws. LET'S GET DIRTY!!!
 
 <br>
 
