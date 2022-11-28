@@ -10,7 +10,7 @@ const Container = styled(animated.div)`
   min-width: 20rem;
   max-width: 20rem;
 
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   overflow: hidden;
 
   margin: 1rem;
