@@ -28,8 +28,8 @@ export default function Ann(props) {
         gitHubUserName="thaian161"
         linkedInURL="thaian161"
         linkedInUserName="thaian161"
-        yNumber={(x) => (x - window.innerWidth / 1 / 4) / 20} //hovering effect requires different number depending on the postion of the glass card
-        sNumber={1.1}
+        // yNumber={(x) => (x - window.innerWidth / 1 / 4) / 20} //hovering effect requires different number depending on the postion of the glass card
+        // sNumber={1.1}
       />
     </div>
   );
